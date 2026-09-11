@@ -22,7 +22,7 @@ The first page covers the Terraform implementation for the **Azure environment**
 
 The second page covers the Terraform implementation for the **AWS environment**, including its Terraform configuration and managed infrastructure.
 
-➡️ **[AWS Terraform Documentation](terraform/aws/readme.en.md)**
+➡️ **[AWS Terraform Documentation](aws/readme.en.md)**
 
 ---
 
