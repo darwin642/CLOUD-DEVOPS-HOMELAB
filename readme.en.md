@@ -23,7 +23,7 @@ Hands-on Azure infrastructure lab covering:
 * Azure CLI
 * Windows Server
 
-[View Azure Lab →](azure-lab/)
+[View Azure Lab →](az/readme.en.md)
 
 ---
 
@@ -48,7 +48,7 @@ Hands-on AWS infrastructure lab covering:
 
 The infrastructure is managed with Terraform.
 
-[View AWS Lab →](aws-terraform-lab/)
+[View AWS Lab →](aws/readme.en.md)
 
 ---
 
@@ -67,7 +67,7 @@ Hands-on Windows Server and Active Directory environment covering:
 * PowerShell
 * Windows Server administration
 
-[View Active Directory Lab →](active-directory-lab/)
+[View Active Directory Lab →](ad/readme.en.md)
 
 ---
 
@@ -89,7 +89,7 @@ The project focuses on:
 * Cloud connectivity
 * Cross-platform infrastructure
 
-[View Hybrid Cloud Lab →](hybrid-cloud-lab/)
+[View Hybrid Cloud Lab →](hybrid/readme.en.md)
 
 ---
 
@@ -114,7 +114,7 @@ Current work includes:
 * Terraform state management
 * Infrastructure planning and deployment
 
-[View Terraform Lab →](aws-terraform-lab/)
+[View Terraform Lab →](terraform/readme.en.md)
 
 ---
 
