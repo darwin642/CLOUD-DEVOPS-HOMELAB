@@ -1,8 +1,8 @@
-# Cloud & DevOps Lab Portfolio
+# Welcome to my Cloud & DevOps Lab Portfolio.
 
-A hands-on portfolio documenting my journey from IT support into cloud infrastructure and DevOps.
+This is a hands-on portfolio documenting my journey from IT support into cloud infrastructure and DevOps.
 
-## 🌍 Choose your language
+## 🌍 Please, choose your language.
 
 ### 🇬🇧 English
 
