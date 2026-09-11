@@ -16,7 +16,7 @@ Because the Terraform content is too large to fit cleanly into a single page, th
 
 The first page covers the Terraform implementation for the **Azure environment**, including the configuration files, infrastructure resources, and deployment structure.
 
-➡️ **[Azure Terraform Documentation](terraform/az/readme.en.md)**
+➡️ **[Azure Terraform Documentation](az/readme.en.md)**
 
 ### AWS Terraform
 
