@@ -23,7 +23,7 @@ Aşağıdaki konuları kapsayan uygulamalı Azure altyapı laboratuvarı:
 * Azure CLI
 * Windows Server
 
-[Azure Lab'ı Görüntüle →](azure-lab/)
+[Azure Lab'ı Görüntüle →](az/readme.tr.md)
 
 ---
 
@@ -48,7 +48,7 @@ Aşağıdaki konuları kapsayan uygulamalı AWS altyapı laboratuvarı:
 
 Altyapı Terraform ile yönetilmektedir.
 
-[AWS Lab'ı Görüntüle →](aws-terraform-lab/)
+[AWS Lab'ı Görüntüle →](aws/readme.tr.md)
 
 ---
 
@@ -67,7 +67,7 @@ Aşağıdaki konuları kapsayan uygulamalı Windows Server ve Active Directory o
 * PowerShell
 * Windows Server yönetimi
 
-[Active Directory Lab'ını Görüntüle →](active-directory-lab/)
+[Active Directory Lab'ını Görüntüle →](ad/readme.tr.md)
 
 ---
 
@@ -89,7 +89,7 @@ Proje aşağıdaki konulara odaklanmaktadır:
 * Cloud connectivity
 * Platformlar arası altyapı
 
-[Hybrid Cloud Lab'ını Görüntüle →](hybrid-cloud-lab/)
+[Hybrid Cloud Lab'ını Görüntüle →](hybrid/readme.tr.md)
 
 ---
 
@@ -114,7 +114,7 @@ Mevcut çalışmalar:
 * Terraform state yönetimi
 * Infrastructure planlama ve deployment
 
-[Terraform Lab'ını Görüntüle →](aws-terraform-lab/)
+[Terraform Lab'ını Görüntüle →](terraform/readme.tr.md)
 
 ---
 
