@@ -31,9 +31,7 @@ Projede aşağıdaki konular ele alınmaktadır:
 
 ### Mimari Diyagram
 
-> **[AZURE MİMARİ DİYAGRAMINIZI BURAYA EKLEYİN]**
-
-<!-- Azure mimari diyagramınızı buraya ekleyin -->
+![Azure Architecture](./az_diagram.jpg)
 
 Ortam; yapılandırılmış bir subnet yapısına sahip Azure Virtual Network, Windows Server Virtual Machine, ağ güvenlik kontrolleri ve Azure Storage'a özel bağlantıdan oluşmaktadır.
 
