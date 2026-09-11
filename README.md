@@ -6,12 +6,12 @@ This is a hands-on portfolio documenting my journey from IT support into cloud i
 
 ### 🇬🇧 English
 
-[View the English portfolio →](README.en.md)
+[View the English portfolio →](readme.en.md)
 
 ### 🇹🇷 Türkçe
 
-[Türkçe portfolyoyu görüntüle →](README.tr.md)
+[Türkçe portfolyoyu görüntüle →](readme.tr.md)
 
 ### 🇩🇪 Deutsch
 
-[Deutsches Portfolio anzeigen →](README.de.md)
+[Deutsches Portfolio anzeigen →](readme.de.md)
