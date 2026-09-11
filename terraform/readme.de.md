@@ -16,13 +16,13 @@ Da der Terraform-Inhalt zu umfangreich für eine einzelne Seite ist, wurde die D
 
 Die erste Seite behandelt die **Terraform-Implementierung der Azure-Umgebung**. Dabei werden die Konfigurationsdateien, die verwalteten Infrastruktur-Ressourcen und die Deployment-Struktur beschrieben.
 
-➡️ **[Azure Terraform Dokumentation](azure.md)**
+➡️ **[Azure Terraform Dokumentation](az/readme.de.md)**
 
 ### AWS Terraform
 
 Die zweite Seite behandelt die **Terraform-Implementierung der AWS-Umgebung**. Hier werden die Terraform-Konfiguration und die verwaltete AWS-Infrastruktur beschrieben.
 
-➡️ **[AWS Terraform Dokumentation](aws.md)**
+➡️ **[AWS Terraform Dokumentation](aws/readme.de.md)**
 
 ---
 
