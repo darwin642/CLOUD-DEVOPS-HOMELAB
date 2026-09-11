@@ -16,13 +16,13 @@ Terraform içeriği tek bir sayfaya sığmayacak kadar geniş olduğu için dok�
 
 İlk sayfa, **Azure ortamındaki Terraform uygulamasını** kapsamaktadır. Yapılandırma dosyaları, oluşturulan altyapı kaynakları ve deployment yapısı burada açıklanmaktadır.
 
-➡️ **[Azure Terraform Dokümantasyonu](azure.md)**
+➡️ **[Azure Terraform Dokümantasyonu](az/readme.tr.md)**
 
 ### AWS Terraform
 
 İkinci sayfa, **AWS ortamındaki Terraform uygulamasını** kapsamaktadır. Terraform yapılandırması ve yönetilen AWS altyapısı burada açıklanmaktadır.
 
-➡️ **[AWS Terraform Dokümantasyonu](aws.md)**
+➡️ **[AWS Terraform Dokümantasyonu](aws/readme.tr.md)**
 
 ---
 
