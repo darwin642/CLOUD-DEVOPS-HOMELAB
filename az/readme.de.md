@@ -31,9 +31,7 @@ Das Projekt umfasst:
 
 ### Architekturdiagramm
 
-> **[IHR AZURE-ARCHITEKTURDIAGRAMM HIER EINFÜGEN]**
-
-<!-- Fügen Sie hier Ihr Azure-Architekturdiagramm ein -->
+![Azure Architecture](./az_diagram.jpg)
 
 Die Umgebung enthält ein Azure Virtual Network mit einer definierten Subnetzstruktur, einer Windows Server Virtual Machine, Netzwerk-Sicherheitskontrollen und privater Konnektivität zu Azure Storage.
 
