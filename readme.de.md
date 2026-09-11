@@ -1,5 +1,7 @@
 # ☁️ Cloud & DevOps Lab Portfolio
 
+**Hinweis:** Die deutsche Version wurde aufgrund meiner noch nicht ausreichenden Deutschkenntnisse mit KI übersetzt. Daher können Fehler enthalten sein. Ich entschuldige mich dafür und danke für Ihr Verständnis.
+
 Ein praxisorientiertes Portfolio, das meinen Weg vom IT Support zu Cloud Infrastructure und DevOps dokumentiert.
 
 Dieses Portfolio konzentriert sich nicht nur auf theoretisches Lernen, sondern auf den Aufbau, die Konfiguration, die Fehlerbehebung und die Automatisierung realer Infrastruktur.
