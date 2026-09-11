@@ -1,6 +1,6 @@
 # ☁️ Cloud & DevOps Lab Portfolio
 
-A hands-on portfolio documenting my journey from IT Support into Cloud Infrastructure and DevOps.
+This is a hands-on portfolio documenting my journey from IT Support into Cloud Infrastructure and DevOps.
 
 This portfolio focuses on building, configuring, troubleshooting and automating real-world infrastructure rather than only studying theory.
 
