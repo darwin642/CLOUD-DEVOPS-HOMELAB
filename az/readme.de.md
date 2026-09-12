@@ -1,6 +1,6 @@
 # ☁️ Microsoft Azure Infrastructure Lab
 
-Praktisches Azure-Infrastruktur-Labor zur Entwicklung praxisnaher Kenntnisse in den Bereichen Cloud-Infrastruktur, Netzwerke, Sicherheit, Identität, Storage und Systemadministration.
+Praktisches Azure-Infrastrukturlabor zur Entwicklung praxisnaher Kenntnisse in den Bereichen Cloud-Infrastruktur, Netzwerke, Sicherheit, Identität, Storage und Systemadministration.
 
 Der Schwerpunkt des Labs liegt auf dem Entwurf, der Konfiguration, dem Testen, der Fehlerbehebung und der Verwaltung von Azure-Ressourcen in einer realistischen Infrastrukturumgebung.
 
@@ -33,7 +33,7 @@ Das Projekt beinhaltet:
 
 ### Architekturdiagramm
 
-Die Umgebung besteht aus einem Azure Virtual Network mit einer strukturierten Subnetzarchitektur, Netzwerk-Sicherheitskontrollen, einer Linux Virtual Machine und einer privaten Verbindung zu Azure Storage.
+Die Umgebung enthält ein Azure Virtual Network mit einer strukturierten Subnetzarchitektur, Netzwerk-Sicherheitskontrollen, einer Linux Virtual Machine und einer privaten Verbindung zu Azure Storage.
 
 ---
 
@@ -64,12 +64,12 @@ Die Azure-Netzwerkumgebung wurde mithilfe eines dedizierten Virtual Networks und
 
 Der Netzwerkverkehr wurde mithilfe von Network Security Groups kontrolliert.
 
-Eine NSG wurde dem Subnetz `WebSubnet` zugeordnet, um den eingehenden und ausgehenden Netzwerkverkehr zu kontrollieren.
+Eine NSG wurde dem WebSubnet zugeordnet, um den eingehenden und ausgehenden Netzwerkverkehr zu kontrollieren.
 
 ### Konfiguration
 
 * Network Security Group: `nsg-web-tf01`
-* Subnetz-Zuordnung: `WebSubnet`
+* Subnetzzuordnung: `WebSubnet`
 * RDP-Zugriff wird über Sicherheitsregeln kontrolliert
 * HTTP-Zugriff wird über Sicherheitsregeln kontrolliert
 * Netzwerkzugriff wird über NSG-Regeln kontrolliert
@@ -160,7 +160,7 @@ Diese Konfiguration demonstriert den privaten Zugriff auf Azure-PaaS-Dienste, oh
 
 Eine systemseitig zugewiesene Managed Identity wurde verwendet, um der Virtual Machine kontrollierten Zugriff auf Azure-Ressourcen zu ermöglichen, ohne Anmeldeinformationen direkt auf der VM speichern zu müssen.
 
-Der Identität der VM wurde die erforderliche Azure-RBAC-Berechtigung für den Zugriff auf Blob Storage zugewiesen.
+Der VM-Identität wurde die erforderliche Azure-RBAC-Berechtigung für den Zugriff auf Blob Storage zugewiesen.
 
 ### Rollenzuweisung
 
@@ -193,7 +193,7 @@ Azure Backup wurde ebenfalls für die Virtual Machine konfiguriert und der Backu
 
 ---
 
-## 9. 🧪 Testing & Troubleshooting
+## 9. 🧪 Testen & Fehlerbehebung
 
 Die Umgebung wurde anhand praktischer Troubleshooting-Szenarien getestet.
 
@@ -236,9 +236,17 @@ az storage blob list \
 
 Der Befehl gab erfolgreich das im Container `lab-data` gespeicherte Blob zurück.
 
-### 📸 Screenshot 18 — Private-DNS-Auflösung
+### 📸 Screenshot 18 — SSH-Verbindungstest
 
-### 📸 Screenshot 19 — Storage-Zugriffstest
+![Storage Access Test](18-connectivity-test.png)
+
+### 📸 Screenshot 19 — Private-DNS-Auflösung
+
+![Storage Access Test](18-dns-test.png)
+
+### 📸 Screenshot 20 — Storage-Zugriffstest
+
+![Storage Access Test](19-storage-test.png)
 
 ---
 
@@ -277,7 +285,7 @@ Azure CLI · PowerShell · Terraform
 * Subnetzdesign
 * Netzwerksicherheit
 * Routing
-* Administration von Linux / Ubuntu VMs
+* Linux / Ubuntu VM-Administration
 * Azure Storage
 * Konfiguration von Private Endpoints
 * Private DNS
