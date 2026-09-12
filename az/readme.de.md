@@ -53,10 +53,13 @@ Die Azure-Netzwerkumgebung wurde mithilfe eines dedizierten Virtual Networks und
 | Region          | Sweden Central    |
 
 ### 📸 Screenshot 01 — Resource Group
+![Storage Access Test](01-resource-group.png)
 
 ### 📸 Screenshot 02 — Virtual Network
+![Storage Access Test](02-virtual-network.png)
 
 ### 📸 Screenshot 03 — Subnetzkonfiguration
+![Storage Access Test](03-subnet.png)
 
 ---
 
@@ -75,8 +78,10 @@ Eine NSG wurde dem WebSubnet zugeordnet, um den eingehenden und ausgehenden Netz
 * Netzwerkzugriff wird über NSG-Regeln kontrolliert
 
 ### 📸 Screenshot 04 — Network Security Group
+![Storage Access Test](04-nsg.png)
 
 ### 📸 Screenshot 05 — Eingehende NSG-Regeln
+![Storage Access Test](05-nsg-rules.png)
 
 ---
 
@@ -97,8 +102,10 @@ Eine Linux Virtual Machine wurde innerhalb des Azure Virtual Networks bereitgest
 Die VM wurde verwendet, um Netzwerkverbindungen, Azure-Dienste, Identität, private DNS-Auflösung und den Zugriff auf Storage zu testen.
 
 ### 📸 Screenshot 06 — Übersicht der Virtual Machine
+![Storage Access Test](06-vm-overview.png)
 
 ### 📸 Screenshot 07 — VM-Netzwerk
+![Storage Access Test](07-vm-networking.png)
 
 ---
 
@@ -116,8 +123,10 @@ Ein benutzerdefiniertes Routing wurde konfiguriert, um den Azure-Netzwerkverkehr
 Die Routing-Konfiguration wurde im Rahmen des Netzwerk-Labors und der praktischen Fehlerbehebung verwendet.
 
 ### 📸 Screenshot 08 — Route Table
+![Storage Access Test](08-route-table.png)
 
 ### 📸 Screenshot 09 — Routenkonfiguration
+![Storage Access Test](09-route.png)
 
 ---
 
@@ -128,8 +137,10 @@ Ein Azure Storage Account wurde bereitgestellt und verwendet, um den sicheren Zu
 Die Storage-Umgebung umfasst Blob Storage, Blob-Versionierung, Soft-Delete-Aufbewahrung und private Konnektivität.
 
 ### 📸 Screenshot 10 — Storage Account
+![Storage Access Test](10-storage-account.png)
 
 ### 📸 Screenshot 11 — Blob Storage
+![Storage Access Test](11-blob-storage.png)
 
 ---
 
@@ -151,8 +162,10 @@ Die Private DNS Zone wird zentral in der Resource Group `rg-network-prod` verwal
 Diese Konfiguration demonstriert den privaten Zugriff auf Azure-PaaS-Dienste, ohne auf einen öffentlichen Endpoint angewiesen zu sein.
 
 ### 📸 Screenshot 12 — Private Endpoint
+![Storage Access Test](12-private-endpoint.png)
 
 ### 📸 Screenshot 13 — Private DNS Zone
+![Storage Access Test](13-private-dns.png)
 
 ---
 
@@ -171,8 +184,10 @@ Der VM-Identität wurde die erforderliche Azure-RBAC-Berechtigung für den Zugri
 Das Lab enthält außerdem eine `Resource Group Reader`-Rollenzuweisung für die konfigurierte Azure AD / Microsoft Entra-Gruppe.
 
 ### 📸 Screenshot 14 — Managed Identity
+![Storage Access Test](14-managed-identity.png)
 
 ### 📸 Screenshot 15 — Rollenzuweisung
+![Storage Access Test](15-role-assignment.png)
 
 ---
 
@@ -188,8 +203,10 @@ Ein Resource Lock wurde konfiguriert, um das versehentliche Löschen der Lab-Res
 Azure Backup wurde ebenfalls für die Virtual Machine konfiguriert und der Backup-Status erfolgreich überprüft.
 
 ### 📸 Screenshot 16 — Management Lock
+![Storage Access Test](16-management-lock.png)
 
 ### 📸 Screenshot 17 — Backup / Recovery
+![Storage Access Test](17-backup-recovery.png)
 
 ---
 
