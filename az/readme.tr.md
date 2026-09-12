@@ -35,6 +35,10 @@ Proje şunları içermektedir:
 
 Ortam; yapılandırılmış bir alt ağ mimarisine, ağ güvenlik kontrollerine, bir Linux Virtual Machine'a ve Azure Storage'a özel bağlantıya sahip bir Azure Virtual Network içermektedir.
 
+Kısaca diyagramı burada;
+![Storage Access Test](az_diagram.jpg)
+
+
 ---
 
 ## 1. 🌐 Virtual Network & Alt Ağlar
