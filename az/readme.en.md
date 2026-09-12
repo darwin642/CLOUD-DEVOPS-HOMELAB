@@ -59,7 +59,7 @@ The Azure networking environment was created using a dedicated Virtual Network a
 ![Storage Access Test](02-virtual-network.png)
 
 ### 📸 Screenshot 03 — Subnet Configuratio
-![Storage Access Test](03-subnet.png)n
+![Storage Access Test](03-subnet.png)
 
 ---
 
