@@ -65,19 +65,19 @@ WEB02 wurde in einer anderen Availability Zone bereitgestellt, um eine Multi-AZ-
 
 ### 📸 Screenshot 01 — VPC
 
-![VPC](./images/01-vpc.png)
+![VPC](01-vpc.png)
 
 ### 📸 Screenshot 02 — Subnetze
 
-![Subnets](./images/02-subnets.png)
+![Subnets](02-subnets.png)
 
 ### 📸 Screenshot 03 — Route Tables
 
-![Route Tables](./images/03-route-tables.png)
+![Route Tables](03-route-tables.png)
 
 ### 📸 Screenshot 04 — Internet Gateway
 
-![Internet Gateway](./images/04-internet-gateway.png)
+![Internet Gateway](04-internet-gateway.png)
 
 ---
 
@@ -97,15 +97,15 @@ WEB01 und WEB02 bilden die öffentlich erreichbare Web-Ebene, während APP01 die
 
 ### 📸 Screenshot 05 — WEB01
 
-![WEB01](./images/05-web01.png)
+![WEB01](05-web01.png)
 
 ### 📸 Screenshot 06 — WEB02
 
-![WEB02](./images/06-web02.png)
+![WEB02](06-web02.png)
 
 ### 📸 Screenshot 07 — APP01
 
-![APP01](./images/07-app01.png)
+![APP01](07-app01.png)
 
 ---
 
@@ -127,11 +127,11 @@ APP01 besitzt keine öffentliche IP-Adresse.
 
 ### 📸 Screenshot 08 — WEB01 Security Group
 
-![WEB01 Security Group](./images/08-web01-sg.png)
+![WEB01 Security Group](08-web01-sg.png)
 
 ### 📸 Screenshot 09 — APP01 Security Group
 
-![APP01 Security Group](./images/09-app01-sg.png)
+![APP01 Security Group](09-app01-sg.png)
 
 ---
 
@@ -154,11 +154,11 @@ Der Datenverkehr wird zwischen Webservern in unterschiedlichen Availability Zone
 
 ### 📸 Screenshot 10 — Application Load Balancer
 
-![Application Load Balancer](./images/10-load-balancer.png)
+![Application Load Balancer](10-load-balancer.png)
 
 ### 📸 Screenshot 11 — Target Group
 
-![Target Group](./images/11-target-group.png)
+![Target Group](11-target-group.png)
 
 ---
 
@@ -177,11 +177,11 @@ IAM-Benutzer und Berechtigungen wurden konfiguriert, um Identity- und Access-Man
 
 ### 📸 Screenshot 12 — IAM Users
 
-![IAM Users](./images/12-iam-users.png)
+![IAM Users](12-iam-users.png)
 
 ### 📸 Screenshot 13 — IAM Permissions
 
-![IAM Permissions](./images/13-iam-permissions.png)
+![IAM Permissions](13-iam-permissions.png)
 
 ---
 
@@ -200,11 +200,11 @@ EC2-Metriken wurden überwacht und ein Alarm für eine ausgewählte Metrik einge
 
 ### 📸 Screenshot 14 — CloudWatch Metric
 
-![CloudWatch Metric](./images/14-cloudwatch-metric.png)
+![CloudWatch Metric](14-cloudwatch-metric.png)
 
 ### 📸 Screenshot 15 — CloudWatch Alarm
 
-![CloudWatch Alarm](./images/15-cloudwatch-alarm.png)
+![CloudWatch Alarm](15-cloudwatch-alarm.png)
 
 ---
 
@@ -223,45 +223,15 @@ Ein Backup Plan wurde erstellt und eine Backup-Konfiguration für die entspreche
 
 ### 📸 Screenshot 16 — Backup Plan
 
-![Backup Plan](./images/16-backup-plan.png)
+![Backup Plan](16-backup-plan.png)
 
 ### 📸 Screenshot 17 — Backup Resource
 
-![Backup Resource](./images/17-backup-resource.png)
+![Backup Resource](17-backup-resource.png)
 
 ---
 
-## 8. 🏗️ Terraform
-
-Terraform wurde verwendet, um die AWS-Infrastruktur nach dem Infrastructure-as-Code-Prinzip zu verwalten.
-
-Vorhandene AWS-Ressourcen wurden in den Terraform State importiert, sodass die Infrastruktur deklarativ verwaltet werden kann.
-
-### Terraform-Bereich
-
-* VPC
-* Internet Gateway
-* Route Tables
-* Subnetze
-* Security Groups
-* Terraform State
-* Resource Dependencies
-* Infrastructure Planning
-* Infrastructure Management
-
-Terraform wurde verwendet, um den aktuellen Zustand der Infrastruktur zu überprüfen und Änderungen vor dem Deployment zu planen.
-
-### 📸 Screenshot 18 — Terraform Plan
-
-![Terraform Plan](./images/18-terraform-plan.png)
-
-### 📸 Screenshot 19 — Terraform State
-
-![Terraform State](./images/19-terraform-state.png)
-
----
-
-## 9. 🧪 Tests & Fehlerbehebung
+## 8. 🧪 Tests & Fehlerbehebung
 
 Die AWS-Umgebung wurde anhand realistischer Netzwerk- und Infrastructure-Troubleshooting-Szenarien getestet.
 
@@ -283,15 +253,15 @@ Die Verbindung zu APP01 wurde innerhalb des privaten Netzwerks ohne öffentliche
 
 ### 📸 Screenshot 20 — Netzwerkverbindungstest
 
-![Network Connectivity Test](./images/20-connectivity-test.png)
+![Network Connectivity Test](20-connectivity-test.png)
 
 ### 📸 Screenshot 21 — Load-Balancer-Test
 
-![Load Balancer Test](./images/21-load-balancer-test.png)
+![Load Balancer Test](21-load-balancer-test.png)
 
 ### 📸 Screenshot 22 — Target Health
 
-![Target Health](./images/22-target-health.png)
+![Target Health](22-target-health.png)
 
 ---
 
