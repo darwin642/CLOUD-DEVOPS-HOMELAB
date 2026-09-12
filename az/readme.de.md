@@ -35,6 +35,9 @@ Das Projekt beinhaltet:
 
 Die Umgebung enthält ein Azure Virtual Network mit einer strukturierten Subnetzarchitektur, Netzwerk-Sicherheitskontrollen, einer Linux Virtual Machine und einer privaten Verbindung zu Azure Storage.
 
+Hier ist das Diagramm;
+![Storage Access Test](az_diagram.jpg)
+
 ---
 
 ## 1. 🌐 Virtual Network & Subnetze
