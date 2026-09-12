@@ -271,7 +271,7 @@ Managed Identity · Azure RBAC
 
 **Operating Systems**
 
-Windows Server 2022
+Ubuntu 24.04 LTS
 
 **Automation / Administration**
 
