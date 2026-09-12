@@ -1,28 +1,30 @@
 # ☁️ Microsoft Azure Infrastructure Lab
 
-Praktisches Azure-Infrastrukturlabor zur Entwicklung von praxisnahen Kenntnissen in Cloud-Infrastruktur, Networking, Security, Identity, Storage und Systemadministration.
+Praktisches Azure-Infrastruktur-Labor zur Entwicklung praxisnaher Kenntnisse in den Bereichen Cloud-Infrastruktur, Netzwerke, Sicherheit, Identität, Storage und Systemadministration.
 
-Der Schwerpunkt des Labors liegt auf dem Aufbau, der Konfiguration, dem Testen und der Fehlerbehebung einer realistischen Azure-Infrastruktur.
+Der Schwerpunkt des Labs liegt auf dem Entwurf, der Konfiguration, dem Testen, der Fehlerbehebung und der Verwaltung von Azure-Ressourcen in einer realistischen Infrastrukturumgebung.
 
 ---
 
 ## 📌 Projektübersicht
 
-Dieses Labor umfasst die Bereitstellung und Konfiguration einer kleinen Azure-Infrastruktur.
+Dieses Labor umfasst die Bereitstellung und Konfiguration einer kleinen Azure-Infrastrukturumgebung.
 
-Das Projekt umfasst:
+Das Projekt beinhaltet:
 
 * Azure Virtual Network
 * Subnetze
 * Network Security Groups
 * Netzwerk-Routing
-* Windows Server Virtual Machine
+* Linux Virtual Machine
 * Azure Storage
 * Private Endpoint
 * Private DNS
 * Managed Identity
 * Azure CLI
 * Role-Based Access Control
+* Azure Backup
+* Management Locks
 * Netzwerk-Fehlerbehebung
 
 ---
@@ -31,38 +33,30 @@ Das Projekt umfasst:
 
 ### Architekturdiagramm
 
-![Azure Architecture](./az_diagram.jpg)
-
-Die Umgebung enthält ein Azure Virtual Network mit einer definierten Subnetzstruktur, einer Windows Server Virtual Machine, Netzwerk-Sicherheitskontrollen und privater Konnektivität zu Azure Storage.
+Die Umgebung besteht aus einem Azure Virtual Network mit einer strukturierten Subnetzarchitektur, Netzwerk-Sicherheitskontrollen, einer Linux Virtual Machine und einer privaten Verbindung zu Azure Storage.
 
 ---
 
 ## 1. 🌐 Virtual Network & Subnetze
 
-Die Azure-Netzwerkinfrastruktur wurde mit einem dedizierten Virtual Network und einer strukturierten Subnetzarchitektur erstellt.
+Die Azure-Netzwerkumgebung wurde mithilfe eines dedizierten Virtual Networks und einer strukturierten Subnetzarchitektur erstellt.
 
 ### Konfiguration
 
-| Ressource       | Konfiguration      |
-| --------------- | ------------------ |
-| Resource Group  | `rg-az104-lab01`   |
-| Virtual Network | `vnet-az104-lab01` |
-| Address Space   | `10.0.0.0/16`      |
-| Subnetz         | `WebSubnet`        |
-| Subnetzbereich  | `10.0.1.0/24`      |
-| Region          | Sweden Central     |
+| Ressource       | Konfiguration     |
+| --------------- | ----------------- |
+| Resource Group  | `rg-az104-lab01`  |
+| Virtual Network | `vnet-az104-tf01` |
+| Address Space   | `10.10.0.0/16`    |
+| Subnetz         | `WebSubnet`       |
+| Subnetzbereich  | `10.10.1.0/24`    |
+| Region          | Sweden Central    |
 
 ### 📸 Screenshot 01 — Resource Group
 
-![Resource Group](./images/01-resource-group.png)
-
 ### 📸 Screenshot 02 — Virtual Network
 
-![Virtual Network](./images/02-virtual-network.png)
-
 ### 📸 Screenshot 03 — Subnetzkonfiguration
-
-![Subnet Configuration](./images/03-subnet.png)
 
 ---
 
@@ -70,89 +64,72 @@ Die Azure-Netzwerkinfrastruktur wurde mit einem dedizierten Virtual Network und 
 
 Der Netzwerkverkehr wurde mithilfe von Network Security Groups kontrolliert.
 
-Eine NSG wurde dem WebSubnet zugewiesen, um eingehenden und ausgehenden Datenverkehr zu kontrollieren.
+Eine NSG wurde dem Subnetz `WebSubnet` zugeordnet, um den eingehenden und ausgehenden Netzwerkverkehr zu kontrollieren.
 
 ### Konfiguration
 
-* Network Security Group: `nsg-web`
+* Network Security Group: `nsg-web-tf01`
 * Subnetz-Zuordnung: `WebSubnet`
-* RDP-Zugriff auf die öffentliche IP-Adresse des Administrators beschränkt
-* Netzwerkzugriff über Security Rules kontrolliert
+* RDP-Zugriff wird über Sicherheitsregeln kontrolliert
+* HTTP-Zugriff wird über Sicherheitsregeln kontrolliert
+* Netzwerkzugriff wird über NSG-Regeln kontrolliert
 
 ### 📸 Screenshot 04 — Network Security Group
 
-![Network Security Group](./images/04-nsg.png)
-
-### 📸 Screenshot 05 — NSG Inbound Rules
-
-![NSG Inbound Rules](./images/05-nsg-rules.png)
+### 📸 Screenshot 05 — Eingehende NSG-Regeln
 
 ---
 
-## 3. 🖥️ Windows Server Virtual Machine
+## 3. 🖥️ Linux Virtual Machine
 
-Eine Windows Server Virtual Machine wurde innerhalb des Azure Virtual Networks bereitgestellt.
+Eine Linux Virtual Machine wurde innerhalb des Azure Virtual Networks bereitgestellt.
 
 ### Konfiguration
 
-| Ressource         | Konfiguration                                 |
-| ----------------- | --------------------------------------------- |
-| VM Name           | `vm-web-01`                                   |
-| Betriebssystem    | Windows Server 2022 Datacenter: Azure Edition |
-| Größe             | `B2als_v2`                                    |
-| Availability Zone | Zone 1                                        |
-| Private IP        | `10.0.1.4`                                    |
-| Sicherheit        | Trusted Launch                                |
+| Ressource        | Konfiguration       |
+| ---------------- | ------------------- |
+| VM-Name          | `vm-web-tf01`       |
+| Betriebssystem   | Ubuntu 24.04 LTS    |
+| Größe            | `Standard_B2ats_v2` |
+| Private IP       | `10.10.1.4`         |
+| Managed Identity | System-assigned     |
 
-Die VM wird verwendet, um Netzwerkverbindungen, Azure-Dienste, Identity und Storage-Zugriffe zu testen.
+Die VM wurde verwendet, um Netzwerkverbindungen, Azure-Dienste, Identität, private DNS-Auflösung und den Zugriff auf Storage zu testen.
 
-### 📸 Screenshot 06 — Virtual Machine Übersicht
+### 📸 Screenshot 06 — Übersicht der Virtual Machine
 
-![Virtual Machine](./images/06-vm-overview.png)
-
-### 📸 Screenshot 07 — VM Networking
-
-![VM Networking](./images/07-vm-networking.png)
+### 📸 Screenshot 07 — VM-Netzwerk
 
 ---
 
 ## 4. 🛣️ Routing
 
-Custom Routing wurde konfiguriert, um den Netzwerkverkehr und das Verhalten von Next Hops in Azure zu demonstrieren.
+Ein benutzerdefiniertes Routing wurde konfiguriert, um den Azure-Netzwerkverkehr und das Verhalten des nächsten Hops zu demonstrieren.
 
 ### Konfiguration
 
-| Einstellung      | Wert        |
-| ---------------- | ----------- |
-| Route            | `0.0.0.0/0` |
-| Next Hop Type    | Internet    |
-| Next Hop Address | `10.0.1.10` |
+| Einstellung   | Wert        |
+| ------------- | ----------- |
+| Route         | `0.0.0.0/0` |
+| Next Hop Type | Internet    |
 
-Die Routing-Konfiguration wurde im Rahmen des Netzwerk-Labors und der Troubleshooting-Szenarien verwendet.
+Die Routing-Konfiguration wurde im Rahmen des Netzwerk-Labors und der praktischen Fehlerbehebung verwendet.
 
 ### 📸 Screenshot 08 — Route Table
 
-![Route Table](./images/08-route-table.png)
-
-### 📸 Screenshot 09 — Route Configuration
-
-![Route Configuration](./images/09-route.png)
+### 📸 Screenshot 09 — Routenkonfiguration
 
 ---
 
 ## 5. 📦 Azure Storage
 
-Ein Azure Storage Account wurde bereitgestellt und für Tests des sicheren Zugriffs von der Azure Virtual Machine verwendet.
+Ein Azure Storage Account wurde bereitgestellt und verwendet, um den sicheren Zugriff von der Azure Virtual Machine zu testen.
 
-Die Storage-Umgebung umfasst Blob Storage und private Konnektivität.
+Die Storage-Umgebung umfasst Blob Storage, Blob-Versionierung, Soft-Delete-Aufbewahrung und private Konnektivität.
 
 ### 📸 Screenshot 10 — Storage Account
 
-![Storage Account](./images/10-storage-account.png)
-
 ### 📸 Screenshot 11 — Blob Storage
-
-![Blob Storage](./images/11-blob-storage.png)
 
 ---
 
@@ -164,90 +141,104 @@ Ein Private Endpoint wurde konfiguriert, um eine private Netzwerkverbindung zu A
 
 | Ressource        | Konfiguration                       |
 | ---------------- | ----------------------------------- |
-| Private Endpoint | `pe-storage-01`                     |
+| Private Endpoint | `pe-storage-tf01`                   |
 | Ziel             | Azure Storage Blob                  |
-| Private IP       | `10.0.1.5`                          |
+| Private IP       | `10.10.1.5`                         |
 | Private DNS Zone | `privatelink.blob.core.windows.net` |
 
-Diese Konfiguration demonstriert den privaten Zugriff auf einen Azure-PaaS-Dienst, ohne einen öffentlichen Endpoint zu verwenden.
+Die Private DNS Zone wird zentral in der Resource Group `rg-network-prod` verwaltet und ist mit dem Lab-Virtual-Network verknüpft.
+
+Diese Konfiguration demonstriert den privaten Zugriff auf Azure-PaaS-Dienste, ohne auf einen öffentlichen Endpoint angewiesen zu sein.
 
 ### 📸 Screenshot 12 — Private Endpoint
 
-![Private Endpoint](./images/12-private-endpoint.png)
-
 ### 📸 Screenshot 13 — Private DNS Zone
-
-![Private DNS](./images/13-private-dns.png)
 
 ---
 
 ## 7. 🆔 Managed Identity & RBAC
 
-Eine Managed Identity wurde verwendet, um der Virtual Machine kontrollierten Zugriff auf Azure-Ressourcen zu ermöglichen, ohne Anmeldeinformationen direkt auf der VM speichern zu müssen.
+Eine systemseitig zugewiesene Managed Identity wurde verwendet, um der Virtual Machine kontrollierten Zugriff auf Azure-Ressourcen zu ermöglichen, ohne Anmeldeinformationen direkt auf der VM speichern zu müssen.
 
-Der VM-Identity wurde die erforderliche Azure-RBAC-Berechtigung für den Zugriff auf Blob Storage zugewiesen.
+Der Identität der VM wurde die erforderliche Azure-RBAC-Berechtigung für den Zugriff auf Blob Storage zugewiesen.
 
-### Role Assignment
+### Rollenzuweisung
 
-* Managed Identity
+* System-assigned Managed Identity
 * Azure Storage
 * `Storage Blob Data Reader`
 
+Das Lab enthält außerdem eine `Resource Group Reader`-Rollenzuweisung für die konfigurierte Azure AD / Microsoft Entra-Gruppe.
+
 ### 📸 Screenshot 14 — Managed Identity
 
-![Managed Identity](./images/14-managed-identity.png)
-
-### 📸 Screenshot 15 — Role Assignment
-
-![Role Assignment](./images/15-role-assignment.png)
+### 📸 Screenshot 15 — Rollenzuweisung
 
 ---
 
-## 8. 💻 Azure CLI
+## 8. 🔒 Management Lock & Backup
 
-Azure CLI wurde verwendet, um Azure-Ressourcen aus der Windows-Server-Umgebung zu verwalten und zu testen.
+Ein Resource Lock wurde konfiguriert, um das versehentliche Löschen der Lab-Resource-Group zu verhindern.
 
-Das Labor umfasst die Authentifizierung und Interaktion mit Azure-Ressourcen über Azure CLI.
+### Konfiguration
 
-### 📸 Screenshot 16 — Azure CLI
+* Management Lock: `lock-az104-tf01`
+* Lock Type: `CanNotDelete`
 
-![Azure CLI](./images/16-azure-cli.png)
+Azure Backup wurde ebenfalls für die Virtual Machine konfiguriert und der Backup-Status erfolgreich überprüft.
 
-### 📸 Screenshot 17 — Azure CLI Identity / Resource Test
+### 📸 Screenshot 16 — Management Lock
 
-![Azure CLI Test](./images/17-azure-cli-test.png)
+### 📸 Screenshot 17 — Backup / Recovery
 
 ---
 
 ## 9. 🧪 Testing & Troubleshooting
 
-Die Umgebung wurde durch praktische Troubleshooting-Szenarien getestet.
+Die Umgebung wurde anhand praktischer Troubleshooting-Szenarien getestet.
 
 Die Tests umfassten:
 
-* Netzwerk-Konnektivität
+* Netzwerkverbindungen
 * Kommunikation über private IP-Adressen
-* Überprüfung von NSG-Regeln
-* Überprüfung des Routings
-* Private Endpoint-Konnektivität
-* Private DNS-Auflösung
-* Managed-Identity-Authentifizierung
+* Validierung der NSG-Regeln
+* Validierung des Routings
+* Private-Endpoint-Konnektivität
+* Private-DNS-Auflösung
+* Authentifizierung über Managed Identity
 * Zugriff auf Azure Storage
-* Azure CLI-Authentifizierung
+* Validierung von Azure Backup
+* Validierung des Management Locks
 
-Das Troubleshooting erfolgte durch die Überprüfung von Azure Networking, Security Rules, Routing, DNS, Identity und Resource Configuration.
+Die private DNS-Auflösung wurde direkt von der Ubuntu-VM mithilfe von `nslookup` getestet.
 
-### 📸 Screenshot 18 — Netzwerk-Konnektivitätstest
+Der Storage-Account-Endpoint wurde über den Private-Link-DNS-Namespace zur privaten IP-Adresse des Private Endpoints aufgelöst.
 
-![Network Connectivity Test](./images/18-connectivity-test.png)
+```text
+az104tflab3531.blob.core.windows.net
+        ↓
+az104tflab3531.privatelink.blob.core.windows.net
+        ↓
+10.10.1.5
+```
 
-### 📸 Screenshot 19 — DNS-Auflösungstest
+Anschließend wurde der Storage-Zugriff von der VM mithilfe ihrer systemseitig zugewiesenen Managed Identity getestet.
 
-![DNS Resolution Test](./images/19-dns-test.png)
+```bash
+az login --identity
 
-### 📸 Screenshot 20 — Storage-Zugriffstest
+az storage blob list \
+  --account-name az104tflab3531 \
+  --container-name lab-data \
+  --auth-mode login \
+  -o table
+```
 
-![Storage Access Test](./images/20-storage-test.png)
+Der Befehl gab erfolgreich das im Container `lab-data` gespeicherte Blob zurück.
+
+### 📸 Screenshot 18 — Private-DNS-Auflösung
+
+### 📸 Screenshot 19 — Storage-Zugriffstest
 
 ---
 
@@ -259,40 +250,44 @@ Azure
 
 **Infrastruktur**
 
-Azure Virtual Network · Virtual Machines · Azure Storage
+Azure Virtual Network · Virtual Machines · Azure Storage · Azure Backup
 
-**Networking**
+**Netzwerk**
 
 VNet · Subnetze · Routing · NSGs · Private Endpoints · Private DNS
 
-**Identity**
+**Identität**
 
-Managed Identity · Azure RBAC
+Managed Identity · Azure RBAC · Microsoft Entra ID
 
 **Betriebssysteme**
 
-Windows Server 2022
+Ubuntu 24.04 LTS
 
 **Automation / Administration**
 
-Azure CLI · PowerShell
+Azure CLI · PowerShell · Terraform
 
 ---
 
 ## 📚 Nachgewiesene Kenntnisse
 
 * Bereitstellung von Azure-Infrastrukturen
-* Virtuelles Networking
+* Virtuelle Netzwerke
 * Subnetzdesign
 * Netzwerksicherheit
 * Routing
-* Windows Server Administration
+* Administration von Linux / Ubuntu VMs
 * Azure Storage
 * Konfiguration von Private Endpoints
 * Private DNS
 * Managed Identity
 * RBAC
+* Microsoft Entra ID
+* Azure Backup
+* Management Locks
 * Azure CLI
+* Terraform
 * Netzwerk-Troubleshooting
 * Cloud-Infrastruktur-Troubleshooting
 
@@ -302,11 +297,11 @@ Azure CLI · PowerShell
 
 Geplante Erweiterungen des Azure-Labors:
 
-* Azure Active Directory / Microsoft Entra ID Integration
-* Hybrid Identity mit lokalem Active Directory
+* Integration von Azure Active Directory / Microsoft Entra ID
+* Hybride Identität mit lokalem Active Directory
 * Erweiterung der Azure-Netzwerkinfrastruktur
 * Azure Monitoring
-* Infrastructure as Code mit Terraform
+* Erweiterte Infrastructure as Code mit Terraform
 * AWS + Azure Hybrid Connectivity
 
 ---
@@ -315,4 +310,4 @@ Geplante Erweiterungen des Azure-Labors:
 
 Dieses Labor ist ein fortlaufendes praktisches Cloud-Infrastrukturprojekt.
 
-Die Umgebung wird kontinuierlich um neue Azure-Dienste, Networking-Szenarien, Automatisierung und Troubleshooting-Übungen erweitert.
+Die Umgebung wird kontinuierlich um neue Azure-Dienste, Netzwerkszenarien, Automatisierung, Infrastructure as Code und Troubleshooting-Szenarien erweitert.
