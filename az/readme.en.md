@@ -54,15 +54,15 @@ The Azure networking environment was created using a dedicated Virtual Network a
 
 ### 📸 Screenshot 01 — Resource Group
 
-![Resource Group](./images/01-resource-group.png)
+![Resource Group](01-resource-group.png)
 
 ### 📸 Screenshot 02 — Virtual Network
 
-![Virtual Network](./images/02-virtual-network.png)
+![Virtual Network](02-virtual-network.png)
 
 ### 📸 Screenshot 03 — Subnet Configuration
 
-![Subnet Configuration](./images/03-subnet.png)
+![Subnet Configuration](03-subnet.png)
 
 ---
 
@@ -81,11 +81,11 @@ An NSG was associated with the WebSubnet to control inbound and outbound traffic
 
 ### 📸 Screenshot 04 — Network Security Group
 
-![Network Security Group](./images/04-nsg.png)
+![Network Security Group](04-nsg.png)
 
 ### 📸 Screenshot 05 — NSG Inbound Rules
 
-![NSG Inbound Rules](./images/05-nsg-rules.png)
+![NSG Inbound Rules](05-nsg-rules.png)
 
 ---
 
@@ -108,11 +108,11 @@ The VM was used to test network connectivity, Azure services, identity, and stor
 
 ### 📸 Screenshot 06 — Virtual Machine Overview
 
-![Virtual Machine](./images/06-vm-overview.png)
+![Virtual Machine](06-vm-overview.png)
 
 ### 📸 Screenshot 07 — VM Networking
 
-![VM Networking](./images/07-vm-networking.png)
+![VM Networking](07-vm-networking.png)
 
 ---
 
@@ -132,11 +132,11 @@ The routing configuration was used as part of the network laboratory and trouble
 
 ### 📸 Screenshot 08 — Route Table
 
-![Route Table](./images/08-route-table.png)
+![Route Table](08-route-table.png)
 
 ### 📸 Screenshot 09 — Route Configuration
 
-![Route Configuration](./images/09-route.png)
+![Route Configuration](09-route.png)
 
 ---
 
@@ -148,11 +148,11 @@ The storage environment includes Blob Storage and private connectivity.
 
 ### 📸 Screenshot 10 — Storage Account
 
-![Storage Account](./images/10-storage-account.png)
+![Storage Account](10-storage-account.png)
 
 ### 📸 Screenshot 11 — Blob Storage
 
-![Blob Storage](./images/11-blob-storage.png)
+![Blob Storage](11-blob-storage.png)
 
 ---
 
@@ -173,11 +173,11 @@ This configuration demonstrates private access to Azure PaaS services without re
 
 ### 📸 Screenshot 12 — Private Endpoint
 
-![Private Endpoint](./images/12-private-endpoint.png)
+![Private Endpoint](12-private-endpoint.png)
 
 ### 📸 Screenshot 13 — Private DNS Zone
 
-![Private DNS](./images/13-private-dns.png)
+![Private DNS](13-private-dns.png)
 
 ---
 
@@ -195,11 +195,11 @@ The VM identity was assigned the required Azure RBAC permission for Blob Storage
 
 ### 📸 Screenshot 14 — Managed Identity
 
-![Managed Identity](./images/14-managed-identity.png)
+![Managed Identity](14-managed-identity.png)
 
 ### 📸 Screenshot 15 — Role Assignment
 
-![Role Assignment](./images/15-role-assignment.png)
+![Role Assignment](15-role-assignment.png)
 
 ---
 
@@ -211,11 +211,11 @@ The lab included authentication and resource interaction using Azure CLI.
 
 ### 📸 Screenshot 16 — Azure CLI
 
-![Azure CLI](./images/16-azure-cli.png)
+![Azure CLI](16-azure-cli.png)
 
 ### 📸 Screenshot 17 — Azure CLI Identity / Resource Test
 
-![Azure CLI Test](./images/17-azure-cli-test.png)
+![Azure CLI Test](17-azure-cli-test.png)
 
 ---
 
@@ -239,15 +239,15 @@ Troubleshooting was performed by checking Azure networking, security rules, rout
 
 ### 📸 Screenshot 18 — Network Connectivity Test
 
-![Network Connectivity Test](./images/18-connectivity-test.png)
+![Network Connectivity Test](18-connectivity-test.png)
 
 ### 📸 Screenshot 19 — DNS Resolution Test
 
-![DNS Resolution Test](./images/19-dns-test.png)
+![DNS Resolution Test](19-dns-test.png)
 
 ### 📸 Screenshot 20 — Storage Access Test
 
-![Storage Access Test](./images/20-storage-test.png)
+![Storage Access Test](20-storage-test.png)
 
 ---
 
