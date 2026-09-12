@@ -32,9 +32,7 @@ Das Projekt behandelt folgende Bereiche:
 
 ### Architekturdiagramm
 
-> **[IHR AWS-ARCHITEKTURDIAGRAMM HIER EINFÜGEN]**
-
-<!-- AWS-Architekturdiagramm hier einfügen -->
+![VPC](aws_diagram.png)
 
 Die Umgebung besteht aus einer VPC mit öffentlichen und privaten Subnetzen, zwei Webservern, einem privaten Application Server und einem öffentlichen Application Load Balancer.
 
