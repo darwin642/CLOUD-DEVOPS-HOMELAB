@@ -98,7 +98,7 @@ A Windows Server virtual machine was deployed inside the Azure Virtual Network.
 | Resource          | Configuration                                 |
 | ----------------- | --------------------------------------------- |
 | VM Name           | `vm-web-01`                                   |
-| OS                | Windows Server 2022 Datacenter: Azure Edition |
+| OS                | Ubuntu 24.04 LTS                              |
 | Size              | `B2als_v2`                                    |
 | Availability Zone | Zone 1                                        |
 | Private IP        | `10.0.1.4`                                    |
