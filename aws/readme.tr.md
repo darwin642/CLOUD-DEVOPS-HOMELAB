@@ -32,9 +32,7 @@ Projede aşağıdaki konular ele alınmaktadır:
 
 ### Mimari Diyagram
 
-> **[AWS MİMARİ DİYAGRAMINIZI BURAYA EKLEYİN]**
-
-<!-- AWS mimari diyagramınızı buraya ekleyin -->
+![VPC](aws_diagram.png)
 
 Ortam; public ve private subnet'lerden oluşan bir VPC, iki web sunucusu, bir private application sunucusu ve public-facing Application Load Balancer mimarisinden oluşmaktadır.
 
