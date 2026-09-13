@@ -2,8 +2,8 @@ name: Docker CI
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
   docker:
@@ -19,8 +19,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Get version
+        id: version
+        run: echo "version=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-web:v1 ./docker
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-web:${{ steps.version.outputs.version }} ./docker
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-web:v1
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-web:${{ steps.version.outputs.version }}
