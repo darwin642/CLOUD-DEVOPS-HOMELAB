@@ -196,7 +196,7 @@ Microsoft Azure
 Active Directory
     │
     ▼
-AWS
+   AWS
     │
     ▼
 Hybrid Cloud
