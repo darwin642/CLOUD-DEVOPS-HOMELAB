@@ -106,6 +106,9 @@ Each department is organized within the Active Directory structure and users are
 * Account properties
 * Client administration
 
+📌 Note:
+The computers are separated into different organizational units to ensure the correct functions of **"ONLY WINXP"** and **"NON WINXP"** WMI filters.
+
 ### 📸 Screenshot
 
 ![Users and Computers](ad-users-computers.png)
