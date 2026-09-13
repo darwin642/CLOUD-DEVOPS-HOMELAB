@@ -1,12 +1,12 @@
-🔗 Hibrit Bulut Laboratuvarı
+🔗 Hybrid Cloud Lab
 
-Microsoft Azure, Amazon Web Services ve On-Premises Active Directory ortamlarını bir araya getiren pratik bir hibrit bulut laboratuvarı.
+Microsoft Azure, Amazon Web Services ve şirket içi (On-Premises) Active Directory ortamını bir araya getiren pratik bir hibrit bulut laboratuvarı.
 
 Projenin amacı, bulut platformlarını mevcut bir On-Premises altyapıya bağlamak ve pratik hibrit bağlantı, hibrit kimlik ve ortamlar arası iletişim senaryolarını göstermektir.
 
 📌 Proje Genel Bakışı
 
-Proje aşağıdaki ortamları ve teknolojileri içermektedir:
+Proje aşağıdaki ortam ve teknolojileri içermektedir:
 
 Microsoft Azure
 Amazon Web Services
@@ -18,9 +18,9 @@ Ağ Bağlantısı
 
 Üç ortam da hibrit ağ üzerinden birbiriyle iletişim kurabilmektedir.
 
-Ortamdaki en önemli hibrit entegrasyon On-Premises Active Directory ile Microsoft Azure arasındadır.
+Ortam içerisindeki en önemli hibrit entegrasyon, On-Premises Active Directory ile Microsoft Azure arasındadır.
 
-AWS ortamı ayrı bir bulut altyapısı olarak tutulurken, Tailscale üzerinden genel hibrit ağa katılmaktadır.
+AWS ortamı ayrı bir bulut altyapısı olarak tutulurken, Tailscale üzerinden genel hibrit ağa dahil olmaktadır.
 
 🏗️ Mimari
 
@@ -30,22 +30,22 @@ Mimari üç ana ortamdan oluşmaktadır:
 ☁️ Amazon Web Services
 🪟 On-Premises Active Directory
 
-Her üç ortam da farklı altyapı ortamları arasında ağ bağlantısı sağlayan Tailscale üzerinden birbirine bağlanmaktadır.
+Üç ortam da farklı altyapılar arasında ağ bağlantısı sağlayan Tailscale üzerinden birbirine bağlanmaktadır.
 
-Ana hibrit kimlik bağlantısı ise On-Premises Active Directory ile Azure arasında Azure AD Connect üzerinden oluşturulmuştur.
+Birincil hibrit kimlik bağlantısı, On-Premises Active Directory ile Azure arasında Azure AD Connect üzerinden oluşturulmuştur.
 
 1. 🔗 Hibrit Bağlantı — Tailscale
 
 Tailscale, On-Premises, Azure ve AWS ortamları arasındaki ağ bağlantısı katmanını sağlar.
 
-Her ortam arasında ayrı VPN bağlantıları oluşturmak yerine Tailscale, farklı ortamlardaki sistemlerin iletişim kurmasını sağlayan ortak bir özel ağ sunar.
+Her ortam arasında ayrı VPN bağlantıları oluşturmak yerine Tailscale, farklı altyapılardaki sistemlerin birbiriyle iletişim kurmasını sağlayan ortak bir özel ağ oluşturur.
 
 Bağlantı
-                    HYBRID NETWORK
+                    HİBRİT AĞ
                          │
                   ┌──────▼──────┐
                   │  Tailscale  │
-                  │ Private VPN │
+                  │ Özel VPN Ağı│
                   └──────┬──────┘
                          │
           ┌──────────────┼──────────────┐
@@ -57,7 +57,7 @@ Bağlantı
 
 Tailscale ağ bağlantısı katmanı olarak kullanılırken, gerçek servisler ve kimlikler kendi platformları tarafından yönetilmektedir.
 
-Bu yapı, üç ortam içerisindeki sistemlerin özel ağ bağlantısı kullanarak iletişim kurmasını sağlar.
+Bu yapı, üç farklı ortamdaki sistemlerin özel ağ bağlantısı üzerinden iletişim kurmasını sağlar.
 
 Kapsanan Konular
 Özel ağ bağlantısı
@@ -68,22 +68,24 @@ Azure → AWS bağlantısı
 Tailscale subnet routing
 Hibrit ağ iletişimi
 
-Örneğin, HL-DC01 isimli On-Premises Windows Server makinemiz üzerinden AWS web01 sanal makinesine bağlanabiliriz.
+Örneğin, On-Premises Windows Server makinemiz olan HL-DC01 üzerinden AWS üzerindeki web01 sanal makinesine bağlanabiliriz.
 
 📸 Ekran Görüntüsü — Tailscale Bağlantısı
 
 2. 🪟🔗☁️ On-Premises Active Directory ↔ Azure
 
-Bu, proje içerisindeki ana hibrit entegrasyondur.
+Bu proje içerisindeki birincil hibrit entegrasyondur.
 
-On-Premises Windows Server ortamı Active Directory altyapısını barındırırken, Microsoft Azure bulut kimlik ve altyapı bileşenlerini sağlamaktadır.
+On-Premises Windows Server ortamı Active Directory altyapısını barındırırken, Microsoft Azure bulut kimliği ve altyapı bileşenlerini sağlamaktadır.
 
-İki ortam aşağıdaki iki yöntem üzerinden birbirine bağlanmaktadır:
+İki ortam arasında:
 
 Tailscale üzerinden ağ bağlantısı
 Azure AD Connect üzerinden kimlik senkronizasyonu
 
-Bu yapı, On-Premises Active Directory'den gelen kullanıcıların Azure ile senkronize edilebildiği pratik bir hibrit kimlik ortamı oluşturur.
+bulunmaktadır.
+
+Bu yapı, On-Premises Active Directory ortamında bulunan kullanıcıların Azure'a senkronize edilebildiği pratik bir hibrit kimlik ortamı oluşturur.
 
 Hibrit Kimlik Akışı
         ON-PREMISES
@@ -125,18 +127,18 @@ Tailscale ağ bağlantısı
 
 Azure, hibrit altyapı içerisindeki ana bulut platformlarından biridir.
 
-Azure ortamı aşağıdaki bileşenleri içermektedir:
+Azure ortamı şunları içermektedir:
 
 Virtual Network
-Subnets
+Subnetler
 Windows Server
 Private Endpoint
 Private DNS
 Managed Identity
 
-Azure ortamı Tailscale üzerinden On-Premises altyapıya bağlanmaktadır.
+Azure ortamı, On-Premises altyapıya Tailscale üzerinden bağlanmaktadır.
 
-Azure ayrıca On-Premises Active Directory ortamıyla entegrasyon sayesinde hibrit kimlik mimarisinin bir parçasıdır.
+Azure ayrıca On-Premises Active Directory ortamıyla entegrasyon sayesinde hibrit kimlik mimarisine dahil olmaktadır.
 
 📸 Ekran Görüntüsü — Azure Bağlantısı
 
@@ -144,10 +146,10 @@ Azure ayrıca On-Premises Active Directory ortamıyla entegrasyon sayesinde hibr
 
 AWS, hibrit bulut portföyündeki ikinci bulut platformudur.
 
-AWS ortamı aşağıdaki bileşenleri içermektedir:
+AWS ortamı şunları içermektedir:
 
 VPC
-Public ve private subnet'ler
+Public ve Private Subnetler
 EC2
 Security Groups
 Application Load Balancer
@@ -156,7 +158,7 @@ AWS altyapısı ayrı bir bulut ortamı olarak tutulmakta ve Terraform ile yöne
 
 AWS, ortak Tailscale ağı üzerinden On-Premises ve Azure ortamlarına bağlanmaktadır.
 
-Bu yapı, AWS'nin Active Directory kimlik senkronizasyon mimarisinin bir parçası olmadan genel hibrit ağa katılmasını sağlar.
+Bu sayede AWS altyapısı genel hibrit ağa dahil olurken, AWS Active Directory kimlik senkronizasyon mimarisinin bir parçası haline gelmemektedir.
 
 📸 Ekran Görüntüsü — AWS Bağlantısı
 
@@ -164,20 +166,20 @@ Bu yapı, AWS'nin Active Directory kimlik senkronizasyon mimarisinin bir parças
 
 On-Premises ortamı Windows Server üzerinde oluşturulmuştur ve kuruluşun merkezi kimlik ve Windows altyapı servislerini sağlamaktadır.
 
-Ortam aşağıdaki bileşenleri içermektedir:
+Ortam şunları içermektedir:
 
 Active Directory Domain Services
 DNS
 DHCP
 Group Policy
-File Sharing
+Dosya Paylaşımı
 Windows istemcileri
 
 Active Directory ortamı Azure AD Connect kullanılarak Azure ile entegre edilmiştir.
 
 Kullanıcı kimlikleri On-Premises Active Directory ile Azure arasında senkronize edilmektedir.
 
-On-Premises ortamı ayrıca Tailscale üzerinden hibrit ağın bir parçası olarak çalışmaktadır.
+On-Premises ortamı ayrıca Tailscale üzerinden hibrit ağa dahil olmaktadır.
 
 6. 🌐 Hibrit İletişim
 
@@ -185,7 +187,7 @@ On-Premises ortamı ayrıca Tailscale üzerinden hibrit ağın bir parçası ola
 
                  ┌─────────────────────┐
                  │      TAILSCALE      │
-                 │ Hybrid Connectivity │
+                 │ Hibrit Bağlantı     │
                  └──────────┬──────────┘
                             │
           ┌─────────────────┼─────────────────┐
@@ -205,26 +207,26 @@ On-Premises ortamı ayrıca Tailscale üzerinden hibrit ağın bir parçası ola
           ▼
    ┌─────────────────┐
    │ Azure Identity  │
-   │ Hybrid Identity │
+   │ Hibrit Kimlik   │
    └─────────────────┘
 
-Buradaki önemli ayrım, Tailscale'in ağ bağlantısını, Azure AD Connect'in ise kimlik senkronizasyonunu sağlamasıdır.
-
-Bu nedenle:
+Buradaki önemli ayrım şudur:
 
 Tailscale = Ağ Bağlantısı
 
 Azure AD Connect = Hibrit Kimlik
 
-Bu ayrım sayesinde laboratuvar hem hibrit ağ hem de hibrit kimlik yapılarını aynı ortam içerisinde göstermektedir.
+Tailscale ağ bağlantısını sağlarken, Azure AD Connect kimlik senkronizasyonunu sağlamaktadır.
 
-📌 Hibrit Lab Odağı
+Bu ayrım, aynı ortam içerisinde hem hibrit ağ hem de hibrit kimlik mimarisinin gösterilmesini sağlar.
+
+📌 Hibrit Lab Odak Noktası
 
 Bu proje On-Premises Active Directory, Microsoft Azure ve AWS ortamlarını birbirine bağlayan pratik bir hibrit altyapıyı göstermektedir.
 
 Ana hibrit entegrasyon On-Premises Active Directory ile Azure arasındadır ve Azure AD Connect kimlik senkronizasyonunu sağlamaktadır.
 
-Ağ katmanında ise Tailscale üç ortamı birbirine bağlayarak On-Premises, Azure ve AWS sistemlerinin hibrit altyapı içerisinde iletişim kurmasını sağlamaktadır.
+Ağ katmanında ise Tailscale üç ortamı birbirine bağlamakta, böylece On-Premises, Azure ve AWS sistemlerinin hibrit altyapı üzerinden iletişim kurmasını sağlamaktadır.
 
 Proje bu nedenle aşağıdaki konuları göstermektedir:
 
@@ -232,8 +234,8 @@ Hibrit ağ
 Hibrit kimlik
 Active Directory'nin Azure ile entegrasyonu
 Azure AD Connect
-Bulutlar arası bağlantı
-On-Premises → bulut iletişimi
+Cross-cloud bağlantı
+On-Premises → Cloud iletişimi
 Azure → AWS iletişimi
 AWS → On-Premises iletişimi
 Tailscale tabanlı özel ağ bağlantısı
