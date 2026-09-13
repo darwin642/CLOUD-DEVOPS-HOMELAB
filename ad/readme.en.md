@@ -23,7 +23,7 @@ The environment was designed to demonstrate how a small organization can central
 
 ## 🏗️ Architecture
 
-![Active Directory Architecture](ad-diagram.jpg)
+![Active Directory Architecture](ad_diagram.jpg)
 
 > On-premises network containing the Windows Server Domain Controller, Active Directory, DNS, DHCP, Group Policy, shared network drives, and domain-joined clients.
 
