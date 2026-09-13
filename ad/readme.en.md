@@ -211,7 +211,7 @@ For example:
 HR User
    │
    └── H: ───────┐
-                  │
+                 │
 Video User       │
    │             │
    └── V: ───────┼──► Windows Server
