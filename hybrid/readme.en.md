@@ -84,7 +84,7 @@ For example, we can connect to AWS web01 virtual machine from our on-premises Wi
 
 ### 📸 Screenshot — Tailscale Connectivity
 
-![Tailscale Connectivity](./images/tailscale-connectivity.png)
+![Tailscale Connectivity](tailscale-connectivity.png)
 
 ---
 
@@ -140,11 +140,11 @@ This demonstrates how an organization can maintain an existing On-Premises Activ
 
 ### 📸 Screenshot 01 — Azure AD Connect
 
-![Azure AD Connect](./images/03-azure-ad-connect.png)
+![Azure AD Connect](03-azure-ad-connect.png)
 
 ### 📸 Screenshot 02 — Synchronization
 
-![Synchronization](./images/04-synchronization.png)
+![Synchronization](04-synchronization.png)
 
 ---
 
@@ -167,7 +167,7 @@ Azure also participates in the hybrid identity architecture through the integrat
 
 ### 📸 Screenshot — Azure Connectivity
 
-![Azure Connectivity](./images/01-azure-connectivity.png)
+![Azure Connectivity](01-azure-connectivity.png)
 
 ---
 
@@ -191,7 +191,7 @@ This allows the AWS infrastructure to participate in the overall hybrid network 
 
 ### 📸 Screenshot — AWS Connectivity
 
-![AWS Connectivity](./images/02-aws-connectivity.png)
+![AWS Connectivity](02-aws-connectivity.png)
 
 ---
 
