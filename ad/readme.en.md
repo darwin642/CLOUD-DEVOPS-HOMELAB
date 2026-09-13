@@ -108,7 +108,7 @@ Each department is organized within the Active Directory structure and users are
 
 ### 📸 Screenshot
 
-![Users and Computers](users-computers.png)
+![Users and Computers](ad-users-computers.png)
 
 > The **Computers** section is separated into two organizational groups because one contains a legacy **Windows XP** client. This separation helps distinguish the legacy system from the modern domain-joined computers.
 
