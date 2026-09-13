@@ -140,7 +140,7 @@ This demonstrates how an organization can maintain an existing On-Premises Activ
 
 ### 📸 Screenshot 01 — Azure AD Connect
 
-![Azure AD Connect](azure-ad-connect.png)
+![Azure AD Connect](azure-ad-connect2.png)
 
 ### 📸 Screenshot 02 — Synchronization
 
