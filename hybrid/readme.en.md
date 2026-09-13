@@ -144,7 +144,7 @@ This demonstrates how an organization can maintain an existing On-Premises Activ
 
 ### 📸 Screenshot 02 — Synchronization
 
-![Synchronization](synchronization.png)
+![Synchronization](azure-ad-sync.png)
 
 ---
 
