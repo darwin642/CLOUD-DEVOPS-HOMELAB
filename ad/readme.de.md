@@ -1,33 +1,33 @@
 # 🪟 Active Directory Lab
 
-Eine praktische **Active Directory**-Umgebung, die auf Windows Server aufgebaut wurde.
+Eine praktische **On-Premises-Active-Directory-Umgebung**, die mit Windows Server als Teil meines Cloud-&-DevOps-Homelabs aufgebaut wurde.
 
-Das Lab umfasst die grundlegende Verwaltung von Active Directory, Benutzer- und Computerverwaltung, DNS, DHCP und Group Policy.
+Für dieses Lab habe ich eine fiktive **Videobearbeitungsagentur** mit drei Abteilungen erstellt:
 
-## 🏗️ Hybrid Integration
+* 👥 **Personalabteilung (Human Resources)**
+* 🎬 **Videobearbeitung (Video Editing)**
+* 💻 **IT**
 
-Die Active Directory-Umgebung wurde mit **Azure AD Connect** in Azure integriert. Benutzeridentitäten werden zwischen Active Directory und Azure synchronisiert.
+Jede Abteilung verfügt über ein eigenes Benutzerkonto und ein eigenes **gemapptes Netzlaufwerk**.
 
-Für die Netzwerkkommunikation zwischen der Azure- und der Active Directory-Umgebung wird **Tailscale** verwendet.
+Die Abteilungslaufwerke werden auf dem Windows Server gehostet. Die Benutzer greifen über den Server auf ihr zugewiesenes Laufwerk zu. Dadurch fungiert der **Server als Endpunkt für den Netzwerkdateiverkehr der jeweiligen Abteilung**.
 
-### 📸 Screenshot — Azure AD Connect
+Die Umgebung wurde entwickelt, um zu zeigen, wie ein kleines Unternehmen **Benutzer, Computer, Netzwerkdienste, Dateizugriff, Sicherheitsrichtlinien und Windows-Clients** mithilfe von Active Directory zentral verwalten kann.
 
-![Azure AD Connect](./images/azure-ad-connect.png)
+> **📌 Hinweis:**
+> Die ausführlichere Version dieses Labs findest du auf meinem GitHub-Profil unter **`hugehomelab`**.
+> Leider kann ich derzeit keine zusätzlichen Screenshots von den Client-Computern bereitstellen. Aufgrund eines Festplattenschadens habe ich keinen Zugriff mehr auf die in diesem Lab verwendeten Client-Systeme. Der Windows Server ist weiterhin zugänglich, daher konzentrieren sich die verfügbaren Screenshots hauptsächlich auf die serverseitige Konfiguration und Administration.
 
-### 📸 Screenshot — Synchronisierung
+---
 
-![Synchronisierung](./images/synchronization.png)
+## 🏗️ Architektur
 
-### 📸 Screenshot — Tailscale Connectivity
+![Active Directory Architecture](ad_diagram.jpg)
 
-![Tailscale Connectivity](./images/tailscale-connectivity.png)
+> On-Premises-Netzwerk mit dem Windows Server Domain Controller, Active Directory, DNS, DHCP, Group Policy, gemeinsam genutzten Netzlaufwerken und domänengebundenen Clients.
 
-### 🏗️ Architekturdiagramm
+---
 
-> **[ARCHITEKTURDIAGRAMM HIER EINFÜGEN]**
+## 🏢 Active Directory Domain Services
 
-<!-- Active Directory + Azure + Tailscale Architekturdiagramm hier einfügen -->
-
-## 🛠️ Technologien
-
-Active Directory · Windows Server · Azure · Azure AD Connect · DNS · DHCP · Group Policy · Tailscale
+Der Windows Server ist als **Active Directory Domain Controller** konfiguriert und stellt eine zentrale Verwa
