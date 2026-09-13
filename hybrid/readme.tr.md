@@ -187,7 +187,7 @@ On-Premises ortamı ayrıca Tailscale üzerinden hibrit ağa dahil olmaktadır.
 
                  ┌─────────────────────┐
                  │      TAILSCALE      │
-                 │ Hibrit Bağlantı     │
+                 │   Hibrit Bağlantı   │
                  └──────────┬──────────┘
                             │
           ┌─────────────────┼─────────────────┐
@@ -207,7 +207,7 @@ On-Premises ortamı ayrıca Tailscale üzerinden hibrit ağa dahil olmaktadır.
           ▼
    ┌─────────────────┐
    │ Azure Identity  │
-   │ Hibrit Kimlik   │
+   │  Hibrit Kimlik  │
    └─────────────────┘
 
 Buradaki önemli ayrım şudur:
