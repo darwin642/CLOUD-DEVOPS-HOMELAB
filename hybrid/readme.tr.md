@@ -1,14 +1,14 @@
 # 🔗 Hybrid Cloud Lab
 
-Microsoft Azure, Amazon Web Services ve On-Premises Active Directory ortamlarını bir araya getiren uygulamalı hybrid cloud laboratuvarı.
+**Microsoft Azure, Amazon Web Services ve On-Premises Active Directory ortamlarını** bir araya getiren pratik bir hibrit bulut laboratuvarı.
 
-Projenin amacı cloud platformları ile mevcut Active Directory altyapısı arasında bağlantı kurmak ve farklı cloud ortamlarıyla birlikte çalışan bir hybrid altyapıyı uygulamaktır.
+Projenin amacı, mevcut bir On-Premises altyapıyı bulut platformlarına bağlamak ve pratik **hibrit bağlantı, hibrit kimlik ve ortamlar arası iletişim** senaryolarını göstermektir.
 
 ---
 
 ## 📌 Proje Genel Bakış
 
-Projede aşağıdaki ortamlar kullanılmaktadır:
+Projede aşağıdaki ortamlar ve teknolojiler kullanılmaktadır:
 
 * Microsoft Azure
 * Amazon Web Services
@@ -18,162 +18,49 @@ Projede aşağıdaki ortamlar kullanılmaktadır:
 * DNS
 * Network Connectivity
 
-On-Premises Active Directory ortamı **Azure ile entegre edilmiştir**.
+Üç ortam da hibrit ağ üzerinden birbiriyle iletişim kurabilmektedir.
 
-AWS ortamı ise ayrı bir cloud altyapısı olarak projeye dahil edilmiştir.
+Ortam içerisindeki en önemli hibrit entegrasyon **On-Premises Active Directory ile Microsoft Azure** arasındadır.
 
----
-
-## 🏗️ Mimari
-
-### Mimari Diyagram
-
-> **[HYBRID CLOUD MİMARİ DİYAGRAMINIZI BURAYA EKLEYİN]**
-
-<!-- Azure + AWS + On-Premises Active Directory + Tailscale mimari diyagramınızı buraya ekleyin -->
-
-Mimari; Azure ve AWS cloud ortamları ile On-Premises Active Directory altyapısından oluşmaktadır.
-
-On-Premises ortam ile Azure arasındaki ağ iletişimi **Tailscale** üzerinden sağlanmaktadır.
+AWS ortamı ayrı bir bulut altyapısı olarak yönetilirken, Tailscale üzerinden genel hibrit ağa dahil olmaktadır.
 
 ---
 
-## 1. ☁️ Microsoft Azure
+## 🏗️ Architecture
 
-Azure, hybrid altyapının ana cloud platformlarından biridir.
+![Tailscale Connectivity](hybrid-diagram.png)
 
-Azure ortamında Virtual Network, subnet, Windows Server, Private Endpoint, Private DNS ve Managed Identity gibi kaynaklar kullanılmaktadır.
+Mimari üç ana ortamdan oluşmaktadır:
 
-On-Premises Active Directory ortamı Azure ile entegre edilerek hybrid identity senaryosu oluşturulmuştur.
+* ☁️ Microsoft Azure
+* ☁️ Amazon Web Services
+* 🪟 On-Premises Active Directory
 
-### 📸 Screenshot 01 — Azure Connectivity
+Her üç ortam da farklı altyapılar arasında ağ bağlantısı sağlayan **Tailscale** üzerinden birbirine bağlanmaktadır.
 
-![Azure Connectivity](./images/01-azure-connectivity.png)
-
----
-
-## 2. ☁️ Amazon Web Services
-
-AWS, hybrid cloud portföyünün ikinci cloud platformudur.
-
-AWS ortamında VPC, public/private subnet'ler, EC2, Security Groups ve Application Load Balancer gibi kaynaklar kullanılmaktadır.
-
-AWS altyapısı ayrı bir cloud ortamı olarak yapılandırılmış ve Terraform ile yönetilmektedir.
-
-### 📸 Screenshot 02 — AWS Connectivity
-
-![AWS Connectivity](./images/02-aws-connectivity.png)
+Ana hibrit kimlik bağlantısı ise **On-Premises Active Directory ile Azure** arasında Azure AD Connect kullanılarak oluşturulmuştur.
 
 ---
 
-## 3. 🪟 On-Premises Active Directory
+## 1. 🔗 Hybrid Connectivity — Tailscale
 
-On-Premises Active Directory ortamı Windows Server üzerinde oluşturulmuştur.
+**Tailscale, On-Premises, Azure ve AWS ortamları arasındaki ağ bağlantısını sağlayan katmandır.**
 
-Active Directory ortamı **Azure AD Connect** kullanılarak Azure ile entegre edilmiştir.
+Her ortam arasında ayrı VPN bağlantıları oluşturmak yerine Tailscale, farklı altyapılardaki sistemlerin iletişim kurmasını sağlayan ortak bir özel ağ oluşturur.
 
-Kullanıcı kimlikleri Active Directory ile Azure arasında senkronize edilmektedir.
+### Connectivity
 
-### 📸 Screenshot 03 — Azure AD Connect
-
-![Azure AD Connect](./images/03-azure-ad-connect.png)
-
-### 📸 Screenshot 04 — Synchronization
-
-![Synchronization](./images/04-synchronization.png)
-
----
-
-## 4. 🔗 Azure — On-Premises Connectivity
-
-On-Premises Active Directory ortamı ile Azure arasındaki ağ iletişimi **Tailscale** üzerinden sağlanmaktadır.
-
-Bu bağlantı sayesinde On-Premises ve Azure ortamları arasında özel ağ üzerinden iletişim kurulması ve bağlantı testlerinin gerçekleştirilmesi sağlanmıştır.
-
-### 📸 Screenshot 05 — Tailscale
-
-![Tailscale](./images/05-tailscale.png)
-
-### 📸 Screenshot 06 — Azure / On-Premises Connectivity Test
-
-![Connectivity Test](./images/06-connectivity-test.png)
-
----
-
-## 5. 🧪 Hybrid Connectivity Test
-
-Hybrid ortam aşağıdaki bağlantılar üzerinden test edilmektedir:
-
-* On-Premises → Azure
-* Azure → On-Premises
-* DNS resolution
-* Private IP connectivity
-* Tailscale connectivity
-
-AWS ortamı ise kendi VPC networking ve cloud servisleri üzerinden ayrıca test edilmektedir.
-
-### 📸 Screenshot 07 — Connectivity Test
-
-![Connectivity Test](./images/07-connectivity-test.png)
-
-### 📸 Screenshot 08 — DNS Test
-
-![DNS Test](./images/08-dns-test.png)
-
----
-
-## 🛠️ Technologies
-
-**Cloud**
-
-Azure · AWS
-
-**Identity**
-
-Active Directory · Azure AD Connect
-
-**Networking**
-
-VNet · VPC · Subnets · DNS · Tailscale
-
-**Hybrid**
-
-Hybrid Identity · Hybrid Connectivity
-
-**Infrastructure as Code**
-
-Terraform
-
----
-
-## 📚 Gösterilen Yetkinlikler
-
-* Azure infrastructure
-* AWS infrastructure
-* Hybrid cloud concepts
-* Active Directory integration
-* Hybrid identity
-* Azure AD Connect
-* DNS
-* Network connectivity
-* Tailscale networking
-* Terraform
-* Cloud infrastructure troubleshooting
-
----
-
-## 🚀 Sonraki Adımlar
-
-* Azure + AWS hybrid connectivity'nin geliştirilmesi
-* Terraform ile hybrid altyapının genişletilmesi
-* Docker entegrasyonu
-* Kubernetes ortamının eklenmesi
-* Cloud/DevOps otomasyonu
-
----
-
-## 📌 Proje Durumu
-
-Bu laboratuvar, **Azure, AWS ve On-Premises Active Directory** ortamlarını bir araya getiren sürekli geliştirilen bir hybrid cloud projesidir.
-
-On-Premises Active Directory ile Azure arasındaki bağlantı Tailscale ve Azure AD Connect kullanılarak sağlanmaktadır.
+```text
+                    HYBRID NETWORK
+                         │
+                  ┌──────▼──────┐
+                  │  Tailscale  │
+                  │ Private VPN │
+                  └──────┬──────┘
+                         │
+          ┌──────────────┼──────────────┐
+          │              │              │
+          ▼              ▼              ▼
+   ON-PREMISES        AZURE            AWS
+   Active Directory   VNet             VPC
+   Windows Server     Azure VM         EC2
