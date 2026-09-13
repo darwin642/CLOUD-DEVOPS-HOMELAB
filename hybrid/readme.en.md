@@ -107,8 +107,8 @@ This creates a practical **hybrid identity environment** where users originating
         ON-PREMISES
              │
              │
-     ┌───────▼────────┐
-     │   HL-DC01      │
+     ┌───────▼─────────┐
+     │   HL-DC01       │
      │ Windows Server  │
      │                 │
      │ Active Directory│
@@ -140,11 +140,11 @@ This demonstrates how an organization can maintain an existing On-Premises Activ
 
 ### 📸 Screenshot 01 — Azure AD Connect
 
-![Azure AD Connect](03-azure-ad-connect.png)
+![Azure AD Connect](azure-ad-connect.png)
 
 ### 📸 Screenshot 02 — Synchronization
 
-![Synchronization](04-synchronization.png)
+![Synchronization](synchronization.png)
 
 ---
 
@@ -167,7 +167,7 @@ Azure also participates in the hybrid identity architecture through the integrat
 
 ### 📸 Screenshot — Azure Connectivity
 
-![Azure Connectivity](01-azure-connectivity.png)
+![Azure Connectivity](azure-connectivity.png)
 
 ---
 
@@ -191,7 +191,7 @@ This allows the AWS infrastructure to participate in the overall hybrid network 
 
 ### 📸 Screenshot — AWS Connectivity
 
-![AWS Connectivity](02-aws-connectivity.png)
+![AWS Connectivity](aws-connectivity.png)
 
 ---
 
