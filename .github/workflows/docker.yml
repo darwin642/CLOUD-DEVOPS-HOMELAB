@@ -20,8 +20,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Get version
-        id: version
-        run: echo "version=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+  id: version
+  shell: cmd
+  run: echo version=%GITHUB_REF_NAME%>>%GITHUB_OUTPUT%
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-web:${{ steps.version.outputs.version }} ./docker
