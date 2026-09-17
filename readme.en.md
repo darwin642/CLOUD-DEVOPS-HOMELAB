@@ -134,6 +134,8 @@ Planned hands-on work with:
 * Docker Compose
 * Application containerization
 
+[View Docker Lab →](docker/readme.en.md)
+
 ---
 
 ## ☸️ Container Orchestration
@@ -153,6 +155,8 @@ Planned hands-on work with:
 * Ingress
 * Scaling
 * Kubernetes networking
+
+ [View Kubernetes Lab →](kubernetes/readme.en.md)
 
 ---
 
@@ -196,7 +200,7 @@ Microsoft Azure
 Active Directory
     │
     ▼
-AWS
+   AWS
     │
     ▼
 Hybrid Cloud
@@ -205,7 +209,7 @@ Hybrid Cloud
 Terraform
     │
     ▼
-Docker
+ Docker
     │
     ▼
 Kubernetes
