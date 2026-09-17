@@ -50,33 +50,6 @@ Hier ist das Diagramm;
 
 ![Docker Architecture](docker_diagram.jpg)
 
-```text id="katled"
-                         CLIENT
-                            │
-                            ▼
-                    ┌──────────────┐
-                    │    Nginx     │
-                    │ Reverse Proxy│
-                    │    :8080     │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │   Backend    │
-                    │    :5000     │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │  PostgreSQL  │
-                    │    :5432     │
-                    └──────┬───────┘
-                           │
-                           ▼
-                    postgres-data
-                       Volume
-```
-
 ---
 
 ## 1. 🖼️ Docker Images
