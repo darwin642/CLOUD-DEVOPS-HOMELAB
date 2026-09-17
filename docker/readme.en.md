@@ -50,7 +50,6 @@ Here's the diagram;
 
 ![Docker Architecture](docker_diagram.jpg)
 
-```text
 ```
 
 ---
