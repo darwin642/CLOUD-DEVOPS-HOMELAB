@@ -125,17 +125,20 @@ Die aktuelle Arbeit umfasst:
 
 ### Docker
 
-🚧 **In Bearbeitung**
+Praxisorientierte Arbeit mit Containerisierung, mit Fokus auf das Erstellen, Ausführen und Verwalten von containerisierten Anwendungen.
 
-Geplante praktische Arbeiten mit:
+Aktuelle Inhalte:
 
-* Docker Images
-* Containern
-* Dockerfiles
-* Volumes
-* Netzwerken
+* Docker Images und Container
+* Dockerfiles und Multi-Stage Builds
+* Volumes und Netzwerke
 * Docker Compose
-* Containerisierung von Anwendungen
+* Nginx und PostgreSQL
+* Docker-Sicherheit und Secrets
+* Docker Hub und CI/CD
+
+[Docker Lab ansehen →](docker/readme.de.md)
+
 
 ---
 
