@@ -142,25 +142,23 @@ Aktuelle Inhalte:
 
 ---
 
-## ☸️ Container-Orchestrierung
+## ☸️ Container Orchestration
 
 ### Kubernetes
 
-🚧 **In Bearbeitung**
+Praktisches Kubernetes-Lab mit:
 
-Geplante praktische Arbeiten mit:
+* Pods, Deployments & Services
+* ConfigMaps & Secrets
+* Storage & Networking
+* Ingress & NetworkPolicies
+* HPA & RBAC
+* StatefulSets, DaemonSets & Jobs
+* Helm
+* Production Deployment & Troubleshooting
 
-* Pods
-* Deployments
-* Services
-* ConfigMaps
-* Secrets
-* Namespaces
-* Ingress
-* Skalierung
-* Kubernetes Networking
+[Kubernetes-Lab ansehen →](kubernetes/readme.de.md)
 
----
 
 ## 🛠️ Technologien
 
