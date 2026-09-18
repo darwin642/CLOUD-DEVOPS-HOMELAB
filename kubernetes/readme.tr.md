@@ -38,7 +38,7 @@ Ortam aşağıdaki konuları içermektedir:
 
 Lab, workload management, internal services, persistent storage, networking ve Helm-managed application'lar içeren yerel bir Kubernetes cluster üzerinde çalışmaktadır.
 
-![Kubernetes Architecture](01-k8s-diagram.png)
+![Kubernetes Architecture](01-k8s-diagram.jpg)
 
 ---
 
