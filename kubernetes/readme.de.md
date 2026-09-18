@@ -38,7 +38,7 @@ Die Umgebung umfasst:
 
 Das Lab läuft auf einem lokalen Kubernetes-Cluster mit Workload Management, internen Services, persistentem Storage, Networking und Helm-managed Applications.
 
-![Kubernetes Architecture](01-k8s-diagram.png)
+![Kubernetes Architecture](01-k8s-diagram.jpg)
 
 ---
 
