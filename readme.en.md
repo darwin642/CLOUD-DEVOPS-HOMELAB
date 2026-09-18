@@ -122,17 +122,17 @@ Current work includes:
 
 ### Docker
 
-🚧 **Under Construction**
+Hands-on containerization work focused on building, running, and managing containerized applications.
 
-Planned hands-on work with:
+Current work includes:
 
-* Docker images
-* Containers
-* Dockerfiles
-* Volumes
-* Networks
+* Docker images and containers
+* Dockerfiles and multi-stage builds
+* Volumes and networks
 * Docker Compose
-* Application containerization
+* Nginx and PostgreSQL
+* Docker security and secrets
+* Docker Hub and CI/CD
 
 [View Docker Lab →](docker/readme.en.md)
 
