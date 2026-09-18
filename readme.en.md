@@ -142,19 +142,16 @@ Current work includes:
 
 ### Kubernetes
 
-🚧 **Under Construction**
+Hands-on Kubernetes lab covering:
 
-Planned hands-on work with:
-
-* Pods
-* Deployments
-* Services
-* ConfigMaps
-* Secrets
-* Namespaces
-* Ingress
-* Scaling
-* Kubernetes networking
+* Pods, Deployments & Services
+* ConfigMaps & Secrets
+* Storage & Networking
+* Ingress & NetworkPolicies
+* HPA & RBAC
+* StatefulSets, DaemonSets & Jobs
+* Helm
+* Production deployment & troubleshooting
 
  [View Kubernetes Lab →](kubernetes/readme.en.md)
 
