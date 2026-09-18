@@ -122,17 +122,20 @@ Mevcut çalışmalar:
 
 ### Docker
 
-🚧 **Yapım Aşamasında**
+Container uygulamalarını oluşturma, çalıştırma ve yönetmeye odaklanan uygulamalı containerization çalışmaları.
 
-Planlanan uygulamalı çalışmalar:
+Çalışma kapsamı:
 
-* Docker images
-* Containers
-* Dockerfiles
-* Volumes
-* Networks
+* Docker imajları ve container'lar
+* Dockerfile ve multi-stage build
+* Volumes ve networks
 * Docker Compose
-* Application containerization
+* Nginx ve PostgreSQL
+* Docker güvenliği ve secrets
+* Docker Hub ve CI/CD
+
+[Docker Lab'ı Görüntüle →](docker/readme.tr.md)
+
 
 ---
 
