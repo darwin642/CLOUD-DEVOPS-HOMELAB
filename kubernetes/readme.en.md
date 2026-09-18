@@ -38,7 +38,7 @@ The environment includes:
 
 The lab runs on a local Kubernetes cluster with workload management, internal services, persistent storage, networking and Helm-managed applications.
 
-![Kubernetes Architecture](01-k8s-diagram.png)
+![Kubernetes Architecture](01-k8s-diagram.jpg)
 
 ---
 
