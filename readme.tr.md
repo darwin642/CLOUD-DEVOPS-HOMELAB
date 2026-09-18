@@ -143,19 +143,19 @@ Container uygulamalarını oluşturma, çalıştırma ve yönetmeye odaklanan uy
 
 ### Kubernetes
 
-🚧 **Yapım Aşamasında**
+Uygulamalı Kubernetes lab çalışması:
 
-Planlanan uygulamalı çalışmalar:
+* Pods, Deployments & Services
+* ConfigMaps & Secrets
+* Storage & Networking
+* Ingress & NetworkPolicies
+* HPA & RBAC
+* StatefulSets, DaemonSets & Jobs
+* Helm
+* Production deployment & troubleshooting
 
-* Pods
-* Deployments
-* Services
-* ConfigMaps
-* Secrets
-* Namespaces
-* Ingress
-* Scaling
-* Kubernetes networking
+[Kubernetes Lab'ını Gör →](kubernetes/readme.tr.md)
+
 
 ---
 
