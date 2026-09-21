@@ -52,6 +52,27 @@ Altyapı Terraform ile yönetilmektedir.
 
 ---
 
+### Google Cloud Platform
+
+Aşağıdaki bileşenleri kapsayan uygulamalı GCP altyapı laboratuvarı:
+
+* VPC
+* Public ve private subnetler
+* Compute Engine
+* Global Application Load Balancer
+* Managed Instance Group & Autoscaling
+* Cloud Storage & Lifecycle Management
+* IAM & Service Accounts
+* Cloud DNS
+* Private Google Access
+* Cloud Monitoring & Alerting
+* Backup & DR
+* AWS ↔ GCP özel ağ bağlantısı
+
+[GCP Lab'e Git →](gcp/readme.tr.md)
+
+---
+
 ## 🪟 Windows & Identity
 
 ### Active Directory
