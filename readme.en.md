@@ -52,6 +52,27 @@ The infrastructure is managed with Terraform.
 
 ---
 
+### Google Cloud Platform
+
+Hands-on GCP infrastructure lab covering:
+
+* VPC
+* Public and private subnets
+* Compute Engine
+* Global Application Load Balancer
+* Managed Instance Group & Autoscaling
+* Cloud Storage & Lifecycle Management
+* IAM & Service Accounts
+* Cloud DNS
+* Private Google Access
+* Cloud Monitoring & Alerting
+* Backup & DR
+* AWS ↔ GCP private connectivity
+
+[View GCP Lab →](gcp/readme.en.md)
+
+---
+
 ## 🪟 Windows & Identity
 
 ### Active Directory
