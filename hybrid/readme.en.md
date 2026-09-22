@@ -1,6 +1,6 @@
 # 🔗 Hybrid Cloud Lab
 
-A practical hybrid cloud laboratory combining **Microsoft Azure, Amazon Web Services, and an On-Premises Active Directory environment**.
+A practical hybrid cloud laboratory combining **Microsoft Azure, Amazon Web Services, Google Cloud Platform and an On-Premises Active Directory environment**.
 
 The goal of the project is to connect cloud platforms with an existing On-Premises infrastructure and demonstrate practical **hybrid connectivity, hybrid identity, and cross-environment communication**.
 
@@ -12,17 +12,18 @@ The project includes the following environments and technologies:
 
 * Microsoft Azure
 * Amazon Web Services
+* Google Cloud Platform
 * On-Premises Active Directory
 * Tailscale
 * Hybrid Identity
 * DNS
 * Network Connectivity
 
-The three environments are able to communicate with each other through the hybrid network.
+The four environments are able to communicate with each other through the hybrid network.
 
 The most important hybrid integration in the environment is between **On-Premises Active Directory and Microsoft Azure**.
 
-The AWS environment is maintained as a separate cloud infrastructure, while still participating in the overall hybrid network through Tailscale.
+The AWS and Google Cloud Platform environment is maintained as a separate cloud infrastructure, while still participating in the overall hybrid network through Tailscale.
 
 ---
 
@@ -34,9 +35,10 @@ The architecture consists of three main environments:
 
 * ☁️ Microsoft Azure
 * ☁️ Amazon Web Services
+* ☁️ Google Cloud Platform
 * 🪟 On-Premises Active Directory
 
-All three environments are connected through **Tailscale**, providing network connectivity between the different infrastructure environments.
+All four environments are connected through **Tailscale**, providing network connectivity between the different infrastructure environments.
 
 The primary hybrid identity connection is established between **On-Premises Active Directory and Azure** through Azure AD Connect.
 
@@ -44,26 +46,26 @@ The primary hybrid identity connection is established between **On-Premises Acti
 
 ## 1. 🔗 Hybrid Connectivity — Tailscale
 
-**Tailscale provides the network connectivity layer between the On-Premises, Azure, and AWS environments.**
+**Tailscale provides the network connectivity layer between the On-Premises, Azure, GCP and AWS environments.**
 
 Instead of creating separate VPN connections between every environment, Tailscale provides a common private network that allows systems across the different environments to communicate.
 
 ### Connectivity
 
 ```text
-                    HYBRID NETWORK
-                         │
-                  ┌──────▼──────┐
-                  │  Tailscale  │
-                  │ Private VPN │
-                  └──────┬──────┘
-                         │
-          ┌──────────────┼──────────────┐
-          │              │              │
-          ▼              ▼              ▼
-   ON-PREMISES        AZURE            AWS
-   Active Directory   VNet             VPC
-   Windows Server     Azure VM         EC2
+                                             HYBRID NETWORK
+                              │
+                       ┌──────▼──────┐
+                       │  Tailscale  │
+                       │ Private VPN │
+                       └──────┬──────┘
+                              │
+       ┌──────────────┬──────────────┬────────────┐
+       │              │              │            │
+       ▼              ▼              ▼            ▼
+ON-PREMISES         AZURE           AWS          GCP
+Active Directory    VNet            VPC          VPC
+Windows Server      Azure VM        EC2         GCP VM
 ```
 
 Tailscale is used as the **network connectivity layer**, while the actual services and identities remain managed by their respective platforms.
@@ -76,7 +78,9 @@ This allows systems in the three environments to communicate using private netwo
 * Cross-environment communication
 * On-Premises → Azure connectivity
 * On-Premises → AWS connectivity
+* On-Premises → GCP connectivity
 * Azure → AWS connectivity
+* GCP → AWS connectivity
 * Tailscale subnet routing
 * Hybrid network communication
 
@@ -216,7 +220,29 @@ The On-Premises environment also participates in the hybrid network through Tail
 
 ---
 
-## 6. 🌐 Hybrid Communication
+## 6. ☁️ Google Cloud Platform
+
+GCP is another cloud platform within the hybrid cloud portfolio.
+
+The GCP environment includes:
+
+* VPC
+* Public and private subnets
+* Compute Engine
+* Global External Application Load Balancer
+* Managed Instance Group
+* Cloud Storage
+
+The GCP infrastructure is maintained as a separate cloud environment and connected to the **On-Premises and AWS environments through Tailscale**.
+
+GCP provides network connectivity with these environments but does not participate in Active Directory identity synchronization.
+
+### 📸 Screenshot — GCP Connectivity
+
+![GCP Connectivity](gcp-connectivity.png)
+
+
+## 7. 🌐 Hybrid Communication
 
 The three environments communicate through the Tailscale network:
 
@@ -226,25 +252,25 @@ The three environments communicate through the Tailscale network:
                  │ Hybrid Connectivity │
                  └──────────┬──────────┘
                             │
-          ┌─────────────────┼─────────────────┐
-          │                 │                 │
-          ▼                 ▼                 ▼
-   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
-   │ ON-PREMISES │   │    AZURE    │   │     AWS     │
-   │             │   │             │   │             │
-   │ HL-DC01     │◄─►│ Azure VNet  │◄─►│ AWS VPC     │
-   │ AD DS       │   │ Azure VM    │   │ EC2         │
-   │ DNS / DHCP  │   │             │   │ ALB         │
-   └──────┬──────┘   └─────────────┘   └─────────────┘
-          │
-          │
-          │ Azure AD Connect
-          │
-          ▼
-   ┌─────────────────┐
-   │ Azure Identity  │
-   │ Hybrid Identity │
-   └─────────────────┘
+     ┌──────────────────────┼───────────────────────────────────┐
+     │                      │                                   │
+     ▼                      ▼                                   ▼
+┌─────────────┐      ┌─────────────┐      ┌─────────────┐   ┌─────────────┐
+│ ON-PREMISES │      │    AZURE    │      │     AWS     │   │     GCP     │
+│             │      │             │      │             │   │             │
+│ HL-DC01     │◄────►│ Azure VNet  │◄────►│ AWS VPC     │◄─►│ GCP VPC     │
+│ AD DS       │      │ Azure VM    │      │ EC2         │   │ Compute     │
+│ DNS / DHCP  │      │             │      │ ALB         │   │ Global LB   │
+└──────┬──────┘      └─────────────┘      └─────────────┘   │ Cloud       │
+       │                                                    │ Storage     │
+       │                                                    └─────────────┘
+       │
+       │ Azure AD Connect
+       ▼
+┌─────────────────┐
+│ Azure Identity  │
+│ Hybrid Identity │
+└─────────────────┘
 ```
 
 The important distinction is that **Tailscale provides network connectivity**, while **Azure AD Connect provides identity synchronization**.
