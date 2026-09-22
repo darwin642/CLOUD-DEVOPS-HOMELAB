@@ -23,7 +23,7 @@ The four environments are able to communicate with each other through the hybrid
 
 The most important hybrid integration in the environment is between **On-Premises Active Directory and Microsoft Azure**.
 
-The AWS and Google Cloud Platform environment is maintained as a separate cloud infrastructure, while still participating in the overall hybrid network through Tailscale.
+The AWS and Google Cloud Platform environments are maintained as a separate cloud infrastructure, while still participating in the overall hybrid network through Tailscale.
 
 ---
 
@@ -53,7 +53,7 @@ Instead of creating separate VPN connections between every environment, Tailscal
 ### Connectivity
 
 ```text
-                                             HYBRID NETWORK
+                        HYBRID NETWORK
                               │
                        ┌──────▼──────┐
                        │  Tailscale  │
@@ -287,11 +287,11 @@ This separation allows the lab to demonstrate both **hybrid networking** and **h
 
 ## 📌 Hybrid Lab Focus
 
-This project demonstrates a practical hybrid infrastructure connecting **On-Premises Active Directory, Microsoft Azure, and AWS**.
+This project demonstrates a practical hybrid infrastructure connecting **On-Premises Active Directory, Microsoft Azure, GCP and AWS**.
 
 The main hybrid integration is between **On-Premises Active Directory and Azure**, where Azure AD Connect provides identity synchronization.
 
-At the network layer, **Tailscale connects all three environments**, allowing On-Premises, Azure, and AWS systems to communicate across the hybrid infrastructure.
+At the network layer, **Tailscale connects all four environments**, allowing On-Premises, Azure, GCP and AWS systems to communicate across the hybrid infrastructure.
 
 The project therefore demonstrates:
 
@@ -302,5 +302,7 @@ The project therefore demonstrates:
 * Cross-cloud connectivity
 * On-Premises to cloud communication
 * Azure to AWS communication
+* GCP to AWS communication
 * AWS to On-Premises communication
+* GCP to On-Premises communication
 * Tailscale-based private connectivity
