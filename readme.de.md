@@ -181,6 +181,26 @@ Praktisches Kubernetes-Lab mit:
 
 [Kubernetes-Lab ansehen →](kubernetes/readme.de.md)
 
+---
+
+## Zusätzliche Hinweise und Cloud-Systemvergleiche
+
+Zusätzliche Hinweise zu den von mir verwendeten Quellen sowie ein persönlicher, praxisbasierter Vergleich der drei von mir verwendeten Cloud-Plattformen anhand folgender Kriterien:
+
+* GUI- / Konsolenerfahrung
+* Benutzerfreundlichkeit und Navigation
+* Dokumentation
+* CLI-Erfahrung
+* Netzwerkverwaltung
+* IAM und Berechtigungen
+* Monitoring
+* Fehlerbehebung
+* Lernkurve
+* Allgemeine Benutzererfahrung
+
+[Website anzeigen →](hm/readme.de.md)
+
+---
 
 ## 🛠️ Technologien
 
