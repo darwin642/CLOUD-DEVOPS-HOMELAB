@@ -178,6 +178,25 @@ Hands-on Kubernetes lab covering:
 
 ---
 
+## Honorable Mentions and Cloud System Comparisons
+
+Honoreable Mentions about the Sources i used and Personal hands-on comparison of the three cloud platforms i have experienced based on:
+
+- GUI / Console experience
+- Ease of navigation
+- Documentation
+- CLI experience
+- Networking
+- IAM and permissions
+- Monitoring
+- Troubleshooting
+- Learning curve
+- Overall user experience
+
+[View Site →](hm/readme.en.md)
+
+---
+
 ## 🛠️ Technologies
 
 **Cloud**
