@@ -180,6 +180,26 @@ Uygulamalı Kubernetes lab çalışması:
 
 ---
 
+## Ek Notlar ve Bulut Sistemleri Karşılaştırmaları
+
+Kullandığım kaynaklara dair ek notlar ve deneyimlediğim üç bulut platformunun aşağıdaki kriterlere göre kişisel, uygulamalı karşılaştırması:
+
+* GUI / Konsol deneyimi
+* Gezinme kolaylığı
+* Dokümantasyon
+* CLI deneyimi
+* Ağ yönetimi
+* IAM ve yetkilendirme
+* İzleme
+* Sorun giderme
+* Öğrenme eğrisi
+* Genel kullanıcı deneyimi
+
+[Siteyi Görüntüle →](hm/readme.tr.md)
+
+---
+
+
 ## 🛠️ Teknolojiler
 
 **Cloud**
