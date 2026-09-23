@@ -7,7 +7,7 @@ This page documents how I experienced **Microsoft Azure, Amazon Web Services (AW
 The comparison is based on my own practical experience rather than theoretical benchmarks or marketing material.
 
 > [!WARNING]
-> If you are in this page, you have either fully readen my documentation, or you came here mistakenly. If you are here with no clue, please return. This is the finalized opinion page.
+> If you are in this page, you have either fully readen my documentation, or you came here mistakenly. If you are here with no clue, please return. This is the finalized opinion page and there's nothing to learn.
 
 ---
 
