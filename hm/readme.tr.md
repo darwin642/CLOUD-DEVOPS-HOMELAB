@@ -701,7 +701,9 @@ Dokümantasyon, bilgi edinmek için kullanılabilir ve başka dokümantasyonlard
 
 Bir hata tespit ettiğim her seferde dokümantasyon yenilenecektir.
 
-* Portföyümü ziyaret ettiğiniz için teşekkürler.
+
+ 
+Portföyümü ziyaret ettiğiniz için teşekkürler.
 
 ---
 
