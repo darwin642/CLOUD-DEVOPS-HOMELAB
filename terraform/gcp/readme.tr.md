@@ -1020,10 +1020,10 @@ GCP ortamının tamamı aşağıdaki şekilde temsil edilebilir:
         ┌────────────────────────────────────────┐
         │                lab_vpc                 │
         │                                        │
-        │  ┌────────────────┐ ┌───────────────┐ │
-        │  │ public_subnet  │ │private_subnet │ │
-        │  │ WEB01 / WEB02  │ │     APP01     │ │
-        │  └────────────────┘ └───────────────┘ │
+        │  ┌────────────────┐ ┌───────────────┐  │
+        │  │ public_subnet  │ │private_subnet │  │
+        │  │ WEB01 / WEB02  │ │     APP01     │  │
+        │  └────────────────┘ └───────────────┘  │
         │                                        │
         │  Private Google Access                 │
         │  Private Cloud DNS                     │
