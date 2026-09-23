@@ -92,7 +92,7 @@ At the beginning of my cloud journey, I needed a structured way to understand **
 
 The screenshot below represents my early cloud learning roadmap and study approach.
 
-![Cloud learning roadmap](./images/cloud-learning-roadmap.png)
+![Cloud learning roadmap](startfinish.png)
 
 ---
 
