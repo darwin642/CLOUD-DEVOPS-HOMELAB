@@ -5,7 +5,7 @@ Dies ist ein praxisorientiertes Portfolio, das meinen Weg vom IT-Support in Rich
 Der Schwerpunkt dieses Portfolios liegt auf dem Aufbau, der Konfiguration, der Fehlerbehebung und der Automatisierung realer Infrastruktur – nicht nur auf dem Lernen von Theorie.
 
 > [!WARNING]
->Hinweis: Da sich meine Deutschkenntnisse derzeit noch auf einem grundlegenden Niveau befinden, wurde diese deutsche Version mit Unterstützung künstlicher Intelligenz erstellt. Für mögliche sprachliche Ungenauigkeiten bitte ich um Verständnis.
+> Da sich meine Deutschkenntnisse derzeit noch auf einem grundlegenden Niveau befinden, wurde diese deutsche Version mit Unterstützung künstlicher Intelligenz erstellt. Für mögliche sprachliche Ungenauigkeiten bitte ich um Verständnis.
 
 ---
 
