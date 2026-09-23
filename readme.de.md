@@ -25,7 +25,7 @@ Praxisorientiertes Azure-Infrastruktur-Lab mit:
 * Azure CLI
 * Windows Server
 
-[Azure Lab ansehen →](az/readme.en.md)
+[Azure Lab ansehen →](az/readme.de.md)
 
 ---
 
@@ -50,7 +50,7 @@ Praxisorientiertes AWS-Infrastruktur-Lab mit:
 
 Die Infrastruktur wird mit Terraform verwaltet.
 
-[AWS Lab ansehen →](aws/readme.en.md)
+[AWS Lab ansehen →](aws/readme.de.md)
 
 ---
 
@@ -71,7 +71,7 @@ Praxisorientiertes GCP-Infrastruktur-Lab mit:
 * Backup & Disaster Recovery
 * Private AWS ↔ GCP-Konnektivität
 
-[GCP Lab ansehen →](gcp/readme.en.md)
+[GCP Lab ansehen →](gcp/readme.de.md)
 
 ---
 
@@ -90,7 +90,7 @@ Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit:
 * PowerShell
 * Windows-Server-Administration
 
-[Active Directory Lab ansehen →](ad/readme.en.md)
+[Active Directory Lab ansehen →](ad/readme.de.md)
 
 ---
 
@@ -112,7 +112,7 @@ Das Projekt konzentriert sich auf:
 * Cloud-Konnektivität
 * Plattformübergreifende Infrastruktur
 
-[Hybrid Cloud Lab ansehen →](hybrid/readme.en.md)
+[Hybrid Cloud Lab ansehen →](hybrid/readme.de.md)
 
 ---
 
@@ -137,7 +137,7 @@ Der aktuelle Stand umfasst:
 * Terraform State Management
 * Planung und Bereitstellung von Infrastruktur
 
-[Terraform Lab ansehen →](terraform/readme.en.md)
+[Terraform Lab ansehen →](terraform/readme.de.md)
 
 ---
 
@@ -157,7 +157,7 @@ Der aktuelle Stand umfasst:
 * Docker-Sicherheit und Secrets
 * Docker Hub und CI/CD
 
-[Docker Lab ansehen →](docker/readme.en.md)
+[Docker Lab ansehen →](docker/readme.de.md)
 
 ---
 
@@ -176,7 +176,7 @@ Praxisorientiertes Kubernetes-Lab mit:
 * Helm
 * Produktive Bereitstellung & Troubleshooting
 
-[Kubernetes Lab ansehen →](kubernetes/readme.en.md)
+[Kubernetes Lab ansehen →](kubernetes/readme.de.md)
 
 ---
 
@@ -195,7 +195,7 @@ Honorable Mentions zu den von mir verwendeten Quellen sowie ein persönlicher Ve
 * Lernkurve
 * Allgemeine Benutzererfahrung
 
-[Seite ansehen →](hm/readme.en.md)
+[Seite ansehen →](hm/readme.de.md)
 
 ---
 
