@@ -705,7 +705,9 @@ The documentation can be used to learn information, can be used in any other doc
 
 The documentation will be renewed every single time i spot a mistake.
 
-* Thank you for visiting my portfolio.
+
+
+Thank you for visiting my portfolio.
 
 ---
 
