@@ -317,9 +317,9 @@ The comparison focuses on:
 
 ## 🟨 GCP
 
-The UI is like a settings menu on a Google Pixel with Android 11. Complete boredom unexpected from Google. 6/10
+**My experience:**
 
-> [Personal evaluation]
+> The UI is like a settings menu on a Google Pixel with Android 11. Complete boredom unexpected from Google. 6/10
 
 ### Direct Comparison
 
@@ -339,7 +339,7 @@ The UI is like a settings menu on a Google Pixel with Android 11. Complete bored
 
 **My experience:**
 
-Simple like Azure. 10/10
+> Simple like Azure. 10/10
 
 ## 🟨 GCP
 
@@ -569,54 +569,7 @@ This gave me practical experience that cannot be gained simply by memorizing clo
 
 ---
 
-# 🧱 Infrastructure as Code
-
-As my cloud learning progressed, I also started using **Terraform** to manage infrastructure.
-
-Terraform helped me understand cloud infrastructure from a different perspective.
-
-Instead of configuring everything manually through a graphical interface, I started thinking in terms of:
-
-* Resources
-* Dependencies
-* Variables
-* Locals
-* Data Sources
-* State
-* Plans
-* Applies
-* Imports
-* Infrastructure lifecycle
-
-This also made the comparison between cloud platforms more interesting because the same Infrastructure as Code concepts can be applied across different providers.
-
----
-
-# 🐳 Docker & DevOps Workflows
-
-After working with cloud infrastructure and Terraform, I expanded into containerization with **Docker**.
-
-My Docker learning focuses on:
-
-* Images
-* Containers
-* Dockerfiles
-* Multi-stage builds
-* Volumes
-* Networks
-* Docker Compose
-* Nginx
-* PostgreSQL
-* Container security
-* Secrets
-* Docker Hub
-* CI/CD concepts
-
-Docker became another step toward understanding how applications are packaged, deployed, and operated alongside cloud infrastructure.
-
----
-
-# 🧠 My Learning Philosophy
+# 🧠 The Philosophy
 
 The main objective of this journey was not simply to learn more services.
 
@@ -751,8 +704,8 @@ The documentation can be used to learn information, can be used in any other doc
 
 The documentation will be renewed every single time i spot a mistake.
 
-Thank you for visiting my portfolio.
+* Thank you for visiting my portfolio.
 
 ---
 
-**Last updated:** `24 September 2026 12:51 AM GMT +3 Istanbul`
+**Last updated:** `24 September 2026 12:57 AM GMT +3 Istanbul`
