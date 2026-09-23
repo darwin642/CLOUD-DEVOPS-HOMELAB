@@ -267,7 +267,7 @@ This gave me another perspective on how networking, compute, identity, load bala
 
 # ⚖️ Azure vs AWS vs GCP — Practical Comparison
 
-This is the main comparison section of this page.
+This is the main brutal comparison section of this page.
 
 The purpose is **not** to create an objective industry ranking.
 
@@ -305,23 +305,23 @@ The comparison focuses on:
 
 **My experience:**
 
-> [Personal evaluation]
+> It's the best UI i have ever seen. It directly tells what you need to create an environment. We're able to select themes. We can select any enviroment without any confusion. 10/10
 
 ## 🟧 AWS
 
 **My experience:**
 
-> [Personal evaluation]
+> It does not create the name on a new entity on a new entity creation, even if you write it you have to name it again. The name confusion really exists because if you don't want it that hard, it does not tell you the name but the ID number and it's a huge downfall for GUI. What do you mean i have to find the machine i created 10 minutes ago in a list with more than 100 machines? No i don't want to waste my time setting filters. 4/10
 
 ## 🟨 GCP
 
-**My experience:**
+The UI is like a settings menu on a Google Pixel with Android 11. Complete boredom unexpected from Google. 6/10
 
 > [Personal evaluation]
 
 ### Direct Comparison
 
-> [Azure vs AWS vs GCP based on my experience]
+> If you don't like to deal with tons of commandlines, you will still be able to do any work with GUI but, not every design is good as it's expected. Because of this, Azure -> GCP -> AWS.
 
 ---
 
@@ -331,49 +331,23 @@ The comparison focuses on:
 
 **My experience:**
 
-> [Personal evaluation]
+> Nothing much. Simple. It's really good that Microsoft values it's traditions and own products like having powershell console with bash together. You don't fully have to learn bash. 10/10
 
 ## 🟧 AWS
 
 **My experience:**
 
-> [Personal evaluation]
+Simple like Azure. 10/10
 
 ## 🟨 GCP
 
 **My experience:**
 
-> [Personal evaluation]
+> What do you mean i have to install API to access to a VM that i have installed? 5/10
 
 ### Direct Comparison
 
-> [Azure vs AWS vs GCP based on my experience]
-
----
-
-# 📚 Documentation
-
-## 🟦 Azure
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟧 AWS
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟨 GCP
-
-**My experience:**
-
-> [Personal evaluation]
-
-### Direct Comparison
-
-> [Azure vs AWS vs GCP based on my experience]
+> No explaination required. Azure = AWS > GCP.
 
 ---
 
@@ -383,101 +357,23 @@ The comparison focuses on:
 
 **My experience:**
 
-> [Personal evaluation]
+> If i have free subscription i don't belong to "az" ? Why do i have to get my tenant and sub id? 9/10
 
 ## 🟧 AWS
 
 **My experience:**
 
-> [Personal evaluation]
+> Nothing special. All good. 10/10
 
 ## 🟨 GCP
 
 **My experience:**
 
-> [Personal evaluation]
+> Same as AWS. 10/10
 
 ### Direct Comparison
 
-> [Azure CLI vs AWS CLI vs Google Cloud CLI]
-
----
-
-# 🌐 Network Management
-
-## 🟦 Azure
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟧 AWS
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟨 GCP
-
-**My experience:**
-
-> [Personal evaluation]
-
-### Direct Comparison
-
-> [Azure vs AWS vs GCP networking experience]
-
----
-
-# 🔐 IAM & Authorization
-
-## 🟦 Azure
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟧 AWS
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟨 GCP
-
-**My experience:**
-
-> [Personal evaluation]
-
-### Direct Comparison
-
-> [Azure RBAC vs AWS IAM vs GCP IAM]
-
----
-
-# 📊 Monitoring
-
-## 🟦 Azure
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟧 AWS
-
-**My experience:**
-
-> [Personal evaluation]
-
-## 🟨 GCP
-
-**My experience:**
-
-> [Personal evaluation]
-
-### Direct Comparison
-
-> [Azure vs AWS vs GCP monitoring experience]
+> All CLI's and consoles are good, but it would be a bit better if Microsoft fixes the az commandline not detecting the free subscription. AWS=GCP>Azure
 
 ---
 
@@ -487,23 +383,23 @@ The comparison focuses on:
 
 **My experience:**
 
-> [Personal evaluation]
+> So i could not do the work because i did something wrong. But what am i supposed to do with the error ID? 0/10
 
 ## 🟧 AWS
 
 **My experience:**
 
-> [Personal evaluation]
+> Good. If something cracks, it tells the errors which even if you don't know, it can be found in google. But it would be better if it could be researched and given in a user friendly way. 8/10
 
 ## 🟨 GCP
 
 **My experience:**
 
-> [Personal evaluation]
+> Same with AWS. At least it informs the error. 8/10
 
 ### Direct Comparison
 
-> [Azure vs AWS vs GCP troubleshooting experience]
+> Basically, in Azure, if you know what did you 10 hours before your work, it's easier to deal with the error you already know than AWS and GCP but otherwise, an Error ID with nowhere to put is nothing but empty talk. AWS=GCP>Azure
 
 ---
 
@@ -513,23 +409,57 @@ The comparison focuses on:
 
 **My experience:**
 
-> [Personal evaluation]
+> In my opinion, Azure has the best learning platform. Microsoft learn explains everything like talking to a person with zero knowledge, but too much words. Microsoft also has videos for each content in Microsoft learn, worth checking out but i don't learn things by watching or reading. Also, Azure has more detailed IAM, VM and security settings worth checking out. 8/10.
 
 ## 🟧 AWS
 
 **My experience:**
 
-> [Personal evaluation]
+> Short explainations. Brilliant. The language support sucks. Indonesian exists but not Russian, Arabic or Swedish? 6/10
 
 ## 🟨 GCP
 
 **My experience:**
 
-> [Personal evaluation]
+> We're talking about google. Of course everything looks extremely beautiful. There's even roadmaps if you're confused. Homelabs are included. The problem is, there's no text document. We're not studying in an highschool. 9/10
 
 ### Direct Comparison
 
-> [Azure vs AWS vs GCP learning experience]
+> GCP is vocal only (if there is i will change this part in this document.), but it tells you what should you do. Azure likes to overexplain which can make your brain overheat. AWS likes things simple. You will learn quick but something may feel missing. GCP>Azure>AWS
+
+---
+
+# 🤖 AI-Assisted Experience
+
+This category focuses on my practical experience using AI-assisted tools while learning and working with cloud platforms.
+
+I have tested AI Systems with multiple requests, such as;
+
+Troubleshooting requests
+Reply speed
+Information knowledge on my entities.
+
+## 🟦 Azure
+
+**My experience:**
+
+> I want to know my "TENANT ID NOT MY SUBSCRIPTION ID" What do you mean it took 50 seconds to tell that i have to click to learn my ID's? 1/10
+
+## 🟧 AWS
+
+**My experience:**
+
+> The GUI does not have multi-language support but Amazon Q does. Great explaination with short time, but no image creation support(even tho it's unnecessary) 9/10
+
+## 🟨 GCP
+
+**My experience:**
+
+> Gemini cloud version does any stuff i want, even tho it says that it isn't normal Gemini and explains why. Whenever i occur problems, Gemini helps and explains what's wrong. It does whatever i want. 10/10
+
+### Direct Comparison
+
+> Microsoft is way too behind the AI race. I thought they would improve it alot for Azure. The other AI's are pretty useful. GCP>AWS>Azure
 
 ---
 
@@ -539,64 +469,57 @@ The comparison focuses on:
 
 **My experience:**
 
-> [Personal evaluation]
+> Working with Azure was pretty nice, i can clearly say that it's good that i have started with Azure. The reason here is, i have been using Windows since my childhood and i already know Active Directory, which means i would be familiar with terms and usages. Azure was the most detailed cloud platform. But the slight issue here for the practicioners is, many things are paid and not included within the free subscription (eg. NAT gateway). With all positives and negatives, i will give it solid 6 in this one. The -4 points are due to finding the issues on during the entity creation, less zone availability, sometimes no machine availability in the zone and Copilot.
 
 ## 🟧 AWS
 
 **My experience:**
 
-> [Personal evaluation]
+> AWS was very hard for me to learn because i was using Azure mainly. The time i became familiar with AWS i realized the differences. For example, in AWS, the UI was more modern but more complicated than Azure. The huge difference between these clouds is the Zone availability and machine availabilities in the zones. With all positives and negatives, I will give AWS 8 because the complexity in entities makes GUI user waste much more time than Azure and GCP.
 
 ## 🟨 GCP
 
 **My experience:**
 
-> [Personal evaluation]
-
-### Direct Comparison
-
-> [Azure vs AWS vs GCP based on my overall hands-on experience]
+> On GCP, on my first interaction i wanted to quit the platform because the UI is terrible. I am not using an android phone. Also the biggest loss is, whenever i write the spesific entity name (eg. app01) it does not find. Azure and AWS has bigger advantage here. In other ways, the UI is more simpler than AWS. It is similar to Azure. The regional and zonal flexibility is even better than Azure and AWS which makse GCP better than the competitors in this topic. I will give it solid 9 in this one due to UI.
 
 ---
 
-# 🤖 AI-Assisted Experience
+# 💳💵🤑 Pricing comparison
 
-This category focuses on my practical experience using AI-assisted tools while learning and working with cloud platforms.
+In this topic i have compared Virtual Machine costs in both three locations. Because if a system should be learned, it will be learned with positives and negatives. This topic explains pricing information for enterprises and startups for better cost-management.
 
-It is not simply a comparison of how many AI services each provider offers.
+Here are some informations:
 
-I consider:
+I have made my location as Frankfurt due to Azure differs it's price regionally.
+I have setted 3 machines with different parts.
+# Here is the table of the machines:
 
-* AI-assisted learning
-* Troubleshooting
-* CLI assistance
-* Infrastructure configuration
-* Documentation assistance
-* Error analysis
-* Architecture discussions
-* Cloud-specific workflows
+| Level          |   CPU  |  RAM  |    SSD     |  Azure    |    AWS      |      GCP      |
+| **Economic**   | 2 vCPU |  8 GB | 64 GB SSD  | D2as v5   | m6i.large   | e2-standard-2 |
+| **Mid-ranged** | 4 vCPU | 16 GB | 128 GB SSD | D4as v5   | m6i.xlarge  | e2-standard-4 |
+| **Expensive ** | 8 vCPU | 32 GB | 256 GB SSD | D8as v5   | m6i.2xlarge | e2-standard-8 |
 
-## 🟦 Azure
+These are the same ranged machines for fair pricing comparison. The source can be outdated.
 
-**My experience:**
+# Here are the hourly prices:
 
-> [Personal evaluation]
+| Level | Azure | AWS | GCP |
+|:---:|:---:|:---:|:---:|
+| **2 vCPU / 8 GB** | **~$0.096/h** | **$0.115/h** | **~$0.067/h** |
+| **4 vCPU / 16 GB** | **~$0.208/h** | **$0.230/h** | **~$0.134–0.173/h** |
+| **8 vCPU / 32 GB** | **~$0.416/h** | **$0.460/h** | **~$0.268–0.346/h** |
 
-## 🟧 AWS
+Here are the monthly prices (730 hours of calculation/30.41666 days):
 
-**My experience:**
+| Level | Azure | AWS | GCP |
+|:---:|:---:|:---:|:---:|
+| **2 vCPU / 8 GB** | **~$70/month** | **~$84/month** | **~$49/month** |
+| **4 vCPU / 16 GB** | **~$152/month** | **~$168/month** | **~$98–126/month** |
+| **8 vCPU / 32 GB** | **~$304/month** | **~$336/month** | **~$196–253/month** |
 
-> [Personal evaluation]
-
-## 🟨 GCP
-
-**My experience:**
-
-> [Personal evaluation]
-
-### Direct Comparison
-
-> [Azure vs AWS vs GCP based on my AI-assisted workflows]
+Regarding to the list, it's visible that GCP offers cheaper services compared to the competitors.
+Between the race in Azure and AWS, Azure overtakes in this topic, which can be due to availability for everyone in every single time with no issue in AWS.
 
 ---
 
