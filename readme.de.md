@@ -1,271 +1,691 @@
-# ☁️ Cloud & DevOps Lab Portfolio
+☁️ Honest Evaluation — Azure vs AWS vs GCP
 
-**Hinweis:** Die deutsche Version wurde aufgrund meiner noch nicht ausreichenden Deutschkenntnisse mit KI übersetzt. Daher können Fehler enthalten sein. Ich entschuldige mich dafür und danke für Ihr Verständnis.
+A personal, hands-on comparison of the three cloud platforms I have worked with during my Cloud and DevOps learning journey.
 
+This page documents how I experienced Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) while building, configuring, troubleshooting, and managing infrastructure.
 
-Ein praxisorientiertes Portfolio, das meinen Weg vom IT Support in die Bereiche Cloud Infrastructure und DevOps dokumentiert.
+The comparison is based on my own practical experience rather than theoretical benchmarks or marketing material.
 
-Dieses Portfolio konzentriert sich auf den Aufbau, die Konfiguration, die Fehlerbehebung und die Automatisierung realer Infrastruktur und nicht nur auf theoretisches Lernen.
+🎯 Why I Chose the Cloud / DevOps Path
 
----
+My decision to move toward Cloud and DevOps was driven by both career opportunities and my interest in working with larger infrastructure.
 
-## ☁️ Cloud-Plattformen
+Traditional IT opportunities in my country are relatively limited, and I wanted to move beyond traditional IT support.
 
-### Microsoft Azure
+My IT background gave me a foundation in:
 
-Praxisorientiertes Azure-Infrastrukturlabor mit folgenden Themen:
+Troubleshooting
+Operating systems
+User support
+Hardware
+Networking
+Technical problem solving
 
-* Azure Virtual Networks
-* Subnetze
-* Network Security Groups
-* Virtuelle Maschinen
-* Routing
-* Private Endpoints
-* Managed Identities
-* Azure Storage
-* Azure CLI
-* Windows Server
+However, I wanted to work with larger systems and infrastructure.
 
-[Azure Lab anzeigen →](az/readme.de.md)
+This led me toward:
 
----
+Cloud Infrastructure
+Networking
+Identity and Access Management
+Automation
+Infrastructure as Code
+Monitoring
+High Availability
+Scalability
+Containers
+DevOps workflows
 
-### Amazon Web Services
+My goal was not simply to collect certifications.
 
-Praxisorientiertes AWS-Infrastrukturlabor mit folgenden Themen:
+I wanted to understand infrastructure by building it, breaking it, troubleshooting it, destroying it, and rebuilding it.
 
-* VPC
-* Öffentliche und private Subnetze
-* Internet Gateway
-* Route Tables
-* EC2
-* Application Load Balancer
-* Security Groups
-* IAM
-* Systems Manager
-* VPC Endpoints
-* CloudWatch
-* SNS
-* S3
-* Multi-AZ-Architektur
+☁️ Where My Cloud Learning Started
 
-Die Infrastruktur wird mit Terraform verwaltet.
+My structured cloud learning started with Microsoft Azure.
 
-[AWS Lab anzeigen →](aws/readme.de.md)
+I began studying cloud infrastructure through the AZ-104 curriculum in August 2026.
 
----
+The AZ-104 curriculum became the structured foundation of my cloud administration learning. It gave me a practical framework for understanding areas such as:
 
-### Google Cloud Platform
+Azure Virtual Networks
+Subnets and IP addressing
+Network Security
+Virtual Machines
+Storage
+Identity and RBAC
+Monitoring
+Backup
+High Availability
+Governance
+Security
 
-Praxisorientiertes GCP-Infrastrukturlabor mit:
+Important: This does not mean that I obtained the AZ-104 certification. The AZ-104 curriculum was the structured learning path I used to build my initial cloud administration knowledge.
 
-* VPC
-* Öffentlichen und privaten Subnetzen
-* Compute Engine
-* Globalem Application Load Balancer
-* Managed Instance Group & Autoscaling
-* Cloud Storage & Lifecycle Management
-* IAM & Service Accounts
-* Cloud DNS
-* Private Google Access
-* Cloud Monitoring & Alerting
-* Backup & DR
-* Privater Konnektivität zwischen AWS und GCP
+Microsoft Learn was my primary technical learning resource during this initial Azure phase.
 
-[Zum GCP-Lab →](gcp/readme.de.md)
+My Initial Learning Roadmap
 
+At the beginning of my cloud journey, I needed a structured way to understand what to learn, in what order, and how to turn theoretical knowledge into practical experience.
 
----
+The screenshot below represents my early cloud learning roadmap and study approach.
 
-## 🪟 Windows & Identity
 
-### Active Directory
 
-Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit folgenden Themen:
 
-* Active Directory Domain Services
-* DNS
-* DHCP
-* Group Policy
-* Organizational Units
-* Verwaltung von Benutzern und Computern
-* PowerShell
-* Windows-Server-Administration
+🧪 How I Learned
 
-[Active Directory Lab anzeigen →](ad/readme.de.md)
+My learning process has been primarily hands-on and experiment-based.
 
----
+I used:
 
-## 🔗 Hybrid Cloud
+Microsoft Learn
+Official cloud documentation
+ChatGPT
+Google Gemini
+Microsoft Copilot
+YouTube
+My own home labs
 
-### Azure + AWS + Active Directory + Tailscale
+AI tools were used as interactive learning assistants rather than simply as sources for copying configurations.
 
-Ein hybrides Infrastrukturprojekt, das Cloud-Plattformen mit lokaler Identität und Infrastruktur verbindet.
+A typical learning cycle looked like:
 
-Das Projekt konzentriert sich auf:
-
-* Hybride Identität
-* Active-Directory-Integration
-* Azure
-* AWS
-* Tailscale
-* DNS
-* Netzwerkkommunikation
-* Cloud-Konnektivität
-* Plattformübergreifende Infrastruktur
-
-[Hybrid Cloud Lab anzeigen →](hybrid/readme.de.md)
-
----
-
-## 🏗️ Infrastructure as Code
-
-### Terraform
-
-Praxisorientierte Arbeit mit Infrastructure as Code zur Verwaltung von Cloud-Infrastruktur mithilfe deklarativer Konfigurationen.
-
-Die aktuelle Arbeit umfasst:
-
-* AWS-Infrastruktur
-* VPC-Netzwerke
-* EC2
-* Load Balancing
-* IAM
-* Monitoring
-* Storage
-* Variablen und Locals
-* Data Sources
-* Ressourcenabhängigkeiten
-* Terraform State Management
-* Planung und Bereitstellung von Infrastruktur
-
-[Terraform Lab anzeigen →](terraform/readme.de.md)
-
----
-
-## 🐳 Container
-
-### Docker
-
-Praxisorientierte Arbeit mit Containerisierung, mit Fokus auf das Erstellen, Ausführen und Verwalten von containerisierten Anwendungen.
-
-Aktuelle Inhalte:
-
-* Docker Images und Container
-* Dockerfiles und Multi-Stage Builds
-* Volumes und Netzwerke
-* Docker Compose
-* Nginx und PostgreSQL
-* Docker-Sicherheit und Secrets
-* Docker Hub und CI/CD
-
-[Docker Lab ansehen →](docker/readme.de.md)
-
-
----
-
-## ☸️ Container Orchestration
-
-### Kubernetes
-
-Praktisches Kubernetes-Lab mit:
-
-* Pods, Deployments & Services
-* ConfigMaps & Secrets
-* Storage & Networking
-* Ingress & NetworkPolicies
-* HPA & RBAC
-* StatefulSets, DaemonSets & Jobs
-* Helm
-* Production Deployment & Troubleshooting
-
-[Kubernetes-Lab ansehen →](kubernetes/readme.de.md)
-
----
-
-## Zusätzliche Hinweise und Cloud-Systemvergleiche
-
-Zusätzliche Hinweise zu den von mir verwendeten Quellen sowie ein persönlicher, praxisbasierter Vergleich der drei von mir verwendeten Cloud-Plattformen anhand folgender Kriterien:
-
-* GUI- / Konsolenerfahrung
-* Benutzerfreundlichkeit und Navigation
-* Dokumentation
-* CLI-Erfahrung
-* Netzwerkverwaltung
-* IAM und Berechtigungen
-* Monitoring
-* Fehlerbehebung
-* Lernkurve
-* Allgemeine Benutzererfahrung
-
-[Website anzeigen →](hm/readme.de.md)
-
----
-
-## 🛠️ Technologien
-
-**Cloud**
-
-Azure · AWS
-
-**Infrastruktur**
-
-Terraform · Windows Server · Linux
-
-**Networking**
-
-VNet · VPC · Subnetze · Routing · NSGs · Security Groups · Load Balancing · DNS · Tailscale
-
-**Identity**
-
-Active Directory · IAM · Group Policy
-
-**Automatisierung**
-
-Terraform · PowerShell · Git
-
-**Container**
-
-Docker · Kubernetes
-
----
-
-## 🎯 Lernpfad
-
-```text
-IT Support
-    │
-    ▼
+Learn
+   │
+   ▼
+Build
+   │
+   ▼
+Configure
+   │
+   ▼
+Test
+   │
+   ▼
+Break
+   │
+   ▼
+Troubleshoot
+   │
+   ▼
+Fix
+   │
+   ▼
+Destroy
+   │
+   ▼
+Rebuild
+   │
+   ▼
+Document
+
+I intentionally created infrastructure, changed configurations, introduced problems, investigated failures, fixed them, destroyed environments, and rebuilt them.
+
+This helped me understand not only how something works, but also why it works and what happens when it doesn't.
+
+☁️ Azure → AWS → GCP
+
+After building my initial foundation with Azure and the AZ-104 curriculum, I expanded my learning to AWS and later GCP.
+
+The purpose was to understand how common infrastructure concepts are implemented across different cloud ecosystems.
+
+My learning path developed approximately as follows:
+
+AZ-104 Curriculum
+        │
+        ▼
 Microsoft Azure
-    │
-    ▼
-Active Directory
-    │
-    ▼
+        │
+        ▼
 AWS
-    │
-    ▼
-Hybrid Cloud
-    │
-    ▼
+        │
+        ▼
+GCP
+        │
+        ▼
+Terraform / Infrastructure as Code
+        │
+        ▼
+Docker / DevOps Workflows
+
+I wanted to see which concepts remained consistent between platforms and where the platforms approached the same problem differently.
+
+🟦 Microsoft Azure
+
+My cloud learning started with Azure.
+
+My practical Azure work included:
+
+Virtual Networks
+Subnets
+Network Security Groups
+Virtual Machines
+Routing
+Storage
+Private Endpoints
+Managed Identities
+RBAC
+Monitoring
+Backup
+Azure CLI
+Windows Server
+Hybrid connectivity
+
+Azure was also the platform through which I first developed a structured understanding of cloud administration.
+
+🟧 Amazon Web Services
+
+After Azure, I expanded into AWS to understand the equivalent infrastructure concepts in another major cloud ecosystem.
+
+My AWS work included:
+
+VPC
+Public and private subnets
+Internet Gateway
+Route Tables
+EC2
+Application Load Balancer
+Security Groups
+IAM
+Systems Manager
+VPC Endpoints
+CloudWatch
+SNS
+S3
+Backup
+Multi-AZ architecture
 Terraform
-    │
-    ▼
-Docker
-    │
-    ▼
-Kubernetes
-    │
-    ▼
-Cloud / DevOps
-```
 
----
+Working with AWS allowed me to compare concepts such as Azure VNets vs AWS VPCs, Azure RBAC vs AWS IAM, and Azure Load Balancing vs AWS load balancing services.
 
-## 📌 Über dieses Portfolio
+🟨 Google Cloud Platform
 
-Dieses Portfolio dokumentiert praxisorientierte Labs, die während der Entwicklung meiner Kenntnisse und Fähigkeiten im Bereich Cloud Infrastructure und DevOps erstellt wurden.
+GCP was added later to expand the comparison beyond Azure and AWS.
 
-Jedes Projekt ist darauf ausgelegt, das praktische Verständnis durch Konfiguration, Tests, Fehlerbehebung und Automatisierung zu vertiefen.
+My GCP work included:
 
-Das Portfolio wird kontinuierlich erweitert, sobald neue Technologien und Projekte hinzukommen.
+VPC
+Public and private subnets
+Compute Engine
+Global Application Load Balancer
+Managed Instance Groups
+Autoscaling
+Cloud Storage
+Lifecycle Management
+IAM
+Service Accounts
+Cloud DNS
+Private Google Access
+Cloud Monitoring
+Alerting
+Backup and Disaster Recovery
+Private connectivity
+
+This gave me another perspective on how networking, compute, identity, load balancing, and monitoring are implemented in a cloud environment.
+
+⚖️ Azure vs AWS vs GCP — Practical Comparison
+
+This is the main comparison section of this page.
+
+The purpose is not to create an objective industry ranking.
+
+Instead, I compare the platforms based on what I personally experienced while using their consoles, CLI tools, networking systems, IAM models, monitoring tools, documentation, and troubleshooting workflows.
+
+The comparison focuses on:
+
+GUI / Console Experience
+Navigation
+Documentation
+CLI Experience
+Network Management
+IAM & Authorization
+Monitoring
+Troubleshooting
+Learning Curve
+Overall User Experience
+AI-Assisted Experience
+🖥️ GUI / Console Experience
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP based on my experience]
+
+🧭 Navigation
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP based on my experience]
+
+📚 Documentation
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP based on my experience]
+
+💻 CLI Experience
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure CLI vs AWS CLI vs Google Cloud CLI]
+
+🌐 Network Management
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP networking experience]
+
+🔐 IAM & Authorization
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure RBAC vs AWS IAM vs GCP IAM]
+
+📊 Monitoring
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP monitoring experience]
+
+🛠️ Troubleshooting
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP troubleshooting experience]
+
+📈 Learning Curve
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP learning experience]
+
+👤 Overall User Experience
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP based on my overall hands-on experience]
+
+🤖 AI-Assisted Experience
+
+This category focuses on my practical experience using AI-assisted tools while learning and working with cloud platforms.
+
+It is not simply a comparison of how many AI services each provider offers.
+
+I consider:
+
+AI-assisted learning
+Troubleshooting
+CLI assistance
+Infrastructure configuration
+Documentation assistance
+Error analysis
+Architecture discussions
+Cloud-specific workflows
+Azure
+
+My experience:
+
+[Personal evaluation]
+
+AWS
+
+My experience:
+
+[Personal evaluation]
+
+GCP
+
+My experience:
+
+[Personal evaluation]
+
+Direct Comparison
+
+[Azure vs AWS vs GCP based on my AI-assisted workflows]
+
+💥 Learning Through Failure
+
+Failure was an intentional part of my learning process.
+
+I did not try to keep every lab environment in a perfect state.
+
+Instead, I wanted to understand what happens when infrastructure is incorrectly configured.
+
+For example:
+
+Incorrect firewall rules
+Missing IAM permissions
+Networking problems
+DNS issues
+Terraform state/configuration mismatches
+Incorrect resource dependencies
+Connectivity problems
+
+My general approach was:
+
+Build
+  ↓
+Understand
+  ↓
+Change
+  ↓
+Break
+  ↓
+Investigate
+  ↓
+Troubleshoot
+  ↓
+Fix
+  ↓
+Destroy
+  ↓
+Rebuild
+
+This gave me practical experience that cannot be gained simply by memorizing cloud service definitions.
+
+🧱 Infrastructure as Code
+
+As my cloud learning progressed, I also started using Terraform to manage infrastructure.
+
+Terraform helped me understand cloud infrastructure from a different perspective.
+
+Instead of configuring everything manually through a graphical interface, I started thinking in terms of:
+
+Resources
+Dependencies
+Variables
+Locals
+Data Sources
+State
+Plans
+Applies
+Imports
+Infrastructure lifecycle
+
+This also made the comparison between cloud platforms more interesting because the same Infrastructure as Code concepts can be applied across different providers.
+
+🐳 Docker & DevOps Workflows
+
+After working with cloud infrastructure and Terraform, I expanded into containerization with Docker.
+
+My Docker learning focuses on:
+
+Images
+Containers
+Dockerfiles
+Multi-stage builds
+Volumes
+Networks
+Docker Compose
+Nginx
+PostgreSQL
+Container security
+Secrets
+Docker Hub
+CI/CD concepts
+
+Docker became another step toward understanding how applications are packaged, deployed, and operated alongside cloud infrastructure.
+
+🧠 My Learning Philosophy
+
+The main objective of this journey was not simply to learn more services.
+
+It was to develop a practical infrastructure mindset.
+
+I wanted to understand:
+
+How does it work?
+
+Then:
+
+Why does it work?
+
+And finally:
+
+What happens when it breaks?
+
+This is why my learning process repeatedly follows:
+
+Learn
+  ↓
+Build
+  ↓
+Break
+  ↓
+Troubleshoot
+  ↓
+Fix
+  ↓
+Destroy
+  ↓
+Rebuild
+
+For me, practical experience comes from interacting with infrastructure rather than only reading about it.
+
+📌 Evaluation Scope
+
+This page represents my personal experience up to 23 September 2026.
+
+The comparison is based on:
+
+My own hands-on labs
+Cloud infrastructure I built
+Networking configurations
+IAM and authorization work
+CLI usage
+Terraform projects
+Troubleshooting experiences
+Documentation
+AI-assisted learning
+My personal learning process
+
+This is not an objective benchmark or industry ranking.
+
+Different users may have very different experiences depending on their background, workload, organization, and preferred tools.
+
+The purpose of this page is simply to document my own practical experience with Azure, AWS, and GCP.
+
+📚 References
+
+The following resources were used throughout my learning journey and while building and troubleshooting the cloud environments documented in this portfolio.
+
+Official Documentation & Learning Platforms
+Microsoft Learn — Primary learning resource during the Azure and AZ-104-based learning phase.
+Microsoft Azure Documentation — Azure service documentation, administration, networking, identity, monitoring, and troubleshooting.
+AWS Documentation — AWS service documentation, architecture, CLI, networking, IAM, and troubleshooting.
+Google Cloud Documentation — GCP service documentation, networking, IAM, Compute Engine, monitoring, and troubleshooting.
+Terraform Documentation — Infrastructure as Code concepts, Terraform configuration, providers, resources, state, and workflows.
+AI-Assisted Learning
+ChatGPT — Interactive learning, troubleshooting, architecture discussions, Terraform, CLI assistance, and scenario-based learning.
+Google Gemini — Alternative explanations, troubleshooting approaches, and technical cross-checking.
+Microsoft Copilot — Microsoft ecosystem and cloud-related assistance.
+Video Resources
+Microsoft Azure
+AWS
+Google Cloud Tech
+Microsoft Mechanics
+NetworkChuck
+TechWorld with Nana
+Personal Hands-On Labs
+
+The comparison is also based on my own hands-on environments, including:
+
+Azure administration and infrastructure labs
+Windows Server / Active Directory labs
+Azure + on-premises hybrid infrastructure
+AWS infrastructure lab
+GCP infrastructure lab
+Terraform Infrastructure as Code projects
+Docker and containerization exercises
+
+All observations and comparisons on this page are based on my personal practical experience with these resources and environments.
