@@ -6,6 +6,8 @@ This page documents how I experienced **Microsoft Azure, Amazon Web Services (AW
 
 The comparison is based on my own practical experience rather than theoretical benchmarks or marketing material.
 
+If you are in this page, you have either fully readen my documentation, or you came here mistakenly.
+
 ---
 
 # 🎯 Why I Chose the Cloud / DevOps Path
@@ -745,6 +747,12 @@ All observations and comparisons on this page are based on my **personal practic
 
 This page is intended to document my learning journey, the infrastructure I built, the problems I encountered, and the way I experienced each cloud platform.
 
+The documentation can be used to learn information, can be used in any other documentation, video or blogs. If you are planning to use any of my pages or sources, feel free but a credit would make me happier to know that i am being viewed.
+
+The documentation will be renewed every single time i spot a mistake.
+
+Thank you for visiting my portfolio.
+
 ---
 
-**Last updated:** `23 September 2026`
+**Last updated:** `24 September 2026 12:51 AM GMT +3 Istanbul`
