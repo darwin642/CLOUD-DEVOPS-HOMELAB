@@ -2,11 +2,11 @@
 
 ## Overview
 
-This section documents the use of **Terraform** to manage cloud infrastructure as code across both **Microsoft Azure** and **Amazon Web Services (AWS)**.
+This section documents the use of **Terraform** to manage cloud infrastructure as code across both **Microsoft Azure**, **Google Cloud Platform** and **Amazon Web Services (AWS)**.
 
 The Terraform configurations include the infrastructure, networking, security, identity, monitoring, backup, and other cloud resources used throughout the labs.
 
-Because the Terraform content is too large to fit cleanly into a single page, the documentation has been divided into **two separate pages**.
+Because the Terraform content is too large to fit cleanly into a single page, the documentation has been divided into **three separate pages**.
 
 ---
 
@@ -23,6 +23,12 @@ The first page covers the Terraform implementation for the **Azure environment**
 The second page covers the Terraform implementation for the **AWS environment**, including its Terraform configuration and managed infrastructure.
 
 ➡️ **[AWS Terraform Documentation](aws/readme.en.md)**
+
+## GCP Terraform
+
+The third page covers the Terraform implementation for the GCP environment, including the imported infrastructure, Terraform state management, drift detection, and configuration validation.
+
+➡️ **[GCP Terraform Documentation](gcp/readme.en.md)**
 
 ---
 
