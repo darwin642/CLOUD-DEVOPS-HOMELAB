@@ -701,7 +701,9 @@ Die Dokumentation kann zum Lernen und auch in anderen Dokumentationen, Videos od
 
 Die Dokumentation wird jedes Mal aktualisiert, wenn ich einen Fehler entdecke.
 
-* Vielen Dank für den Besuch meines Portfolios.
+
+
+Vielen Dank für den Besuch meines Portfolios.
 
 ---
 
