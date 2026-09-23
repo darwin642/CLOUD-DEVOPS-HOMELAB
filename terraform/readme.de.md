@@ -2,11 +2,11 @@
 
 ## Überblick
 
-Dieser Abschnitt dokumentiert die Verwendung von **Terraform**, um Cloud-Infrastruktur nach dem Infrastructure-as-Code-Prinzip in **Microsoft Azure** und **Amazon Web Services (AWS)** zu verwalten.
+Dieser Abschnitt dokumentiert die Verwendung von **Terraform** zur Verwaltung von Cloud-Infrastrukturen als Code über **Microsoft Azure**, **Google Cloud Platform** und **Amazon Web Services (AWS)** hinweg.
 
-Die Terraform-Konfigurationen umfassen die Infrastruktur, Netzwerke, Sicherheit, Identitätsverwaltung, Monitoring, Backups und weitere Cloud-Ressourcen der Lab-Umgebungen.
+Die Terraform-Konfigurationen umfassen die Infrastruktur, Netzwerke, Sicherheit, Identität, Überwachung, Backups und weitere Cloud-Ressourcen, die in den Labs verwendet werden.
 
-Da der Terraform-Inhalt zu umfangreich für eine einzelne Seite ist, wurde die Dokumentation auf **zwei separate Seiten** aufgeteilt.
+Da der Terraform-Inhalt zu umfangreich ist, um übersichtlich auf einer einzigen Seite dargestellt zu werden, wurde die Dokumentation auf **drei separate Seiten** aufgeteilt.
 
 ---
 
@@ -14,22 +14,28 @@ Da der Terraform-Inhalt zu umfangreich für eine einzelne Seite ist, wurde die D
 
 ### Azure Terraform
 
-Die erste Seite behandelt die **Terraform-Implementierung der Azure-Umgebung**. Dabei werden die Konfigurationsdateien, die verwalteten Infrastruktur-Ressourcen und die Deployment-Struktur beschrieben.
+Die erste Seite behandelt die Terraform-Implementierung für die **Azure-Umgebung**, einschließlich der Konfigurationsdateien, Infrastrukturressourcen und Bereitstellungsstruktur.
 
-➡️ **[Azure Terraform Dokumentation](az/readme.de.md)**
+➡️ **[Azure Terraform-Dokumentation](az/readme.de.md)**
 
 ### AWS Terraform
 
-Die zweite Seite behandelt die **Terraform-Implementierung der AWS-Umgebung**. Hier werden die Terraform-Konfiguration und die verwaltete AWS-Infrastruktur beschrieben.
+Die zweite Seite behandelt die Terraform-Implementierung für die **AWS-Umgebung**, einschließlich der Terraform-Konfiguration und der verwalteten Infrastruktur.
 
-➡️ **[AWS Terraform Dokumentation](aws/readme.de.md)**
+➡️ **[AWS Terraform-Dokumentation](aws/readme.de.md)**
+
+## GCP Terraform
+
+Die dritte Seite behandelt die Terraform-Implementierung für die **GCP-Umgebung**, einschließlich der importierten Infrastruktur, der Verwaltung des Terraform-States, der Erkennung von Abweichungen (Drift Detection) und der Validierung der Konfiguration.
+
+➡️ **[GCP Terraform-Dokumentation](gcp/readme.de.md)**
 
 ---
 
 ## Warum Terraform?
 
-Terraform ermöglicht es, Cloud-Infrastruktur mithilfe von Code konsistent und wiederholbar zu definieren und zu verwalten.
+Terraform bietet eine konsistente und wiederholbare Möglichkeit, Cloud-Infrastrukturen mithilfe von Code zu definieren und zu verwalten.
 
-Anstatt Ressourcen manuell über die Cloud-Konsolen zu konfigurieren, kann die Infrastruktur in Terraform-Konfigurationsdateien definiert und über einen kontrollierten Workflow bereitgestellt werden.
+Anstatt Ressourcen manuell über Cloud-Konsolen zu konfigurieren, kann die Infrastruktur in Terraform-Konfigurationsdateien definiert und über einen kontrollierten Workflow verwaltet werden.
 
-In diesem Projekt wird Terraform eingesetzt, um praktische **Infrastructure-as-Code-(IaC)-Kenntnisse** über mehrere Cloud-Plattformen hinweg zu demonstrieren.
+Dieses Projekt verwendet Terraform, um praktische **Infrastructure-as-Code-(IaC)-Kenntnisse** über mehrere Cloud-Plattformen hinweg zu demonstrieren.
