@@ -31,7 +31,7 @@ Praxisorientiertes Azure-Infrastruktur-Lab mit folgenden Themen:
 * Azure CLI
 * Windows Server
 
-[Azure Lab ansehen →](az/readme.en.md)
+[Azure Lab ansehen →](az/readme.de.md)
 
 ---
 
@@ -56,7 +56,7 @@ Praxisorientiertes AWS-Infrastruktur-Lab mit folgenden Themen:
 
 Die Infrastruktur wird mit Terraform verwaltet.
 
-[AWS Lab ansehen →](aws/readme.en.md)
+[AWS Lab ansehen →](aws/readme.de.md)
 
 ---
 
@@ -77,7 +77,7 @@ Praxisorientiertes GCP-Infrastruktur-Lab mit folgenden Themen:
 * Backup & Disaster Recovery
 * Private Konnektivität zwischen AWS und GCP
 
-[GCP Lab ansehen →](gcp/readme.en.md)
+[GCP Lab ansehen →](gcp/readme.de.md)
 
 ---
 
@@ -96,7 +96,7 @@ Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit folgenden Th
 * PowerShell
 * Windows Server Administration
 
-[Active Directory Lab ansehen →](ad/readme.en.md)
+[Active Directory Lab ansehen →](ad/readme.de.md)
 
 ---
 
@@ -118,7 +118,7 @@ Der Schwerpunkt liegt auf:
 * Cloud Connectivity
 * Plattformübergreifender Infrastruktur
 
-[Hybrid Cloud Lab ansehen →](hybrid/readme.en.md)
+[Hybrid Cloud Lab ansehen →](hybrid/readme.de.md)
 
 ---
 
@@ -143,7 +143,7 @@ Aktuelle Themen:
 * Terraform State Management
 * Infrastructure Planning und Deployment
 
-[Terraform Lab ansehen →](terraform/readme.en.md)
+[Terraform Lab ansehen →](terraform/readme.de.md)
 
 ---
 
@@ -164,7 +164,7 @@ Aktuelle Themen:
 * UFW Firewall Configuration
 * Idempotente Konfiguration
 
-[Ansible Lab ansehen →](ansible/readme.en.md)
+[Ansible Lab ansehen →](ansible/readme.de.md)
 
 ### Python
 
@@ -196,7 +196,7 @@ Aktuelle Themen:
 * Docker Security und Secrets
 * Docker Hub und CI/CD
 
-[Docker Lab ansehen →](docker/readme.en.md)
+[Docker Lab ansehen →](docker/readme.de.md)
 
 ---
 
@@ -215,7 +215,7 @@ Praxisorientiertes Kubernetes-Lab mit folgenden Themen:
 * Helm
 * Production Deployment & Troubleshooting
 
-[Kubernetes Lab ansehen →](kubernetes/readme.en.md)
+[Kubernetes Lab ansehen →](kubernetes/readme.de.md)
 
 ---
 
@@ -234,7 +234,7 @@ Aktuelle Themen:
 * Automatisiertes Deployment
 * CI/CD Pipelines
 
-[CI/CD Lab ansehen →](cicd/readme.en.md)
+[CI/CD Lab ansehen →](cicd/readme.de.md)
 
 ---
 
@@ -256,7 +256,7 @@ Aktuelle Themen:
 * Alerting
 * Docker Monitoring
 
-[Monitoring Lab ansehen →](monitor/readme.en.md)
+[Monitoring Lab ansehen →](monitor/readme.de.md)
 
 ---
 
@@ -275,7 +275,7 @@ Praxisorientierter Vergleich der Cloud-Plattformen, mit denen ich gearbeitet hab
 * Lernkurve
 * Allgemeine Benutzererfahrung
 
-[Website ansehen →](hm/readme.en.md)
+[Website ansehen →](hm/readme.de.md)
 
 ---
 
