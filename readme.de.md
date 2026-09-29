@@ -1,6 +1,6 @@
 # ☁️ Cloud & DevOps Lab Portfolio
 
-> [!HINWEIS]
+> [!WARNING]
 > Da sich meine Deutschkenntnisse derzeit noch auf einem grundlegenden Niveau befinden, wurde diese deutsche Version mit Unterstützung künstlicher Intelligenz erstellt. Für mögliche sprachliche Ungenauigkeiten bitte ich um Verständnis.
 
 
