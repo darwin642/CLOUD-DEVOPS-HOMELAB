@@ -1,11 +1,16 @@
 # ☁️ Cloud & DevOps Lab Portfolio
 
-Dies ist ein praxisorientiertes Portfolio, das meinen Weg vom IT-Support in Richtung Cloud-Infrastruktur und DevOps dokumentiert.
-
-Der Schwerpunkt dieses Portfolios liegt auf dem Aufbau, der Konfiguration, der Fehlerbehebung und der Automatisierung realer Infrastruktur – nicht nur auf dem Lernen von Theorie.
-
-> [!WARNING]
+> [!HINWEIS]
 > Da sich meine Deutschkenntnisse derzeit noch auf einem grundlegenden Niveau befinden, wurde diese deutsche Version mit Unterstützung künstlicher Intelligenz erstellt. Für mögliche sprachliche Ungenauigkeiten bitte ich um Verständnis.
+
+
+Dies ist ein praxisorientiertes Portfolio, das meine Entwicklung vom IT Support hin zu Cloud Infrastructure und DevOps dokumentiert.
+
+Der Schwerpunkt dieses Portfolios liegt auf dem Aufbau, der Konfiguration, der Fehlerbehebung und der Automatisierung realer Infrastrukturen anstatt ausschließlich auf theoretischem Lernen.
+
+Unten ist eine visuelle Übersicht der Umgebungen, mit denen ich gearbeitet habe:
+
+![Cloud & DevOps Lab Environments](main_diagram.png)
 
 ---
 
@@ -13,12 +18,12 @@ Der Schwerpunkt dieses Portfolios liegt auf dem Aufbau, der Konfiguration, der F
 
 ### Microsoft Azure
 
-Praxisorientiertes Azure-Infrastruktur-Lab mit:
+Praxisorientiertes Azure-Infrastruktur-Lab mit folgenden Themen:
 
 * Azure Virtual Networks
-* Subnets
+* Subnetze
 * Network Security Groups
-* Virtual Machines
+* Virtuelle Maschinen
 * Routing
 * Private Endpoints
 * Managed Identities
@@ -26,16 +31,16 @@ Praxisorientiertes Azure-Infrastruktur-Lab mit:
 * Azure CLI
 * Windows Server
 
-[Azure Lab ansehen →](az/readme.de.md)
+[Azure Lab ansehen →](az/readme.en.md)
 
 ---
 
 ### Amazon Web Services
 
-Praxisorientiertes AWS-Infrastruktur-Lab mit:
+Praxisorientiertes AWS-Infrastruktur-Lab mit folgenden Themen:
 
 * VPC
-* Öffentlichen und privaten Subnets
+* Öffentliche und private Subnetze
 * Internet Gateway
 * Route Tables
 * EC2
@@ -51,36 +56,36 @@ Praxisorientiertes AWS-Infrastruktur-Lab mit:
 
 Die Infrastruktur wird mit Terraform verwaltet.
 
-[AWS Lab ansehen →](aws/readme.de.md)
+[AWS Lab ansehen →](aws/readme.en.md)
 
 ---
 
 ### Google Cloud Platform
 
-Praxisorientiertes GCP-Infrastruktur-Lab mit:
+Praxisorientiertes GCP-Infrastruktur-Lab mit folgenden Themen:
 
 * VPC
-* Öffentlichen und privaten Subnets
+* Öffentliche und private Subnetze
 * Compute Engine
 * Global Application Load Balancer
-* Managed Instance Groups & Autoscaling
+* Managed Instance Group & Autoscaling
 * Cloud Storage & Lifecycle Management
 * IAM & Service Accounts
 * Cloud DNS
 * Private Google Access
 * Cloud Monitoring & Alerting
 * Backup & Disaster Recovery
-* Private AWS ↔ GCP-Konnektivität
+* Private Konnektivität zwischen AWS und GCP
 
-[GCP Lab ansehen →](gcp/readme.de.md)
+[GCP Lab ansehen →](gcp/readme.en.md)
 
 ---
 
-## 🪟 Windows & Identität
+## 🪟 Windows & Identity
 
 ### Active Directory
 
-Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit:
+Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit folgenden Themen:
 
 * Active Directory Domain Services
 * DNS
@@ -89,9 +94,9 @@ Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit:
 * Organizational Units
 * Benutzer- und Computerverwaltung
 * PowerShell
-* Windows-Server-Administration
+* Windows Server Administration
 
-[Active Directory Lab ansehen →](ad/readme.de.md)
+[Active Directory Lab ansehen →](ad/readme.en.md)
 
 ---
 
@@ -99,21 +104,21 @@ Praxisorientierte Windows-Server- und Active-Directory-Umgebung mit:
 
 ### Azure + AWS + Active Directory + Tailscale
 
-Ein Hybrid-Infrastrukturprojekt, das Cloud-Plattformen mit On-Premises-Identität und -Infrastruktur verbindet.
+Ein Hybrid-Infrastrukturprojekt, das Cloud-Plattformen mit On-Premises-Identität und Infrastruktur verbindet.
 
-Das Projekt konzentriert sich auf:
+Der Schwerpunkt liegt auf:
 
-* Hybride Identität
+* Hybrid Identity
 * Active-Directory-Integration
 * Azure
 * AWS
 * Tailscale
 * DNS
-* Netzwerk
-* Cloud-Konnektivität
-* Plattformübergreifende Infrastruktur
+* Networking
+* Cloud Connectivity
+* Plattformübergreifender Infrastruktur
 
-[Hybrid Cloud Lab ansehen →](hybrid/readme.de.md)
+[Hybrid Cloud Lab ansehen →](hybrid/readme.en.md)
 
 ---
 
@@ -121,12 +126,12 @@ Das Projekt konzentriert sich auf:
 
 ### Terraform
 
-Praxisorientierte Arbeit mit Infrastructure as Code, mit dem Schwerpunkt auf der Verwaltung von Cloud-Infrastruktur durch deklarative Konfiguration.
+Praxisorientierte Infrastructure-as-Code-Arbeit mit Fokus auf die Verwaltung von Cloud-Infrastruktur durch deklarative Konfiguration.
 
-Der aktuelle Stand umfasst:
+Aktuelle Themen:
 
 * AWS-Infrastruktur
-* VPC-Netzwerk
+* VPC Networking
 * EC2
 * Load Balancing
 * IAM
@@ -134,11 +139,44 @@ Der aktuelle Stand umfasst:
 * Storage
 * Variablen und Locals
 * Data Sources
-* Ressourcenabhängigkeiten
+* Resource Dependencies
 * Terraform State Management
-* Planung und Bereitstellung von Infrastruktur
+* Infrastructure Planning und Deployment
 
-[Terraform Lab ansehen →](terraform/readme.de.md)
+[Terraform Lab ansehen →](terraform/readme.en.md)
+
+---
+
+## ⚙️ Automation & Configuration Management
+
+### Ansible
+
+Praxisorientierte Konfigurationsverwaltung und Automatisierung mit Ansible.
+
+Aktuelle Themen:
+
+* Ansible Roles
+* Playbooks
+* Service Management
+* Paketinstallation
+* Templates
+* Handler
+* UFW Firewall Configuration
+* Idempotente Konfiguration
+
+[Ansible Lab ansehen →](ansible/readme.en.md)
+
+### Python
+
+Wird für Cloud-Automatisierung und Infrastrukturaufgaben eingesetzt, einschließlich AWS/GCP Inventory, Health Checks, JSON-Reporting, API-Nutzung und automatisierten Tests.
+
+### Bash
+
+Wird für Linux-Systemadministration und Automatisierungsaufgaben eingesetzt.
+
+### PowerShell
+
+Wird für Windows-Systemadministration, Active Directory und Automatisierungsaufgaben eingesetzt.
 
 ---
 
@@ -146,19 +184,19 @@ Der aktuelle Stand umfasst:
 
 ### Docker
 
-Praxisorientierte Arbeit mit Containern, mit dem Schwerpunkt auf dem Erstellen, Ausführen und Verwalten containerisierter Anwendungen.
+Praxisorientierte Arbeit mit Containerisierung, insbesondere zum Erstellen, Ausführen und Verwalten containerisierter Anwendungen.
 
-Der aktuelle Stand umfasst:
+Aktuelle Themen:
 
 * Docker Images und Container
 * Dockerfiles und Multi-Stage Builds
-* Volumes und Netzwerke
+* Volumes und Networks
 * Docker Compose
 * Nginx und PostgreSQL
-* Docker-Sicherheit und Secrets
+* Docker Security und Secrets
 * Docker Hub und CI/CD
 
-[Docker Lab ansehen →](docker/readme.de.md)
+[Docker Lab ansehen →](docker/readme.en.md)
 
 ---
 
@@ -166,7 +204,7 @@ Der aktuelle Stand umfasst:
 
 ### Kubernetes
 
-Praxisorientiertes Kubernetes-Lab mit:
+Praxisorientiertes Kubernetes-Lab mit folgenden Themen:
 
 * Pods, Deployments & Services
 * ConfigMaps & Secrets
@@ -175,20 +213,61 @@ Praxisorientiertes Kubernetes-Lab mit:
 * HPA & RBAC
 * StatefulSets, DaemonSets & Jobs
 * Helm
-* Produktive Bereitstellung & Troubleshooting
+* Production Deployment & Troubleshooting
 
-[Kubernetes Lab ansehen →](kubernetes/readme.de.md)
+[Kubernetes Lab ansehen →](kubernetes/readme.en.md)
 
 ---
 
-## Honorable Mentions und Cloud-Systemvergleiche
+## 🔄 CI/CD
 
-Honorable Mentions zu den von mir verwendeten Quellen sowie ein persönlicher Vergleich der drei Cloud-Plattformen, mit denen ich praktische Erfahrungen gesammelt habe, basierend auf:
+### GitHub Actions
 
-* GUI- / Console-Erfahrung
-* Navigation
+Praxisorientierte CI/CD-Automatisierung mit GitHub Actions.
+
+Aktuelle Themen:
+
+* Automatisierte Tests
+* Docker Image Builds
+* GitHub Container Registry
+* Self-hosted Runner
+* Automatisiertes Deployment
+* CI/CD Pipelines
+
+[CI/CD Lab ansehen →](cicd/readme.en.md)
+
+---
+
+## 📊 Monitoring & Observability
+
+### Prometheus & Grafana
+
+Praxisorientiertes Monitoring-Setup für containerisierte Umgebungen.
+
+Aktuelle Themen:
+
+* Prometheus
+* PromQL
+* cAdvisor
+* Container-Metriken
+* CPU- und RAM-Monitoring
+* Netzwerk-Metriken
+* Grafana Dashboards
+* Alerting
+* Docker Monitoring
+
+[Monitoring Lab ansehen →](monitor/readme.en.md)
+
+---
+
+## 📝 Cloud System Comparisons
+
+Praxisorientierter Vergleich der Cloud-Plattformen, mit denen ich gearbeitet habe, anhand folgender Kriterien:
+
+* GUI / Console Experience
+* Benutzerfreundlichkeit der Navigation
 * Dokumentation
-* CLI-Erfahrung
+* CLI Experience
 * Networking
 * IAM und Berechtigungen
 * Monitoring
@@ -196,7 +275,7 @@ Honorable Mentions zu den von mir verwendeten Quellen sowie ein persönlicher Ve
 * Lernkurve
 * Allgemeine Benutzererfahrung
 
-[Seite ansehen →](hm/readme.de.md)
+[Website ansehen →](hm/readme.en.md)
 
 ---
 
@@ -206,32 +285,40 @@ Honorable Mentions zu den von mir verwendeten Quellen sowie ein persönlicher Ve
 
 Azure · AWS · GCP
 
-**Infrastruktur**
+**Infrastructure as Code**
 
-Terraform · Windows Server · Linux
+Terraform
+
+**Automation & Configuration Management**
+
+Ansible · Python · Bash · PowerShell
+
+**Container**
+
+Docker · Kubernetes
+
+**CI/CD**
+
+GitHub Actions
+
+**Monitoring & Observability**
+
+Prometheus · Grafana · cAdvisor
 
 **Networking**
 
 VNet · VPC · Subnets · Routing · NSGs · Security Groups · Load Balancing · DNS · Tailscale
 
-**Identität**
+**Identity & Systems**
 
-Active Directory · IAM · Group Policy
-
-**Automatisierung**
-
-Terraform · PowerShell · Git
-
-**Container**
-
-Docker · Kubernetes
+Active Directory · IAM · Windows Server · Linux · Group Policy
 
 ---
 
 ## 🎯 Lernpfad
 
 ```text
-IT-Support
+IT Support
     │
     ▼
 Microsoft Azure
@@ -249,10 +336,16 @@ Hybrid Cloud
 Terraform
     │
     ▼
- Docker
+  Docker
     │
     ▼
 Kubernetes
+    │
+    ▼
+Automation & CI/CD
+    │
+    ▼
+Monitoring
     │
     ▼
 Cloud / DevOps
@@ -262,8 +355,8 @@ Cloud / DevOps
 
 ## 📌 Über dieses Portfolio
 
-Dieses Portfolio dokumentiert praxisorientierte Labs, die ich während der Entwicklung meiner Kenntnisse in Cloud-Infrastruktur und DevOps aufgebaut habe.
+Dieses Portfolio dokumentiert praxisorientierte Labs, die ich während der Entwicklung meiner Kenntnisse im Bereich Cloud Infrastructure und DevOps aufgebaut habe.
 
-Jedes Projekt ist darauf ausgelegt, das praktische Verständnis durch Konfiguration, Tests, Troubleshooting und Automatisierung zu vertiefen.
+Jedes Projekt dient dazu, praktische Kenntnisse durch Konfiguration, Testing, Troubleshooting und Automatisierung zu vertiefen.
 
-Das Portfolio wird weiterentwickelt, während neue Technologien und Projekte hinzukommen.
+Das Portfolio wird kontinuierlich weiterentwickelt, während neue Technologien und Projekte hinzukommen.
