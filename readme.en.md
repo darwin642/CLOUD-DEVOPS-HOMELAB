@@ -4,6 +4,10 @@ This is a hands-on portfolio documenting my journey from IT Support into Cloud I
 
 This portfolio focuses on building, configuring, troubleshooting and automating real-world infrastructure rather than only studying theory.
 
+Below is a visual overview of the environments I have worked with:
+
+![Cloud & DevOps Lab Environments](main_diagram.png)
+
 ---
 
 ## ☁️ Cloud Platforms
