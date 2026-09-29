@@ -27,7 +27,7 @@ Aşağıdaki konuları kapsayan uygulamalı Azure altyapı laboratuvarı:
 * Azure CLI
 * Windows Server
 
-[Azure Lab'ını Gör →](az/readme.en.md)
+[Azure Lab'ını Gör →](az/readme.tr.md)
 
 ---
 
@@ -52,7 +52,7 @@ Aşağıdaki konuları kapsayan uygulamalı AWS altyapı laboratuvarı:
 
 Altyapı Terraform ile yönetilmektedir.
 
-[AWS Lab'ını Gör →](aws/readme.en.md)
+[AWS Lab'ını Gör →](aws/readme.tr.md)
 
 ---
 
@@ -73,7 +73,7 @@ Aşağıdaki konuları kapsayan uygulamalı GCP altyapı laboratuvarı:
 * Backup & Disaster Recovery
 * AWS ↔ GCP private bağlantısı
 
-[GCP Lab'ını Gör →](gcp/readme.en.md)
+[GCP Lab'ını Gör →](gcp/readme.tr.md)
 
 ---
 
@@ -92,7 +92,7 @@ Aşağıdaki konuları kapsayan uygulamalı Windows Server ve Active Directory o
 * PowerShell
 * Windows Server yönetimi
 
-[Active Directory Lab'ını Gör →](ad/readme.en.md)
+[Active Directory Lab'ını Gör →](ad/readme.tr.md)
 
 ---
 
@@ -114,7 +114,7 @@ Proje şu konulara odaklanmaktadır:
 * Cloud Connectivity
 * Platformlar arası altyapı
 
-[Hybrid Cloud Lab'ını Gör →](hybrid/readme.en.md)
+[Hybrid Cloud Lab'ını Gör →](hybrid/readme.tr.md)
 
 ---
 
@@ -139,7 +139,7 @@ Mevcut çalışmalar:
 * Terraform State Management
 * Infrastructure Planning ve Deployment
 
-[Terraform Lab'ını Gör →](terraform/readme.en.md)
+[Terraform Lab'ını Gör →](terraform/readme.tr.md)
 
 ---
 
@@ -160,7 +160,7 @@ Mevcut çalışmalar:
 * UFW Firewall Configuration
 * Idempotent Configuration
 
-[Ansible Lab'ını Gör →](ansible/readme.en.md)
+[Ansible Lab'ını Gör →](ansible/readme.tr.md)
 
 ### Python
 
@@ -192,7 +192,7 @@ Mevcut çalışmalar:
 * Docker Security ve Secrets
 * Docker Hub ve CI/CD
 
-[Docker Lab'ını Gör →](docker/readme.en.md)
+[Docker Lab'ını Gör →](docker/readme.tr.md)
 
 ---
 
@@ -211,7 +211,7 @@ Aşağıdaki konuları kapsayan uygulamalı Kubernetes laboratuvarı:
 * Helm
 * Production Deployment & Troubleshooting
 
-[Kubernetes Lab'ını Gör →](kubernetes/readme.en.md)
+[Kubernetes Lab'ını Gör →](kubernetes/readme.tr.md)
 
 ---
 
@@ -230,7 +230,7 @@ Mevcut çalışmalar:
 * Otomatik deployment
 * CI/CD pipeline'ları
 
-[CI/CD Lab'ını Gör →](cicd/readme.en.md)
+[CI/CD Lab'ını Gör →](cicd/readme.tr.md)
 
 ---
 
@@ -250,7 +250,7 @@ Mevcut çalışmalar:
 * Alerting
 * Docker monitoring
 
-[Monitoring Lab'ını Gör →](monitor/readme.en.md)
+[Monitoring Lab'ını Gör →](monitor/readme.tr.md)
 
 ---
 
@@ -269,7 +269,7 @@ Mevcut çalışmalar:
 * Öğrenme eğrisi
 * Genel kullanıcı deneyimi
 
-[Siteyi Gör →](hm/readme.en.md)
+[Siteyi Gör →](hm/readme.tr.md)
 
 ---
 
