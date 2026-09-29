@@ -1,21 +1,25 @@
 # ☁️ Cloud & DevOps Lab Portföyü
 
-IT Support alanından Cloud Infrastructure ve DevOps'a geçiş yolculuğumu belgeleyen uygulamalı bir portföy.
+Bu portföy, IT Support alanından Cloud Infrastructure ve DevOps alanına olan gelişimimi uygulamalı çalışmalar üzerinden belgelemektedir.
 
-Bu portföy yalnızca teori çalışmaya değil, gerçek dünya altyapılarını oluşturmaya, yapılandırmaya, sorun gidermeye ve otomatikleştirmeye odaklanmaktadır.
+Bu portföy; yalnızca teori çalışmak yerine gerçek dünya altyapılarını oluşturma, yapılandırma, sorun giderme ve otomasyon süreçlerine odaklanmaktadır.
+
+Aşağıda üzerinde çalıştığım ortamların görsel bir özeti bulunmaktadır:
+
+![Cloud & DevOps Lab Environments](main_diagram.png)
 
 ---
 
-## ☁️ Bulut Platformları
+## ☁️ Cloud Platformları
 
 ### Microsoft Azure
 
 Aşağıdaki konuları kapsayan uygulamalı Azure altyapı laboratuvarı:
 
 * Azure Virtual Networks
-* Subnet'ler
+* Subnetler
 * Network Security Groups
-* Virtual Machines
+* Sanal Makineler
 * Routing
 * Private Endpoints
 * Managed Identities
@@ -23,7 +27,7 @@ Aşağıdaki konuları kapsayan uygulamalı Azure altyapı laboratuvarı:
 * Azure CLI
 * Windows Server
 
-[Azure Lab'ı Görüntüle →](az/readme.tr.md)
+[Azure Lab'ını Gör →](az/readme.en.md)
 
 ---
 
@@ -32,9 +36,9 @@ Aşağıdaki konuları kapsayan uygulamalı Azure altyapı laboratuvarı:
 Aşağıdaki konuları kapsayan uygulamalı AWS altyapı laboratuvarı:
 
 * VPC
-* Public ve private subnet'ler
+* Public ve private subnetler
 * Internet Gateway
-* Route tables
+* Route Tables
 * EC2
 * Application Load Balancer
 * Security Groups
@@ -48,13 +52,13 @@ Aşağıdaki konuları kapsayan uygulamalı AWS altyapı laboratuvarı:
 
 Altyapı Terraform ile yönetilmektedir.
 
-[AWS Lab'ı Görüntüle →](aws/readme.tr.md)
+[AWS Lab'ını Gör →](aws/readme.en.md)
 
 ---
 
 ### Google Cloud Platform
 
-Aşağıdaki bileşenleri kapsayan uygulamalı GCP altyapı laboratuvarı:
+Aşağıdaki konuları kapsayan uygulamalı GCP altyapı laboratuvarı:
 
 * VPC
 * Public ve private subnetler
@@ -66,10 +70,10 @@ Aşağıdaki bileşenleri kapsayan uygulamalı GCP altyapı laboratuvarı:
 * Cloud DNS
 * Private Google Access
 * Cloud Monitoring & Alerting
-* Backup & DR
-* AWS ↔ GCP özel ağ bağlantısı
+* Backup & Disaster Recovery
+* AWS ↔ GCP private bağlantısı
 
-[GCP Lab'e Git →](gcp/readme.tr.md)
+[GCP Lab'ını Gör →](gcp/readme.en.md)
 
 ---
 
@@ -88,7 +92,7 @@ Aşağıdaki konuları kapsayan uygulamalı Windows Server ve Active Directory o
 * PowerShell
 * Windows Server yönetimi
 
-[Active Directory Lab'ını Görüntüle →](ad/readme.tr.md)
+[Active Directory Lab'ını Gör →](ad/readme.en.md)
 
 ---
 
@@ -96,21 +100,21 @@ Aşağıdaki konuları kapsayan uygulamalı Windows Server ve Active Directory o
 
 ### Azure + AWS + Active Directory + Tailscale
 
-Bulut platformlarını şirket içi kimlik ve altyapıyla birleştiren hibrit altyapı projesi.
+Cloud platformlarını on-premises kimlik ve altyapı ile birleştiren hibrit bir altyapı projesi.
 
-Proje aşağıdaki konulara odaklanmaktadır:
+Proje şu konulara odaklanmaktadır:
 
-* Hybrid identity
+* Hybrid Identity
 * Active Directory entegrasyonu
 * Azure
 * AWS
 * Tailscale
 * DNS
 * Networking
-* Cloud connectivity
+* Cloud Connectivity
 * Platformlar arası altyapı
 
-[Hybrid Cloud Lab'ını Görüntüle →](hybrid/readme.tr.md)
+[Hybrid Cloud Lab'ını Gör →](hybrid/readme.en.md)
 
 ---
 
@@ -118,7 +122,7 @@ Proje aşağıdaki konulara odaklanmaktadır:
 
 ### Terraform
 
-Deklaratif yapılandırma kullanarak bulut altyapısını yönetmeye odaklanan uygulamalı Infrastructure as Code çalışmaları.
+Deklaratif yapılandırma kullanarak cloud altyapısını yönetmeye odaklanan uygulamalı Infrastructure as Code çalışmaları.
 
 Mevcut çalışmalar:
 
@@ -129,13 +133,46 @@ Mevcut çalışmalar:
 * IAM
 * Monitoring
 * Storage
-* Variables ve locals
-* Data sources
-* Resource dependencies
-* Terraform state yönetimi
-* Infrastructure planlama ve deployment
+* Variables ve Locals
+* Data Sources
+* Resource Dependencies
+* Terraform State Management
+* Infrastructure Planning ve Deployment
 
-[Terraform Lab'ını Görüntüle →](terraform/readme.tr.md)
+[Terraform Lab'ını Gör →](terraform/readme.en.md)
+
+---
+
+## ⚙️ Automation & Configuration Management
+
+### Ansible
+
+Ansible kullanılarak yapılan uygulamalı configuration management ve otomasyon çalışmaları.
+
+Mevcut çalışmalar:
+
+* Ansible Roles
+* Playbooks
+* Service Management
+* Paket kurulumu
+* Templates
+* Handlers
+* UFW Firewall Configuration
+* Idempotent Configuration
+
+[Ansible Lab'ını Gör →](ansible/readme.en.md)
+
+### Python
+
+AWS/GCP inventory, health checks, JSON raporlama, API kullanımı ve otomatik testler dahil olmak üzere cloud otomasyonu ve altyapı görevlerinde kullanılmaktadır.
+
+### Bash
+
+Linux sistem yönetimi ve otomasyon görevlerinde kullanılmaktadır.
+
+### PowerShell
+
+Windows sistem yönetimi, Active Directory ve otomasyon görevlerinde kullanılmaktadır.
 
 ---
 
@@ -145,18 +182,17 @@ Mevcut çalışmalar:
 
 Container uygulamalarını oluşturma, çalıştırma ve yönetmeye odaklanan uygulamalı containerization çalışmaları.
 
-Çalışma kapsamı:
+Mevcut çalışmalar:
 
-* Docker imajları ve container'lar
-* Dockerfile ve multi-stage build
-* Volumes ve networks
+* Docker Images ve Containers
+* Dockerfiles ve Multi-Stage Builds
+* Volumes ve Networks
 * Docker Compose
 * Nginx ve PostgreSQL
-* Docker güvenliği ve secrets
+* Docker Security ve Secrets
 * Docker Hub ve CI/CD
 
-[Docker Lab'ı Görüntüle →](docker/readme.tr.md)
-
+[Docker Lab'ını Gör →](docker/readme.en.md)
 
 ---
 
@@ -164,7 +200,7 @@ Container uygulamalarını oluşturma, çalıştırma ve yönetmeye odaklanan uy
 
 ### Kubernetes
 
-Uygulamalı Kubernetes lab çalışması:
+Aşağıdaki konuları kapsayan uygulamalı Kubernetes laboratuvarı:
 
 * Pods, Deployments & Services
 * ConfigMaps & Secrets
@@ -173,58 +209,103 @@ Uygulamalı Kubernetes lab çalışması:
 * HPA & RBAC
 * StatefulSets, DaemonSets & Jobs
 * Helm
-* Production deployment & troubleshooting
+* Production Deployment & Troubleshooting
 
-[Kubernetes Lab'ını Gör →](kubernetes/readme.tr.md)
-
+[Kubernetes Lab'ını Gör →](kubernetes/readme.en.md)
 
 ---
 
-## Ek Notlar ve Bulut Sistemleri Karşılaştırmaları
+## 🔄 CI/CD
 
-Kullandığım kaynaklara dair ek notlar ve deneyimlediğim üç bulut platformunun aşağıdaki kriterlere göre kişisel, uygulamalı karşılaştırması:
+### GitHub Actions
 
-* GUI / Konsol deneyimi
-* Gezinme kolaylığı
+GitHub Actions kullanılarak yapılan uygulamalı CI/CD otomasyon çalışmaları.
+
+Mevcut çalışmalar:
+
+* Otomatik testler
+* Docker image build işlemleri
+* GitHub Container Registry
+* Self-hosted runners
+* Otomatik deployment
+* CI/CD pipeline'ları
+
+[CI/CD Lab'ını Gör →](cicd/readme.en.md)
+
+---
+
+## 📊 Monitoring & Observability
+
+Container ortamları için oluşturulmuş uygulamalı monitoring altyapısı.
+
+Mevcut çalışmalar:
+
+* Prometheus
+* PromQL
+* cAdvisor
+* Container metrikleri
+* CPU ve memory monitoring
+* Network metrikleri
+* Grafana dashboard'ları
+* Alerting
+* Docker monitoring
+
+[Monitoring Lab'ını Gör →](monitor/readme.en.md)
+
+---
+
+## 📝 Cloud Sistem Karşılaştırmaları
+
+Çalıştığım cloud platformlarının aşağıdaki kriterlere göre yaptığım uygulamalı karşılaştırması:
+
+* GUI / Console deneyimi
+* Navigasyon kolaylığı
 * Dokümantasyon
 * CLI deneyimi
-* Ağ yönetimi
+* Networking
 * IAM ve yetkilendirme
-* İzleme
-* Sorun giderme
+* Monitoring
+* Troubleshooting
 * Öğrenme eğrisi
 * Genel kullanıcı deneyimi
 
-[Siteyi Görüntüle →](hm/readme.tr.md)
+[Siteyi Gör →](hm/readme.en.md)
 
 ---
-
 
 ## 🛠️ Teknolojiler
 
 **Cloud**
 
-Azure · AWS
+Azure · AWS · GCP
 
-**Infrastructure**
+**Infrastructure as Code**
 
-Terraform · Windows Server · Linux
+Terraform
+
+**Automation & Configuration Management**
+
+Ansible · Python · Bash · PowerShell
+
+**Containers**
+
+Docker · Kubernetes
+
+**CI/CD**
+
+GitHub Actions
+
+**Monitoring & Observability**
+
+Prometheus · Grafana · cAdvisor
 
 **Networking**
 
 VNet · VPC · Subnets · Routing · NSGs · Security Groups · Load Balancing · DNS · Tailscale
 
-**Identity**
+**Identity & Systems**
 
-Active Directory · IAM · Group Policy
-
-**Automation**
-
-Terraform · PowerShell · Git
-
-**Containers**
-
-Docker · Kubernetes
+Active Directory · IAM · Windows Server · Linux · Group Policy
 
 ---
 
@@ -249,10 +330,16 @@ Hybrid Cloud
 Terraform
     │
     ▼
-Docker
+  Docker
     │
     ▼
 Kubernetes
+    │
+    ▼
+Automation & CI/CD
+    │
+    ▼
+Monitoring
     │
     ▼
 Cloud / DevOps
@@ -262,8 +349,8 @@ Cloud / DevOps
 
 ## 📌 Bu Portföy Hakkında
 
-Bu portföy, cloud infrastructure ve DevOps becerilerimi geliştirirken oluşturduğum uygulamalı laboratuvarları belgelemektedir.
+Bu portföy, Cloud Infrastructure ve DevOps alanındaki yetkinliklerimi geliştirirken oluşturduğum uygulamalı laboratuvar çalışmalarını belgelemektedir.
 
-Her proje; yapılandırma, test, sorun giderme ve otomasyon yoluyla pratik anlayışı geliştirmek amacıyla tasarlanmıştır.
+Her proje; yapılandırma, test, sorun giderme ve otomasyon süreçleri üzerinden pratik bilgiyi geliştirmek amacıyla tasarlanmıştır.
 
-Yeni teknolojiler ve projeler eklendikçe portföy geliştirilmeye devam edecektir.
+Yeni teknolojiler ve projeler eklendikçe portföy sürekli olarak geliştirilmeye devam edecektir.
