@@ -139,6 +139,39 @@ Current work includes:
 
 ---
 
+## ⚙️ Automation & Configuration Management
+
+### Ansible
+
+Hands-on configuration management and automation using Ansible.
+
+Current work includes:
+
+* Ansible roles
+* Playbooks
+* Service management
+* Package installation
+* Templates
+* Handlers
+* UFW firewall configuration
+* Idempotent configuration
+
+[View Ansible Lab →](ansible/readme.en.md)
+
+### Python
+
+Used for cloud automation and infrastructure tasks, including AWS/GCP inventory, health checks, JSON reporting, API usage and automated testing.
+
+### Bash
+
+Used for Linux system administration and automation tasks.
+
+### PowerShell
+
+Used for Windows system administration, Active Directory and automation tasks.
+
+---
+
 ## 🐳 Containers
 
 ### Docker
@@ -174,24 +207,65 @@ Hands-on Kubernetes lab covering:
 * Helm
 * Production deployment & troubleshooting
 
- [View Kubernetes Lab →](kubernetes/readme.en.md)
+[View Kubernetes Lab →](kubernetes/readme.en.md)
 
 ---
 
-## Honorable Mentions and Cloud System Comparisons
+## 🔄 CI/CD
 
-Honoreable Mentions about the Sources i used and Personal hands-on comparison of the three cloud platforms i have experienced based on:
+### GitHub Actions
 
-- GUI / Console experience
-- Ease of navigation
-- Documentation
-- CLI experience
-- Networking
-- IAM and permissions
-- Monitoring
-- Troubleshooting
-- Learning curve
-- Overall user experience
+Hands-on CI/CD automation using GitHub Actions.
+
+Current work includes:
+
+* Automated testing
+* Docker image builds
+* GitHub Container Registry
+* Self-hosted runners
+* Automated deployment
+* CI/CD pipelines
+
+[View CI/CD Lab →](cicd/readme.en.md)
+
+---
+
+## 📊 Monitoring & Observability
+
+### Prometheus & Grafana
+
+Hands-on monitoring setup for containerized environments.
+
+Current work includes:
+
+* Prometheus
+* PromQL
+* cAdvisor
+* Container metrics
+* CPU and memory monitoring
+* Network metrics
+* Grafana dashboards
+* Alerting
+* Docker monitoring
+
+[View Monitoring Lab →](monitor/readme.en.md)
+
+---
+
+## 📝 Cloud System Comparisons
+
+Personal hands-on comparison of the cloud platforms I have worked with based on:
+
+* GUI / Console experience
+* Ease of navigation
+* Documentation
+* CLI experience
+* Networking
+* IAM and permissions
+* Monitoring
+* Troubleshooting
+* Learning curve
+* Overall user experience
 
 [View Site →](hm/readme.en.md)
 
@@ -201,27 +275,35 @@ Honoreable Mentions about the Sources i used and Personal hands-on comparison of
 
 **Cloud**
 
-Azure · AWS
+Azure · AWS · GCP
 
-**Infrastructure**
+**Infrastructure as Code**
 
-Terraform · Windows Server · Linux
+Terraform
+
+**Automation & Configuration Management**
+
+Ansible · Python · Bash · PowerShell
+
+**Containers**
+
+Docker · Kubernetes
+
+**CI/CD**
+
+GitHub Actions
+
+**Monitoring & Observability**
+
+Prometheus · Grafana · cAdvisor
 
 **Networking**
 
 VNet · VPC · Subnets · Routing · NSGs · Security Groups · Load Balancing · DNS · Tailscale
 
-**Identity**
+**Identity & Systems**
 
-Active Directory · IAM · Group Policy
-
-**Automation**
-
-Terraform · PowerShell · Git
-
-**Containers**
-
-Docker · Kubernetes
+Active Directory · IAM · Windows Server · Linux · Group Policy
 
 ---
 
@@ -246,10 +328,16 @@ Hybrid Cloud
 Terraform
     │
     ▼
- Docker
+  Docker
     │
     ▼
 Kubernetes
+    │
+    ▼
+Automation & CI/CD
+    │
+    ▼
+Monitoring
     │
     ▼
 Cloud / DevOps
