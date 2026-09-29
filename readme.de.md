@@ -1,7 +1,7 @@
 # ☁️ Cloud & DevOps Lab Portfolio
 
-[!WARNING]
-Da sich meine Deutschkenntnisse derzeit noch auf einem grundlegenden Niveau befinden, habe ich diese deutsche Version mit Unterstützung künstlicher Intelligenz erstellt. Auf diese Weise möchte ich sicherstellen, dass die Inhalte möglichst klar und verständlich vermittelt werden. Vielen Dank für Ihr Verständnis.
+>[!NOTE]
+>Da sich meine Deutschkenntnisse derzeit noch auf einem grundlegenden Niveau befinden, habe ich diese deutsche Version mit Unterstützung künstlicher Intelligenz erstellt. Auf diese Weise möchte ich sicherstellen, dass die Inhalte möglichst klar und verständlich vermittelt werden. Vielen Dank für Ihr Verständnis.
 
 
 Dies ist ein praxisorientiertes Portfolio, das meine Entwicklung vom IT Support hin zu Cloud Infrastructure und DevOps dokumentiert.
