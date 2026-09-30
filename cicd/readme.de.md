@@ -43,7 +43,7 @@ Git wird zur Versionsverwaltung des Quellcodes verwendet, während GitHub das Re
 
 ### 📸 Screenshot 01 — Projektstruktur
 
-![Project Structure](01-project-structure.png))
+![Project Structure](01-project-structure.png)
 
 ---
 
