@@ -43,7 +43,7 @@ Git, kaynak kodu değişikliklerini takip etmek için kullanılırken GitHub, re
 
 ### 📸 Screenshot 01 — Proje Yapısı
 
-[Proje Yapısı](01-project-structure.png))
+[Proje Yapısı](01-project-structure.png)
 
 ---
 
@@ -76,7 +76,7 @@ Workflow, yapılandırılmış repository eventi tetiklendiğinde çalıştırı
 
 ### 📸 Screenshot 02 — GitHub Actions Workflow
 
-[GitHub Actions Workflow](02-workflow.png))
+[GitHub Actions Workflow](02-workflow.png)
 
 ---
 
