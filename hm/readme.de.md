@@ -707,4 +707,6 @@ Vielen Dank für den Besuch meines Portfolios.
 
 ---
 
-**Letzte Aktualisierung:** `24. September 2026, 00:57 Uhr GMT +3, Istanbul`
+**Erste Aktualisierung:** `24 September 2026 12:57 AM GMT +3 Istanbul`
+
+**Letzte Aktualisierung:** `30 September 2026 11:37 PM GMT +3 Istanbul`
