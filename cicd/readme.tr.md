@@ -43,7 +43,7 @@ Git, kaynak kodu değişikliklerini takip etmek için kullanılırken GitHub, re
 
 ### 📸 Screenshot 01 — Proje Yapısı
 
-[Proje Yapısı](01-project-structure.png)
+![Project Structure](01-project-structure.png)
 
 ---
 
