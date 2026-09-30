@@ -76,7 +76,7 @@ Der Workflow definiert die Reihenfolge der automatisierten Aufgaben, die ausgef�
 
 ### 📸 Screenshot 02 — GitHub Actions Workflow
 
-![Project Structure](02-workflow.png))
+![Project Structure](02-workflow.png)
 
 ---
 
@@ -115,7 +115,7 @@ Weiter    Stop
 
 ### 📸 Screenshot 03 — Automatisierte Tests
 
-![Project Structure](03-tests.png))
+![Project Structure](03-tests.png)
 
 ---
 
@@ -153,7 +153,7 @@ Der Docker-Build-Schritt zeigt, wie die Erstellung von Container-Images in einen
 
 ### 📸 Screenshot 04 — Docker Build
 
-![Project Structure](04-docker-build.png))
+![Project Structure](04-docker-build.png)
 
 ---
 
@@ -176,7 +176,7 @@ Eine erfolgreiche Pipeline bedeutet, dass alle erforderlichen Schritte ohne Fehl
 
 ### 📸 Screenshot 05 — Erfolgreiche Pipeline
 
-![Project Structure](05-pipeline-success.png))
+![Project Structure](05-pipeline-success.png)
 
 ---
 
@@ -223,7 +223,7 @@ Fehler beheben
 
 ### 📸 Screenshot 06 — Fehlgeschlagene Pipeline
 
-![Project Structure](06-pipeline-failure.png))
+![Project Structure](06-pipeline-failure.png)
 
 ---
 
@@ -245,7 +245,7 @@ Eine erfolgreiche Ausführung bestätigt, dass das Problem behoben wurde und die
 
 ### 📸 Screenshot 07 — Erfolgreiche Pipeline-Verifizierung
 
-![Project Structure](07-pipeline-verification.png))
+![Project Structure](07-pipeline-verification.png)
 
 ---
 
@@ -267,7 +267,7 @@ Diese Logs wurden verwendet, um die Ausführung zu überprüfen und Fehler inner
 
 ### 📸 Screenshot 08 — Workflow-Logs
 
-![Project Structure](08-workflow-logs.png))
+![Project Structure](08-workflow-logs.png)
 
 ---
 
