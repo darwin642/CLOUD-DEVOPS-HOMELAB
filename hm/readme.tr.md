@@ -707,4 +707,6 @@ Portföyümü ziyaret ettiğiniz için teşekkürler.
 
 ---
 
-**Son güncelleme:** `24 Eylül 2026 12:57 AM GMT +3 İstanbul`
+**İlk Güncelleme:** `24 September 2026 12:57 AM GMT +3 Istanbul`
+
+**Son Güncelleme:** `30 September 2026 11:37 PM GMT +3 Istanbul`
