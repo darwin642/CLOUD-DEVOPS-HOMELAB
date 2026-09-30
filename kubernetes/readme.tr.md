@@ -272,7 +272,7 @@ myapp-ghcr  → GHCR üzerinden dağıtıldı
 
 ### 📸 Screenshot 15 — Helm Chart
 
-[Helm Chart Structure](15-helm-chart.png)
+![Jobs and CronJobs](15-helm-chart.png)
 
 ---
 
@@ -292,7 +292,7 @@ Lab sırasında Helm history, upgrade ve rollback işlemleri test edilmiştir.
 
 ### 📸 Screenshot 16 — Helm Releases
 
-[Helm Releases](16-helm-releases.png)
+![Jobs and CronJobs](16-helm-releases.png)
 
 ---
 
