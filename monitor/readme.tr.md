@@ -232,7 +232,7 @@ http://localhost:8080
 
 ### 📸 Screenshot 08 — Monitoring Doğrulaması
 
-![Monitoring Verification](08-monitoring-verification.png)
+![Docker Containers](02-docker-containers.png)
 
 ---
 
