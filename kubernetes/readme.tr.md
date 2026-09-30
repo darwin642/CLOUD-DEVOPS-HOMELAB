@@ -236,46 +236,63 @@ Kubernetes Job ve CronJob kaynakları one-time ve scheduled workload'ları göst
 
 ## 13. ⛵ Helm
 
-Helm, Kubernetes application'larını package etmek ve deploy etmek için kullanılmaktadır.
+Helm, Kubernetes uygulamalarını paketlemek, yapılandırmak ve dağıtmak için kullanılır.
 
-Lab içerisinde iki Helm chart bulunmaktadır:
+Lab kapsamında aşağıdaki Helm iş akışları uygulamalı olarak çalışılmıştır:
+
+* Helm Charts
+* `Chart.yaml`
+* `values.yaml`
+* Ortama özel values dosyaları
+* Helm Templates
+* Helm Releases
+* Upgrade ve revision işlemleri
+* Rollback işlemleri
+* Chart paketleme
+* OCI tabanlı chart dağıtımı
+* GHCR entegrasyonu
+
+Helm kaynaklarına örnekler:
 
 ```text
 nginx-chart/
 production-app/
+myapp/
+
 ```
 
-Chart'lar aşağıdaki kaynakları kullanmaktadır:
+`myapp` chart'ı, farklı yapılandırmalara sahip birden fazla release oluşturmayı göstermek için kullanılmıştır:
 
-* `Chart.yaml`
-* `values.yaml`
-* Helm templates
-* Services
-* Deployments
-* HPA
-* Ingress
-* ConfigMaps
-* Secrets
-* PVC
+```text
+myapp-dev   → 3 replica
+myapp-prod  → 4 replica
+myapp-ghcr  → GHCR üzerinden dağıtıldı
+
+```
 
 ### 📸 Screenshot 15 — Helm Chart
 
-![Helm Chart Structure](15-helm-chart.png)
+[Helm Chart Structure](15-helm-chart.png)
 
 ---
 
 ## 14. 🚀 Helm Releases
 
-Cluster içerisinde iki adet deployed Helm release bulunmaktadır.
+Helm Releases, aynı chart üzerinden birden fazla bağımsız deployment'ı yönetmek için kullanılmıştır.
 
-| Release          | Chart                  | Revision | Status   |
-| ---------------- | ---------------------- | -------: | -------- |
-| `nginx-test`     | `nginx-chart-0.1.0`    |        7 | deployed |
-| `production-app` | `production-app-0.1.0` |        4 | deployed |
+| **Release**  | **Kaynak**       | **Yapılandırma**    | **Durum** |
+| ------------ | ---------------- | ------------------- | --------- |
+| `myapp-dev`  | Yerel Helm Chart | 3 replica           | deployed  |
+| `myapp-prod` | Yerel Helm Chart | 4 replica           | deployed  |
+| `myapp-ghcr` | GHCR OCI Chart   | Varsayılan değerler | deployed  |
+
+Lab ayrıca `nginx-test` ve `production-app` gibi mevcut Helm release'lerini de içermektedir.
+
+Lab sırasında Helm history, upgrade ve rollback işlemleri test edilmiştir.
 
 ### 📸 Screenshot 16 — Helm Releases
 
-![Helm Releases](16-helm-releases.png)
+[Helm Releases](16-helm-releases.png)
 
 ---
 
