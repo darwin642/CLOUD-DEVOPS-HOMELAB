@@ -232,46 +232,61 @@ Kubernetes Jobs and CronJobs were used to demonstrate one-time and scheduled wor
 
 ## 13. ⛵ Helm
 
-Helm is used to package and deploy Kubernetes applications.
+Helm is used to package, configure and deploy Kubernetes applications.
 
-The lab contains two Helm charts:
+The lab includes hands-on Helm workflows covering:
+
+* Helm Charts
+* `Chart.yaml`
+* `values.yaml`
+* Environment-specific values files
+* Helm templates
+* Helm releases
+* Upgrades and revisions
+* Rollbacks
+* Chart packaging
+* OCI-based chart distribution
+* GHCR integration
+
+Example Helm resources include:
 
 ```text
 nginx-chart/
 production-app/
+myapp/
 ```
 
-The charts use:
+The `myapp` chart was used to demonstrate multiple releases with different configurations:
 
-* `Chart.yaml`
-* `values.yaml`
-* Helm templates
-* Services
-* Deployments
-* HPA
-* Ingress
-* ConfigMaps
-* Secrets
-* PVC
+```text
+myapp-dev   → 3 replicas
+myapp-prod  → 4 replicas
+myapp-ghcr  → deployed from GHCR
+```
 
 ### 📸 Screenshot 15 — Helm Chart
 
-![Helm Chart Structure](15-helm-chart.png)
+[Helm Chart Structure](15-helm-chart.png)
 
 ---
 
 ## 14. 🚀 Helm Releases
 
-The current cluster contains two deployed Helm releases.
+Helm releases were used to manage multiple independent deployments from the same chart.
 
-| Release          | Chart                  | Revision | Status   |
-| ---------------- | ---------------------- | -------: | -------- |
-| `nginx-test`     | `nginx-chart-0.1.0`    |        7 | deployed |
-| `production-app` | `production-app-0.1.0` |        4 | deployed |
+| **Release**  | **Source**       | **Configuration** | **Status** |
+| ------------ | ---------------- | ----------------- | ---------- |
+| `myapp-dev`  | Local Helm Chart | 3 replicas        | deployed   |
+| `myapp-prod` | Local Helm Chart | 4 replicas        | deployed   |
+| `myapp-ghcr` | GHCR OCI Chart   | Default values    | deployed   |
+
+The lab also includes existing Helm releases such as `nginx-test` and `production-app`.
+
+Helm history, upgrades and rollbacks were tested during the lab.
 
 ### 📸 Screenshot 16 — Helm Releases
 
-![Helm Releases](16-helm-releases.png)
+[Helm Releases](16-helm-releases.png)
 
 ---
 
