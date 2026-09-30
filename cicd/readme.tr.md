@@ -43,7 +43,7 @@ Git, kaynak kodu değişikliklerini takip etmek için kullanılırken GitHub, re
 
 ### 📸 Screenshot 01 — Proje Yapısı
 
-[Proje Yapısı](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/01-project-structure.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/01-project-structure.png))
+[Proje Yapısı](01-project-structure.png))
 
 ---
 
@@ -76,7 +76,7 @@ Workflow, yapılandırılmış repository eventi tetiklendiğinde çalıştırı
 
 ### 📸 Screenshot 02 — GitHub Actions Workflow
 
-[GitHub Actions Workflow](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/02-workflow.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/02-workflow.png))
+[GitHub Actions Workflow](02-workflow.png))
 
 ---
 
@@ -115,7 +115,7 @@ Devam     Dur
 
 ### 📸 Screenshot 03 — Otomatik Testler
 
-[Otomatik Testler](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/03-tests.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/03-tests.png))
+[Otomatik Testler](03-tests.png)
 
 ---
 
@@ -153,7 +153,7 @@ Docker build aşaması, container image oluşturma sürecinin otomatik bir CI wo
 
 ### 📸 Screenshot 04 — Docker Build
 
-[Docker Build](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/04-docker-build.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/04-docker-build.png))
+[Docker Build](04-docker-build.png) 
 
 ---
 
@@ -176,7 +176,7 @@ Başarılı bir pipeline, gerekli tüm aşamaların herhangi bir hata olmadan ta
 
 ### 📸 Screenshot 05 — Başarılı Pipeline
 
-[Başarılı Pipeline](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/05-pipeline-success.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/05-pipeline-success.png))
+[Başarılı Pipeline](05-pipeline-success.png) 
 
 ---
 
@@ -223,7 +223,7 @@ Değişiklikleri Push Et
 
 ### 📸 Screenshot 06 — Başarısız Pipeline
 
-[Başarısız Pipeline](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/06-pipeline-failure.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/06-pipeline-failure.png))
+[Başarısız Pipeline](06-pipeline-failure.png) 
 
 ---
 
@@ -245,7 +245,7 @@ Başarılı bir çalıştırma, sorunun giderildiğini ve pipeline'ın tamamen b
 
 ### 📸 Screenshot 07 — Başarılı Pipeline Doğrulaması
 
-[Pipeline Doğrulaması](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/07-pipeline-verification.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/07-pipeline-verification.png))
+[Pipeline Doğrulaması](07-pipeline-verification.png) 
 
 ---
 
@@ -267,7 +267,7 @@ Bu loglar workflow'un çalışmasını doğrulamak ve pipeline hatalarını anal
 
 ### 📸 Screenshot 08 — Workflow Logları
 
-[Workflow Logları](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/08-workflow-logs.png) ([Görsel](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/08-workflow-logs.png))
+[Workflow Logları](08-workflow-logs.png) 
 
 ---
 
