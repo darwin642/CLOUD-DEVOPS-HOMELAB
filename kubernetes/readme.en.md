@@ -266,7 +266,7 @@ myapp-ghcr  → deployed from GHCR
 
 ### 📸 Screenshot 15 — Helm Chart
 
-[Helm Chart Structure](15-helm-chart.png)
+![Helm Chart Structure](15-helm-chart.png)
 
 ---
 
@@ -286,7 +286,7 @@ Helm history, upgrades and rollbacks were tested during the lab.
 
 ### 📸 Screenshot 16 — Helm Releases
 
-[Helm Releases](16-helm-releases.png)
+![Helm Releases](16-helm-releases.png)
 
 ---
 
