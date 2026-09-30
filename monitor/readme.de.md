@@ -235,7 +235,7 @@ http://localhost:8080
 
 ### 📸 Screenshot 08 — Monitoring-Verifizierung
 
-![Monitoring Verification](08-monitoring-verification.png)
+![Docker Containers](02-docker-containers.png)
 
 ---
 
