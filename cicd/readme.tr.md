@@ -76,7 +76,7 @@ Workflow, yapılandırılmış repository eventi tetiklendiğinde çalıştırı
 
 ### 📸 Screenshot 02 — GitHub Actions Workflow
 
-[GitHub Actions Workflow](02-workflow.png)
+![Project Structure](02-workflow.png)
 
 ---
 
@@ -115,7 +115,7 @@ Devam     Dur
 
 ### 📸 Screenshot 03 — Otomatik Testler
 
-[Otomatik Testler](03-tests.png)
+![Project Structure](03-tests.png)
 
 ---
 
@@ -153,7 +153,7 @@ Docker build aşaması, container image oluşturma sürecinin otomatik bir CI wo
 
 ### 📸 Screenshot 04 — Docker Build
 
-[Docker Build](04-docker-build.png) 
+![Project Structure](04-docker-build.png) 
 
 ---
 
@@ -176,7 +176,7 @@ Başarılı bir pipeline, gerekli tüm aşamaların herhangi bir hata olmadan ta
 
 ### 📸 Screenshot 05 — Başarılı Pipeline
 
-[Başarılı Pipeline](05-pipeline-success.png) 
+![Project Structure](05-pipeline-success.png) 
 
 ---
 
@@ -223,7 +223,7 @@ Değişiklikleri Push Et
 
 ### 📸 Screenshot 06 — Başarısız Pipeline
 
-[Başarısız Pipeline](06-pipeline-failure.png) 
+![Project Structure](06-pipeline-failure.png) 
 
 ---
 
@@ -245,7 +245,7 @@ Başarılı bir çalıştırma, sorunun giderildiğini ve pipeline'ın tamamen b
 
 ### 📸 Screenshot 07 — Başarılı Pipeline Doğrulaması
 
-[Pipeline Doğrulaması](07-pipeline-verification.png) 
+![Project Structure](07-pipeline-verification.png) 
 
 ---
 
@@ -267,7 +267,7 @@ Bu loglar workflow'un çalışmasını doğrulamak ve pipeline hatalarını anal
 
 ### 📸 Screenshot 08 — Workflow Logları
 
-[Workflow Logları](08-workflow-logs.png) 
+![Project Structure](08-workflow-logs.png) 
 
 ---
 
