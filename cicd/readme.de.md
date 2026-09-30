@@ -43,7 +43,7 @@ Git wird zur Versionsverwaltung des Quellcodes verwendet, während GitHub das Re
 
 ### 📸 Screenshot 01 — Projektstruktur
 
-[Projektstruktur](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/01-project-structure.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/01-project-structure.png))
+![Project Structure](01-project-structure.png))
 
 ---
 
@@ -76,7 +76,7 @@ Der Workflow definiert die Reihenfolge der automatisierten Aufgaben, die ausgef�
 
 ### 📸 Screenshot 02 — GitHub Actions Workflow
 
-[GitHub Actions Workflow](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/02-workflow.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/02-workflow.png))
+![Project Structure](02-workflow.png))
 
 ---
 
@@ -115,7 +115,7 @@ Weiter    Stop
 
 ### 📸 Screenshot 03 — Automatisierte Tests
 
-[Automatisierte Tests](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/03-tests.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/03-tests.png))
+![Project Structure](03-tests.png))
 
 ---
 
@@ -153,7 +153,7 @@ Der Docker-Build-Schritt zeigt, wie die Erstellung von Container-Images in einen
 
 ### 📸 Screenshot 04 — Docker Build
 
-[Docker Build](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/04-docker-build.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/04-docker-build.png))
+![Project Structure](04-docker-build.png))
 
 ---
 
@@ -176,7 +176,7 @@ Eine erfolgreiche Pipeline bedeutet, dass alle erforderlichen Schritte ohne Fehl
 
 ### 📸 Screenshot 05 — Erfolgreiche Pipeline
 
-[Erfolgreiche Pipeline](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/05-pipeline-success.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/05-pipeline-success.png))
+![Project Structure](05-pipeline-success.png))
 
 ---
 
@@ -223,7 +223,7 @@ Fehler beheben
 
 ### 📸 Screenshot 06 — Fehlgeschlagene Pipeline
 
-[Fehlgeschlagene Pipeline](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/06-pipeline-failure.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/06-pipeline-failure.png))
+![Project Structure](06-pipeline-failure.png))
 
 ---
 
@@ -245,7 +245,7 @@ Eine erfolgreiche Ausführung bestätigt, dass das Problem behoben wurde und die
 
 ### 📸 Screenshot 07 — Erfolgreiche Pipeline-Verifizierung
 
-[Pipeline-Verifizierung](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/07-pipeline-verification.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/07-pipeline-verification.png))
+![Project Structure](07-pipeline-verification.png))
 
 ---
 
@@ -267,7 +267,7 @@ Diese Logs wurden verwendet, um die Ausführung zu überprüfen und Fehler inner
 
 ### 📸 Screenshot 08 — Workflow-Logs
 
-[Workflow-Logs](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/blob/main/cicd/08-workflow-logs.png) ([Bild](https://github.com/darwin642/CLOUD-DEVOPS-HOMELAB/raw/main/cicd/08-workflow-logs.png))
+![Project Structure](08-workflow-logs.png))
 
 ---
 
