@@ -48,7 +48,7 @@ The monitoring stack consists of the following components:
               ▼                                 ▼
      ┌─────────────────┐              ┌─────────────────┐
      │     cAdvisor    │              │     Docker      │
-     │ Container Metrics│              │   Containers    │
+     │Container Metrics│             │   Containers    │
      │     Port 8080   │              │                 │
      └─────────────────┘              └─────────────────┘
 ```
